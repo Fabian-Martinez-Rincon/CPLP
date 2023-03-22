@@ -122,6 +122,21 @@ Tome uno o dos lenguajes de los que ud. Conozca  y
 - Describa las facilidades provistas para la organización del programa
 - Indique cuáles de los atributos del ejercicio anterior posee el/los lenguaje/s elegidos y cuáles no posee, justifique en cada caso
 
+#### Tipos de expresiones
+
+En Python, las expresiones son combinaciones de valores, variables y operadores que se evalúan para producir un resultado. Hay varios tipos de expresiones en Python, como expresiones constantes, aritméticas, integrales, booleanas, de comparación, de asignación, de llamada de función, de indexación, de corte y de atributo
+
+- Expresiones constantes: `2`, `3.14`, `"Hola"`, `True`, `False`.
+- Expresiones aritméticas: `2 + 3`, `5 - 1`, `4 * 2`, `6 / 3`, `2 ** 3`.
+- Expresiones integrales: `5 // 2`, `10 % 3`.
+- Expresiones booleanas: `True and False`, `True or False`, `not True`.
+- Expresiones de comparación: `2 > 1`, `2 < 1`, `2 == 2`, `2 != 3`.
+- Expresiones de asignación: `x = 2`, `y = 3`.
+- Expresiones de llamada de función: `print("Hola, mundo!")`.
+- Expresiones de indexación: `lista[0]`, `cadena[1]`.
+- Expresiones de corte: `lista[1:3]`, `cadena[2:5]`.
+- Expresiones de atributo: `objeto.atributo`.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align ='center'>
