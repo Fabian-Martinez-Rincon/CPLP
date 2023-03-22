@@ -40,7 +40,7 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 
-## **``Ejercicio 1``**
+### **``Ejercicio 1``**
 
 Los lenguajes de programación más representativos son:
 
@@ -81,7 +81,7 @@ Características nuevas: Java se convierte en un lenguaje de programación ampli
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 2``**
+### **``Ejercicio 2``**
 
 Escriba brevemente la historia del lenguaje de programación que eligió en la encuesta u otro de su preferencia.
 
@@ -95,7 +95,7 @@ Hoy en día, Python se utiliza en una amplia variedad de aplicaciones, incluyend
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 3``**
+### **``Ejercicio 3``**
 
 ¿Qué atributos debería tener un buen lenguaje de programación? Por ejemplo,
 ortogonalidad, expresividad, legibilidad, simplicidad, etc. De al menos un ejemplo de un lenguaje que cumple con las características citadas.
@@ -110,7 +110,7 @@ Un buen lenguaje de programación debería tener varios atributos, entre ellos:
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 4``**
+### **``Ejercicio 4``**
 
 Tome uno o dos lenguajes de los que ud. Conozca  y
 
@@ -137,6 +137,12 @@ En Python, las expresiones son combinaciones de valores, variables y operadores 
 
 Python es un lenguaje de programación de alto nivel que tiene una sintaxis elegante y un sistema de programación orientado a objetos simple pero efectivo. El código de un software escrito en Python estará organizado en uno o varios ficheros con definiciones de Python. Cada uno de estos archivos es un módulo. Desde cada módulo podemos importar otros módulos. Para organizar los módulos, Python proporciona el concepto de “paquetes” y “subpaquetes”. Un paquete Python es un directorio del sistema de archivos en el que existe un fichero init.py. Dentro del directorio puede haber uno o varios módulos de código Python, y también otros paquetes
 
+### **Atributos que posee**
+
+Python es un lenguaje de programación que se caracteriza por su sintaxis simple y expresiva. Su objetivo principal es aumentar la legibilidad y la facilidad de desarrollo. En cuanto a los atributos mencionados, Python posee expresividad y legibilidad.
+
+La simplicidad es una característica que puede entrar en conflicto con la expresividad
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align ='center'>
@@ -145,7 +151,7 @@ Python es un lenguaje de programación de alto nivel que tiene una sintaxis eleg
 
 </div>
 
-## **``Ejercicio 5``**
+### **``Ejercicio 5``**
 
 Describa las características más relevantes de Ada, referida a:
 
@@ -163,19 +169,19 @@ Describa las características más relevantes de Ada, referida a:
 
 </div>
 
-## **``Ejercicio 6``**
+### **``Ejercicio 6``**
 
 Diga para qué fue, básicamente, creado Java.¿Qué cambios le introdujo a la Web? ¿Java es un lenguaje dependiente de la plataforma en dónde se ejecuta? ¿Porqué?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 7``**
+### **``Ejercicio 7``**
 
 ¿Sobre qué lenguajes está basado?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 8``**
+### **``Ejercicio 8``**
 
 ¿Qué son los applets? ¿Qué son los servlets?
 
@@ -187,13 +193,13 @@ Diga para qué fue, básicamente, creado Java.¿Qué cambios le introdujo a la W
 
 </div>
 
-## **``Ejercicio 9``**
+### **``Ejercicio 9``**
 
 ¿Cómo es la estructura de un programa escrito en C? ¿Existe anidamiento de funciones?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 10``**
+### **``Ejercicio 10``**
 
 Describa el manejo de expresiones que brinda el lenguaje
 
@@ -205,13 +211,13 @@ Describa el manejo de expresiones que brinda el lenguaje
 
 </div>
 
-## **``Ejercicio 11``**
+### **``Ejercicio 11``**
 
 ¿Qué tipo de programas se pueden escribir con cada uno de estos lenguajes? ¿A qué paradigma responde cada uno? ¿Qué características determinan la pertenencia a cada paradigma?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 12``**
+### **``Ejercicio 12``**
 
 Cite otras características importantes de Python, Ruby, PHP, Gobstone y Processing.
 
@@ -225,13 +231,13 @@ Por ejemplo: tipado de datos,  cómo se organizan los programas, etc.
 
 </div>
 
-## **``Ejercicio 13``**
+### **``Ejercicio 13``**
 
 ¿A qué tipo de paradigma corresponde este lenguajes? ¿A qué tipo de Lenguaje pertenece?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## **``Ejercicio 14``**
+### **``Ejercicio 14``**
 
 Cite otras características importantes de javascript. Tipado de datos, excepciones, variables, etc.
 
