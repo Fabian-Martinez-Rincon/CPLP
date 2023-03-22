@@ -60,6 +60,8 @@ En resumen, la sintaxis es crucial para cualquier lenguaje de programación, ya 
 
 ¿Explique a qué se denomina regla lexicográfica y regla sintáctica?
 
+Las reglas lexicográficas y sintácticas son fundamentales en la definición y construcción de lenguajes formales, incluyendo los lenguajes de programación. Las reglas lexicográficas definen cómo se deben estructurar y utilizar los elementos léxicos de un lenguaje, mientras que las reglas sintácticas definen cómo se deben estructurar y utilizar los elementos sintácticos del lenguaje. Ambas reglas son esenciales para garantizar que los programas escritos en un lenguaje formal sean interpretados y ejecutados correctamente.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 4**
