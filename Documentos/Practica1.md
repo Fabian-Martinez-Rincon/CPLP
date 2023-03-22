@@ -327,10 +327,23 @@ Por ejemplo: tipado de datos,  cómo se organizan los programas, etc.
 
 ¿A qué tipo de paradigma corresponde este lenguajes? ¿A qué tipo de Lenguaje pertenece?
 
+JavaScript es un lenguaje de programación interpretado y de múltiples paradigmas1. Los paradigmas de programación que se pueden utilizar en JavaScript son el imperativo (también llamado procedimental) y el declarativo (también llamado funcional). JavaScript es un lenguaje orientado a objetos basado en prototipos.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **``Ejercicio 14``**
 
 Cite otras características importantes de javascript. Tipado de datos, excepciones, variables, etc.
+
+#### Tipado de datos en JavaScript:
+JavaScript es un lenguaje de programación dinámicamente tipado, lo que significa que no se requiere declarar el tipo de datos de una variable antes de su uso. El tipo de datos se determina automáticamente en tiempo de ejecución. Sin embargo, hay formas de comprobar el tipo de datos de una variable en tiempo de ejecución, como el operador typeof.
+
+#### Excepciones en JavaScript:
+JavaScript tiene soporte para excepciones mediante el uso de la declaración try-catch. El código que puede lanzar una excepción se coloca dentro del bloque try, mientras que el manejo de la excepción se realiza dentro del bloque catch. Si una excepción es lanzada dentro del bloque try, el código se detendrá y el control se transferirá al bloque catch. El bloque catch puede contener código para manejar la excepción, como la impresión de un mensaje de error o la recuperación de datos.
+
+#### Variables en JavaScript:
+En JavaScript, las variables se pueden declarar utilizando la palabra clave var, let o const. La palabra clave var se utiliza para declarar una variable global o local, mientras que let y const se utilizan para declarar variables de ámbito de bloque.
+
+La palabra clave var permite la redeclaración y la reasignación de variables, mientras que let y const solo permiten la reasignación. La palabra clave const se utiliza para declarar variables que no se pueden reasignar después de la inicialización.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
