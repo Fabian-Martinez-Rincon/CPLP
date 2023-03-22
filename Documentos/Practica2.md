@@ -71,41 +71,95 @@ P = {
 }
 ```
 
+- `a)` Identifique las componentes de la misma
+- `b)` Indique porqué es ambigua y corríjala
+
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 6**
+
+Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la
+gramática para la definición de una palabra cualquiera.
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 7**
 
+Defina en EBNF la gramática para la definición de números reales. Inténtelo
+desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 8**
+
+Utilizando la gramática que desarrolló en los puntos 6 y 7, escriba el árbol sintáctico
+de:
+
+- `a)` Conceptos
+- `b)` Programación
+- `c)` 1255869
+- `d)` 854,26
+- `e)` Conceptos de lenguajes
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 9**
 
+Defina utilizando diagramas sintácticos la gramática para la definición de un
+identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 10**
+
+- `a)` Defina con EBNF la gramática para una expresión numérica, dónde intervienen variables y números. Considerar los operadores +, -, * y / sin orden de prioridad. No considerar el uso de paréntesis.
+- `b)` A la gramática definida en el ejercicio anterior agregarle prioridad de operadores.
+- `c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 11**
 
+La siguiente gramática intenta describir sintácticamente la sentencia for de ADA, indique cuál/cuáles son los errores justificando la respuesta
+
+```BNF
+N= {<sentencia_for>,  <bloque>, <variable>, <letra>, <cadena>, <digito>, <otro>, <operacion>,
+<llamada_a_funcion>, <numero>,  <sentencia> }
+P= { <sentencia_for>::= for (i= IN 1..10) loop <bloque> end loop;
+<variable>::= <letra> | <cadena>
+<cadena>::= { ( <letra> | <digito> | <otro> ) }+
+<letra>::=( a | .. | z | A | .. | Z )
+<digito>::= ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 )
+<bloque>::=  <sentencia> | <sentencia> <bloque> | <bloque> <sentencia> ;
+<sentencia>::= <sentencia_asignacion> | <llamada_a_funcion> | <sentencia_if> |
+<sentencia_for> |  <sentencia_while> | <sentencia_switch> }
+```
+
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+
 ### **Ejercicio 12**
+
+Realice en EBNF la gramática para la definición un tag div en html 5. (Puede
+ayudarse con el siguiente enlace (https://developer.mozilla.org/es/docs/Web/HTML/Elemento/div)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 13**
 
+Defina en EBNF una gramática para la construcción de números primos.¿Qué
+debería agregar a la gramática para completar el ejercicio?
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 14**
+
+Sobre un lenguaje de su preferencia escriba en EBNF la gramática para la definición de funciones o métodos o procedimientos (considere los parámetros en caso de ser necesario)
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
