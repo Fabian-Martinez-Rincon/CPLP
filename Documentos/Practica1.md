@@ -161,6 +161,14 @@ Describa las características más relevantes de Ada, referida a:
 - Manejo de excepciones
 - Manejo de concurrencia
 
+Ada es un lenguaje de programación orientado a objetos y multipropósito, desarrollado originalmente para aplicaciones militares y de defensa. En cuanto a sus características más relevantes en cuanto a tipos de datos, tipos abstractos de datos - paquetes, estructuras de datos, manejo de excepciones y manejo de concurrencia, podemos decir lo siguiente:
+
+- **`Tipos de datos:`** <br> Ada es un lenguaje de programación fuertemente tipado, lo que significa que los tipos de datos son muy importantes. El lenguaje proporciona tipos de datos básicos, como enteros, caracteres, flotantes, etc. Además, también permite definir tipos de datos personalizados, incluyendo tipos de datos enumerados y tipos de subrangos.
+- **`Tipos abstractos de datos - paquetes:`** <br> Ada es un lenguaje que permite la creación de tipos abstractos de datos, lo que significa que se pueden definir tipos de datos que encapsulan información y comportamiento, y que son independientes de su implementación. Los paquetes son una característica clave de Ada que permite definir tipos abstractos de datos, y también proporcionan una forma de organizar y agrupar conjuntos relacionados de subprogramas y tipos de datos.
+- **`Estructuras de datos:`** <br> Ada proporciona una variedad de estructuras de datos, incluyendo matrices, registros y punteros. Además, también es posible definir tipos de datos personalizados, que pueden ser estructurados y anidados para crear estructuras de datos más complejas.
+- **`Manejo de excepciones:`** <br> Ada proporciona una forma robusta y estructurada para manejar excepciones en el código. El lenguaje tiene un sistema de excepciones integrado que permite a los programadores definir excepciones personalizadas y establecer manejadores de excepciones para manejarlas.
+- **`Manejo de concurrencia:`** <br> Ada es un lenguaje que permite la programación concurrente y distribuida, lo que significa que puede manejar la ejecución de varias tareas al mismo tiempo. Para lograr esto, Ada utiliza hilos, tareas, exclusión mutua y sincronización. Los hilos permiten la ejecución concurrente dentro del mismo proceso, mientras que las tareas permiten la comunicación entre unidades de ejecución. La exclusión mutua evita problemas de acceso concurrente a recursos compartidos, como variables y secciones críticas, y la sincronización coordina la ejecución de las tareas. En conjunto, estos mecanismos permiten la creación de programas robustos y eficientes que pueden ejecutar varias tareas de forma concurrente.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 <div align ='center'>
@@ -172,6 +180,13 @@ Describa las características más relevantes de Ada, referida a:
 ### **``Ejercicio 6``**
 
 Diga para qué fue, básicamente, creado Java.¿Qué cambios le introdujo a la Web? ¿Java es un lenguaje dependiente de la plataforma en dónde se ejecuta? ¿Porqué?
+
+
+Java fue creado por Sun Microsystems en 1991 como una herramienta de programación para ser usada en un proyecto de set-top-box. Java es un lenguaje independiente de la plataforma que permite que los programas escritos en el lenguaje Java puedan ejecutarse en cualquier tipo de hardware, lo que lo hace portable.
+
+En cuanto a los cambios que le introdujo a la Web, Java permitió la creación de applets, que son pequeñas aplicaciones que se ejecutan dentro del navegador web y que pueden interactuar con el usuario.
+
+Sí, Java es un lenguaje dependiente de la plataforma en donde se ejecuta. La máquina virtual de Java (JVM) es la encargada de la ejecución del código de las bibliotecas y las aplicaciones externas y su implementación depende de la plataforma en donde se ejecuta.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
