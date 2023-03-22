@@ -69,6 +69,21 @@ Las reglas lexicográficas y sintácticas son fundamentales en la definición y 
 ¿En la definición de un lenguaje, a qué se llama palabra reservadas? ¿A qué son
 equivalentes en la definición de una gramática? De un ejemplo de palabra reservada en el lenguaje que más conoce. (Ada,C,Ruby,Python,..)
 
+En la definición de un lenguaje, se llama palabras reservadas a aquellas palabras que tienen un significado especial y están reservadas para su uso por parte del lenguaje en sí mismo. Estas palabras no pueden ser utilizadas como identificadores o nombres de variables en el código del programa.
+
+En la definición de una gramática, las palabras reservadas son equivalentes a los símbolos no terminales o las producciones que representan las estructuras sintácticas especiales del lenguaje.
+
+En el lenguaje de programación Python, algunas palabras reservadas incluyen:
+
+- **`if:`** se utiliza para declarar una condición que debe cumplirse para que se ejecute un bloque de código.
+- **`else:`** se utiliza para declarar un bloque de código que se ejecutará si la condición del if no se cumple.
+- **`while:`** se utiliza para declarar un bucle que se ejecutará mientras se cumpla una condición.
+- **`for:`** se utiliza para declarar un bucle que se ejecutará un número determinado de veces.
+- **`def:`** se utiliza para declarar una función en Python.
+- **`class:`** se utiliza para declarar una clase en Python.
+
+Estas palabras reservadas tienen un significado especial en Python y no pueden ser utilizadas como nombres de variables o funciones en el código.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 5**
