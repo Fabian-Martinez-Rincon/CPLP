@@ -41,6 +41,19 @@ Aca va el cuadro de la fotocopia
 
 ¿Cuál es la importancia de la sintaxis para un lenguaje? ¿Cuáles son sus elementos?
 
+La sintaxis es fundamental en cualquier lenguaje de programación ya que es la que permite definir las reglas y estructuras para escribir el código fuente de manera clara, concisa y coherente. La sintaxis es esencial para que el programa pueda ser interpretado y ejecutado correctamente por la máquina, ya que esta solo entiende un conjunto específico de instrucciones bien definidas. La sintaxis también ayuda a que el código sea más fácil de leer y entender por otros programadores.
+
+#### Los elementos de la sintaxis en un lenguaje de programación incluyen:
+
+- **`Palabras reservadas:`** <br> son las palabras que tienen un significado especial en el lenguaje y que no pueden ser utilizadas como nombres de variables o funciones. Por ejemplo, en JavaScript, las palabras reservadas son if, else, for, while, function, etc.
+- **`Identificadores:`** <br> son los nombres de variables, funciones, objetos, clases, etc. Los identificadores deben seguir ciertas reglas de nomenclatura, como no contener espacios, comenzar con una letra o un guión bajo, etc.
+- **`Operadores:`** <br> son los símbolos que representan operaciones matemáticas, lógicas, de comparación, etc. Por ejemplo, en JavaScript, los operadores incluyen +, -, *, /, &&, ||, >, <, etc.
+- **`Delimitadores:`** <br> son los símbolos que se utilizan para separar o agrupar elementos en el código. Por ejemplo, en JavaScript, los delimitadores incluyen (), {}, [], ;, etc.
+- Literales: son los valores constantes que aparecen directamente en el código fuente. Por ejemplo, en JavaScript, los literales pueden ser números, cadenas de texto, booleanos, objetos, etc.
+- **`Comentarios:`** <br> son los textos que se utilizan para explicar el código o hacer anotaciones para otros programadores. Los comentarios no son interpretados por la máquina y no afectan el funcionamiento del programa.
+
+En resumen, la sintaxis es crucial para cualquier lenguaje de programación, ya que define las reglas y estructuras para escribir código legible y coherente. Sin una sintaxis bien definida, el código sería difícil de interpretar y ejecutar por la máquina, y sería difícil de entender para otros programadores.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 3**
