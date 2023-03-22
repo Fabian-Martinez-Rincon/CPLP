@@ -90,7 +90,7 @@ Estas palabras reservadas tienen un significado especial en Python y no pueden s
 
 Dada la siguiente gramática escrita en BNF:
 
-```BNF
+```php
 G= ( N, T, S, P)
 N = {<numero_entero>, <digito> }
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -155,7 +155,7 @@ identificador de un lenguaje de programación. Tenga presente como regla que un 
 
 La siguiente gramática intenta describir sintácticamente la sentencia for de ADA, indique cuál/cuáles son los errores justificando la respuesta
 
-```BNF
+```php
 N= {<sentencia_for>,  <bloque>, <variable>, <letra>, <cadena>, <digito>, <otro>, <operacion>,
 <llamada_a_funcion>, <numero>,  <sentencia> }
 P= { <sentencia_for>::= for (i= IN 1..10) loop <bloque> end loop;
