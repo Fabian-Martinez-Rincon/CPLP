@@ -265,7 +265,7 @@ Los lenguajes de programación pueden clasificarse en varios paradigmas, según 
     - **Programación estructurada:** C es un lenguaje estructurado que promueve la programación en estilo procedural, lo que significa que los programas se escriben en términos de procedimientos o funciones que realizan tareas específicas.
     - **Variables y tipos de datos:** C tiene un conjunto de tipos de datos básicos, como enteros, caracteres y flotantes, así como la capacidad de definir tipos de datos estructurados mediante estructuras y uniones.
     - **Control de flujo:** C tiene una variedad de operadores y estructuras de control de flujo, como condicionales, bucles y saltos, que permiten controlar la ejecución del programa.
-    
+
 En resumen, cada lenguaje de programación tiene sus propias características que lo hacen más adecuado para ciertos tipos de programas y paradigmas de programación. Python es un lenguaje multiparadigma que permite programar en diferentes estilos, Ruby es un lenguaje orientado a objetos puro que promueve la programación
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -275,6 +275,45 @@ En resumen, cada lenguaje de programación tiene sus propias características qu
 Cite otras características importantes de Python, Ruby, PHP, Gobstone y Processing.
 
 Por ejemplo: tipado de datos,  cómo se organizan los programas, etc.
+
+#### Python:
+
+- Python es un lenguaje de programación interpretado y de tipado dinámico.
+- Se caracteriza por su sintaxis clara y concisa que favorece la legibilidad del código.
+- Es un lenguaje multiparadigma, lo que significa que se puede utilizar para programación orientada a objetos, programación funcional y programación procedural.
+- Los programas en Python se organizan en módulos y paquetes, que se pueden importar en otros programas para reutilizar el código.
+- Python tiene una gran cantidad de bibliotecas estándar y módulos de terceros, lo que lo hace muy versátil para diferentes aplicaciones.
+
+#### Ruby:
+
+- Ruby es un lenguaje de programación interpretado y de tipado dinámico.
+- Se caracteriza por su sintaxis expresiva y flexible, que permite escribir código de forma concisa y elegante.
+- Es un lenguaje orientado a objetos puro, lo que significa que todo en Ruby es un objeto.
+- Los programas en Ruby se organizan en clases y módulos, y se pueden definir métodos y atributos dentro de ellos.
+- Ruby tiene una amplia variedad de bibliotecas y frameworks, lo que lo hace muy útil para el desarrollo web y otras aplicaciones.
+
+#### PHP:
+
+- PHP es un lenguaje de programación interpretado y de tipado débil.
+- Se utiliza principalmente para el desarrollo web, y es muy popular en aplicaciones como WordPress, Drupal y Joomla.
+- PHP tiene una sintaxis similar a la de C y otros lenguajes de programación, lo que lo hace fácil de aprender para quienes ya tienen experiencia en programación.
+- Los programas en PHP se organizan en archivos que se ejecutan en el servidor web.
+- PHP tiene una gran cantidad de bibliotecas y frameworks para el desarrollo web, lo que lo hace muy útil para la creación de sitios web dinámicos.
+
+#### Gobstone:
+
+- Gobstone es un lenguaje de programación especialmente diseñado para enseñar programación a niños y jóvenes.
+- Es un lenguaje de tipado estático, lo que significa que se deben definir los tipos de datos de las variables.
+- Los programas en Gobstone se organizan en procedimientos y funciones, y se utilizan bloques para estructurar el código.
+- Gobstone tiene una sintaxis muy sencilla y fácil de entender, lo que lo hace ideal para enseñar los conceptos básicos de la programación.
+- Gobstone se utiliza principalmente para programación de juegos y aplicaciones gráficas.
+
+#### Processing:
+
+- Processing es un lenguaje de programación diseñado para crear gráficos y animaciones.
+- Es un lenguaje de programación basado en Java, y se utiliza principalmente para programación creativa.
+- Los programas en Processing se organizan en funciones y se utilizan bibliotecas para crear gráficos y animaciones.
+- Processing tiene una sintaxis sencilla y fácil de aprender, lo que lo hace ideal para programadores principiantes y artistas que deseen crear arte digital.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
