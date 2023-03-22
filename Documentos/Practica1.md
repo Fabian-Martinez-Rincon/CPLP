@@ -102,15 +102,11 @@ ortogonalidad, expresividad, legibilidad, simplicidad, etc. De al menos un ejemp
 
 Un buen lenguaje de programación debería tener varios atributos, entre ellos:
 
-Ortogonalidad: esto significa que las construcciones básicas del lenguaje deben ser coherentes y consistentes. Por ejemplo, si un lenguaje permite la definición de funciones, entonces debería ser posible pasar una función como argumento a otra función.
-
-Expresividad: el lenguaje debe permitir al programador expresar claramente sus ideas de manera concisa y legible. Esto puede lograrse mediante la inclusión de constructores de lenguaje expresivos y la eliminación de elementos innecesarios.
-
-Legibilidad: el código escrito en el lenguaje debe ser fácil de leer y entender, incluso por personas que no estén familiarizadas con el lenguaje. Esto se puede lograr mediante el uso de una sintaxis clara y consistente, así como mediante el uso de nombres significativos para variables y funciones.
-
-Simplicidad: el lenguaje debe ser fácil de aprender y usar, sin requerir demasiado conocimiento previo de programación. Esto puede lograrse mediante la eliminación de características innecesarias y la inclusión de una sintaxis intuitiva.
-
-Un ejemplo de un lenguaje de programación que cumple con estos atributos es Python. Python tiene una sintaxis clara y legible que hace que sea fácil de aprender y usar. Además, su enfoque en la simplicidad y la ortogonalidad lo hace fácil de entender y leer. Python también es muy expresivo y permite a los programadores expresar sus ideas de manera clara y concisa, lo que lo convierte en un lenguaje popular para la inteligencia artificial y el análisis de datos.
+- **`Ortogonalidad`** <br> esto significa que las construcciones básicas del lenguaje deben ser coherentes y consistentes. Por ejemplo, si un lenguaje permite la definición de funciones, entonces debería ser posible pasar una función como argumento a otra función.
+- **`Expresividad`** <br> el lenguaje debe permitir al programador expresar claramente sus ideas de manera concisa y legible. Esto puede lograrse mediante la inclusión de constructores de lenguaje expresivos y la eliminación de elementos innecesarios.
+- **`Legibilidad`** <br> el código escrito en el lenguaje debe ser fácil de leer y entender, incluso por personas que no estén familiarizadas con el lenguaje. Esto se puede lograr mediante el uso de una sintaxis clara y consistente, así como mediante el uso de nombres significativos para variables y funciones.
+- **`Simplicidad`** <br> el lenguaje debe ser fácil de aprender y usar, sin requerir demasiado conocimiento previo de programación. Esto puede lograrse mediante la eliminación de características innecesarias y la inclusión de una sintaxis intuitiva.
+- Un ejemplo de un lenguaje de programación que cumple con estos atributos es Python. Python tiene una sintaxis clara y legible que hace que sea fácil de aprender y usar. Además, su enfoque en la simplicidad y la ortogonalidad lo hace fácil de entender y leer. Python también es muy expresivo y permite a los programadores expresar sus ideas de manera clara y concisa, lo que lo convierte en un lenguaje popular para la inteligencia artificial y el análisis de datos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
