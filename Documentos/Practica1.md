@@ -194,11 +194,15 @@ Sí, Java es un lenguaje dependiente de la plataforma en donde se ejecuta. La m�
 
 ¿Sobre qué lenguajes está basado?
 
+Java es un lenguaje de programación de alto nivel, basado en clases y orientado a objetos. No está basado en ningún otro lenguaje de programación.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **``Ejercicio 8``**
 
 ¿Qué son los applets? ¿Qué son los servlets?
+
+Los applets y los servlets son pequeños programas o aplicaciones de Java. La diferencia básica entre un applet y un servlet es que un applet se ejecuta en el lado del cliente, mientras que un servlet se ejecuta en el lado del servidor. Los servlets son programas para los servidores, mientras que los applets son programas para los clientes.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -212,11 +216,15 @@ Sí, Java es un lenguaje dependiente de la plataforma en donde se ejecuta. La m�
 
 ¿Cómo es la estructura de un programa escrito en C? ¿Existe anidamiento de funciones?
 
+Un programa en C consta de una o más funciones, la función principal se llama main. Cada función debe contener cabecera, argumentos y sentencias . En cuanto al anidamiento de funciones, es posible anidar funciones en C
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **``Ejercicio 10``**
 
 Describa el manejo de expresiones que brinda el lenguaje
+
+En C, las expresiones son combinaciones de operadores y operandos que se evalúan para producir un valor. Cuenta con una amplia variedad de operadores, incluyendo aritméticos, de asignación, de comparación, lógicos, de bits y ternarios. Los operadores permiten realizar operaciones matemáticas y lógicas complejas de manera fácil y flexible.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -229,6 +237,36 @@ Describa el manejo de expresiones que brinda el lenguaje
 ### **``Ejercicio 11``**
 
 ¿Qué tipo de programas se pueden escribir con cada uno de estos lenguajes? ¿A qué paradigma responde cada uno? ¿Qué características determinan la pertenencia a cada paradigma?
+
+Los lenguajes de programación pueden clasificarse en varios paradigmas, según la forma en que se utilizan para resolver problemas. En esta respuesta, describiré los tipos de programas que se pueden escribir con los lenguajes de programación Python, Ruby y C, así como el paradigma al que responde cada uno y las características que determinan su pertenencia a ese paradigma.
+
+#### Python:
+
+- **Tipos de programas:** Python es un lenguaje de propósito general que se utiliza en una amplia variedad de aplicaciones, como desarrollo web, análisis de datos, inteligencia artificial, scripting, automatización de tareas y desarrollo de juegos.
+- **Paradigma:** Python es un lenguaje multiparadigma que permite programar en diferentes estilos, como programación orientada a objetos, programación funcional y programación procedural.
+- **Características del paradigma:**
+    - **Programación orientada a objetos:** Python soporta la definición de clases, herencia, polimorfismo y encapsulamiento.
+    - **Programación funcional:** Python soporta funciones como ciudadanos de primera clase, funciones anónimas (lambda), funciones de orden superior y programación en estilo funcional.
+    - **Programación procedural:** Python soporta programación estructurada con funciones y control de flujo.
+
+#### Ruby:
+
+- **Tipos de programas:** Ruby es un lenguaje de propósito general que se utiliza en una amplia variedad de aplicaciones, como desarrollo web, scripting, automatización de tareas, juegos y aplicaciones de escritorio.
+- **Paradigma:** Ruby es un lenguaje orientado a objetos puro que promueve el uso de la programación en estilo declarativo.
+- **Características del paradigma:**
+    - **Programación orientada a objetos:** Ruby es un lenguaje orientado a objetos puro que permite la definición de clases, herencia, polimorfismo, encapsulamiento y mixins.
+    - **Programación en estilo declarativo:** Ruby promueve el uso de la programación en estilo declarativo, lo que significa que los programas se escriben para especificar lo que se desea hacer en lugar de cómo hacerlo.
+
+#### C:
+
+- **Tipos de programas:** C es un lenguaje de bajo nivel que se utiliza para programar sistemas operativos, controladores de dispositivos, aplicaciones embebidas, compiladores, entre otros tipos de programas.
+- **Paradigma:** C es un lenguaje estructurado que promueve la programación en estilo procedural.
+- **Características del paradigma:**
+    - **Programación estructurada:** C es un lenguaje estructurado que promueve la programación en estilo procedural, lo que significa que los programas se escriben en términos de procedimientos o funciones que realizan tareas específicas.
+    - **Variables y tipos de datos:** C tiene un conjunto de tipos de datos básicos, como enteros, caracteres y flotantes, así como la capacidad de definir tipos de datos estructurados mediante estructuras y uniones.
+    - **Control de flujo:** C tiene una variedad de operadores y estructuras de control de flujo, como condicionales, bucles y saltos, que permiten controlar la ejecución del programa.
+    
+En resumen, cada lenguaje de programación tiene sus propias características que lo hacen más adecuado para ciertos tipos de programas y paradigmas de programación. Python es un lenguaje multiparadigma que permite programar en diferentes estilos, Ruby es un lenguaje orientado a objetos puro que promueve la programación
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
