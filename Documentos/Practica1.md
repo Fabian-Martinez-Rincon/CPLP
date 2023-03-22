@@ -57,25 +57,25 @@ Los lenguajes de programación más representativos son:
 
 Indique para cada uno de los períodos presentados cuales son las características nuevas que se incorporan y cual de ellos la incorpora.
 
-- **`1951-1955: Lenguajes tipo assembly`** \
-    Características nuevas: Estos son los primeros lenguajes de programación que se crearon. Los lenguajes tipo assembly se basan en la arquitectura de la computadora y proporcionan una forma de escribir código de bajo nivel para controlar la máquina.
-- 1956-1960: FORTRAN, ALGOL 58, ALGOL 60, LISP\
-    Características nuevas: Se introducen los primeros lenguajes de programación de alto nivel. Estos lenguajes proporcionan una forma más fácil y natural de expresar algoritmos que los lenguajes tipo assembly. FORTRAN y ALGOL 60 se convierten en los primeros lenguajes de programación ampliamente utilizados.
-- 1961-1965: COBOL, ALGOL 60, SNOBOL, JOVIAL\
-    Características nuevas: Se desarrollan lenguajes de programación específicos para aplicaciones empresariales, como COBOL. Además, SNOBOL introduce la idea de patrones de búsqueda en los lenguajes de programación.
-- 1966-1970: APL, FORTRAN 66, BASIC, PL/I, SIMULA 67, ALGOL-W\
-    Características nuevas: Se desarrollan lenguajes de programación para la programación orientada a objetos, como SIMULA 67. También se crean lenguajes de programación más fáciles de usar para los usuarios no expertos, como BASIC.
-- 1971-1975: Pascal, C, Scheme, Prolog\
-    Características nuevas: Se introducen lenguajes de programación más eficientes y flexibles para la programación de sistemas, como C. Además, Pascal introduce conceptos de programación estructurada que hacen que el código sea más fácil de entender y mantener.
-- 1976-1980: Smalltalk, Ada, FORTRAN 77, ML\
-    Características nuevas: Se desarrollan lenguajes de programación para la programación orientada a objetos, como Smalltalk y Ada. Además, FORTRAN 77 y ML se enfocan en mejorar la eficiencia y el rendimiento de los programas.
-- 1981-1985: Smalltalk 80, Turbo Pascal, Postscript\
-    Características nuevas: Smalltalk 80 se convierte en uno de los primeros lenguajes de programación completamente orientado a objetos. Turbo Pascal hace que la programación estructurada sea más fácil para los usuarios no expertos. Postscript introduce la idea de describir la página completa en lugar de simplemente dibujarla.
-- 1986-1990: FORTRAN 90, C++, SML\
-    Características nuevas: C++ se convierte en el primer lenguaje de programación ampliamente utilizado que combina programación orientada a objetos con programación estructurada. FORTRAN 90 introduce mejoras significativas en la eficiencia y el rendimiento de los programas.
-- 1991-1995: TCL, PERL, HTML\
-    Características nuevas: Se introducen lenguajes de programación específicos para aplicaciones de Internet, como HTML. Además, TCL y PERL se convierten en lenguajes de programación populares para scripting y automatización de tareas.
-- 1996-2000: Java, Javascript, XML\
+- **1951-1955: Lenguajes tipo assembly** <br>
+    Características nuevas: Estos son los primeros lenguajes de programación que se crearon. Los lenguajes tipo assembly se basan en la arquitectura de la computadora y proporcionan una forma de escribir código de bajo nivel para controlar la máquina.<br><br>
+- **1956-1960: FORTRAN, ALGOL 58, ALGOL 60, LISP**<br>
+    Características nuevas: Se introducen los primeros lenguajes de programación de alto nivel. Estos lenguajes proporcionan una forma más fácil y natural de expresar algoritmos que los lenguajes tipo assembly. FORTRAN y ALGOL 60 se convierten en los primeros lenguajes de programación ampliamente utilizados.<br><br>
+- **1961-1965: COBOL, ALGOL 60, SNOBOL, JOVIAL**<br>
+    Características nuevas: Se desarrollan lenguajes de programación específicos para aplicaciones empresariales, como COBOL. Además, SNOBOL introduce la idea de patrones de búsqueda en los lenguajes de programación.<br><br>
+- **1966-1970: APL, FORTRAN 66, BASIC, PL/I, SIMULA 67, ALGOL-W**<br>
+    Características nuevas: Se desarrollan lenguajes de programación para la programación orientada a objetos, como SIMULA 67. También se crean lenguajes de programación más fáciles de usar para los usuarios no expertos, como BASIC.<br><br>
+- **1971-1975: Pascal, C, Scheme, Prolog**<br>
+    Características nuevas: Se introducen lenguajes de programación más eficientes y flexibles para la programación de sistemas, como C. Además, Pascal introduce conceptos de programación estructurada que hacen que el código sea más fácil de entender y mantener.<br><br>
+- **1976-1980: Smalltalk, Ada, FORTRAN 77, ML**<br>
+    Características nuevas: Se desarrollan lenguajes de programación para la programación orientada a objetos, como Smalltalk y Ada. Además, FORTRAN 77 y ML se enfocan en mejorar la eficiencia y el rendimiento de los programas.<br><br>
+- **1981-1985: Smalltalk 80, Turbo Pascal, Postscript**<br>
+    Características nuevas: Smalltalk 80 se convierte en uno de los primeros lenguajes de programación completamente orientado a objetos. Turbo Pascal hace que la programación estructurada sea más fácil para los usuarios no expertos. Postscript introduce la idea de describir la página completa en lugar de simplemente dibujarla.<br><br>
+- **1986-1990: FORTRAN 90, C++, SML**<br>
+    Características nuevas: C++ se convierte en el primer lenguaje de programación ampliamente utilizado que combina programación orientada a objetos con programación estructurada. FORTRAN 90 introduce mejoras significativas en la eficiencia y el rendimiento de los programas.<br><br>
+- **1991-1995: TCL, PERL, HTML**<br>
+    Características nuevas: Se introducen lenguajes de programación específicos para aplicaciones de Internet, como HTML. Además, TCL y PERL se convierten en lenguajes de programación populares para scripting y automatización de tareas.<br><br>
+- **1996-2000: Java, Javascript, XML**<br>
 Características nuevas: Java se convierte en un lenguaje de programación ampliamente utilizado para la programación en Internet. Javascript se convierte en el lenguaje de program
 
 
