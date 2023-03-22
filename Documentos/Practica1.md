@@ -85,12 +85,32 @@ Características nuevas: Java se convierte en un lenguaje de programación ampli
 
 Escriba brevemente la historia del lenguaje de programación que eligió en la encuesta u otro de su preferencia.
 
+Python es un lenguaje de programación de alto nivel y propósito general que fue creado a finales de la década de 1980 por Guido van Rossum, un programador holandés. Van Rossum comenzó a trabajar en Python en diciembre de 1989, mientras trabajaba en el Centro para las Matemáticas y la Informática (CWI) en los Países Bajos.
+
+El nombre "Python" fue elegido como un homenaje al grupo de comediantes británicos Monty Python, del cual Van Rossum es fanático. La primera versión pública de Python (versión 0.9.0) fue lanzada en febrero de 1991.
+
+A lo largo de los años, Python ha evolucionado y se ha convertido en uno de los lenguajes de programación más populares del mundo. Python es conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar. Además, Python tiene una gran cantidad de bibliotecas y marcos de trabajo que permiten a los programadores crear aplicaciones de alta calidad de manera rápida y eficiente.
+
+Hoy en día, Python se utiliza en una amplia variedad de aplicaciones, incluyendo el desarrollo web, la inteligencia artificial, el análisis de datos, la automatización de tareas y la robótica, entre otros. La comunidad de Python es muy activa y está formada por programadores de todo el mundo que contribuyen al desarrollo del lenguaje y de sus herramientas.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **``Ejercicio 3``**
 
 ¿Qué atributos debería tener un buen lenguaje de programación? Por ejemplo,
 ortogonalidad, expresividad, legibilidad, simplicidad, etc. De al menos un ejemplo de un lenguaje que cumple con las características citadas.
+
+Un buen lenguaje de programación debería tener varios atributos, entre ellos:
+
+Ortogonalidad: esto significa que las construcciones básicas del lenguaje deben ser coherentes y consistentes. Por ejemplo, si un lenguaje permite la definición de funciones, entonces debería ser posible pasar una función como argumento a otra función.
+
+Expresividad: el lenguaje debe permitir al programador expresar claramente sus ideas de manera concisa y legible. Esto puede lograrse mediante la inclusión de constructores de lenguaje expresivos y la eliminación de elementos innecesarios.
+
+Legibilidad: el código escrito en el lenguaje debe ser fácil de leer y entender, incluso por personas que no estén familiarizadas con el lenguaje. Esto se puede lograr mediante el uso de una sintaxis clara y consistente, así como mediante el uso de nombres significativos para variables y funciones.
+
+Simplicidad: el lenguaje debe ser fácil de aprender y usar, sin requerir demasiado conocimiento previo de programación. Esto puede lograrse mediante la eliminación de características innecesarias y la inclusión de una sintaxis intuitiva.
+
+Un ejemplo de un lenguaje de programación que cumple con estos atributos es Python. Python tiene una sintaxis clara y legible que hace que sea fácil de aprender y usar. Además, su enfoque en la simplicidad y la ortogonalidad lo hace fácil de entender y leer. Python también es muy expresivo y permite a los programadores expresar sus ideas de manera clara y concisa, lo que lo convierte en un lenguaje popular para la inteligencia artificial y el análisis de datos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
