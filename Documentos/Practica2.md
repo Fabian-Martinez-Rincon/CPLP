@@ -101,6 +101,14 @@ P = {
 }
 ```
 
+Compilado
+
+```php
+<numero_entero> ::= <digito> <numero_entero> | <digito> | <numero_entero> <digito>
+<digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+```
+
 - `a)` Identifique las componentes de la misma
     - `N:` conjunto de símbolos no terminales, que en este caso son `<numero_entero>` y `<digito>`.
     - `T:` conjunto de símbolos terminales, que son los dígitos del 0 al 9.
@@ -142,8 +150,7 @@ Con esta modificación, la gramática ya no es ambigua, ya que cada cadena gener
 
 ### **Ejercicio 6**
 
-Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la
-gramática para la definición de una palabra cualquiera.
+Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gramática para la definición de una palabra cualquiera.
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
