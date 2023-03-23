@@ -227,6 +227,19 @@ identificador de un lenguaje de programación. Tenga presente como regla que un 
 <letra> ::= ([A-Z] | [a-z])
 ```
 
+Arbol de definición
+```
+             identificador
+                    |
+                +---+----+
+                |        |
+               letra  letra/digito/_
+                |
+             +--+---+
+             |      |
+          letra  letra/digito/_
+```
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 10**
