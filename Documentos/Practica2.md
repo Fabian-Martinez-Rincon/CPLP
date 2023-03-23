@@ -222,6 +222,11 @@ de:
 Defina utilizando diagramas sintácticos la gramática para la definición de un
 identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
 
+```php
+<real> ::= <letra> ( (([0-9]) | <letra> )*)
+<letra> ::= ([A-Z] | [a-z])
+```
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 10**
