@@ -35,16 +35,17 @@ herramientas necesarias para hacerlo
 ## BNF Para la Practica
 
 - [Pagina para testear](https://bnfplayground.pauliankline.com/)
+- [Pagina para EBNF](https://planetcalc.com/6385/)
 
 En la gramática de Backus-Naur Form (BNF) se utilizan diferentes símbolos para representar elementos gramaticales y construcciones sintácticas. Aquí te presento los símbolos más comunes utilizados en la notación BNF:
 
-- `::= :` se utiliza para indicar la definición de una regla de producción.
-- `| :` se utiliza para separar opciones dentro de una misma regla de producción.
-- `< >` : se utilizan para indicar no terminales (símbolos no léxicos o variables).
-- `" "` o ' ' : se utilizan para indicar literales o símbolos terminales (símbolos léxicos o constantes).
-- `[...] :` se utiliza para indicar que un elemento es opcional.
-- `{...} :` se utiliza para indicar que un elemento se puede repetir cero o más veces.
-- `(...) :` se utiliza para agrupar elementos.
+- `::=` se utiliza para indicar la definición de una regla de producción.
+- `|` se utiliza para separar opciones dentro de una misma regla de producción.
+- `< >` se utilizan para indicar no terminales (símbolos no léxicos o variables).
+- `" "` o `' '` se utilizan para indicar literales o símbolos terminales (símbolos léxicos o constantes).
+- `[...]` se utiliza para indicar que un elemento es opcional.
+- `{...}` se utiliza para indicar que un elemento se puede repetir cero o más veces.
+- `(...)` se utiliza para agrupar elementos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -175,6 +176,19 @@ Con esta modificación, la gramática ya no es ambigua, ya que cada cadena gener
 
 Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gramática para la definición de una palabra cualquiera.
 
+```php
+<text> ::= <character> <text> | <character>
+<character> ::= <letter> | <digit>
+<letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+```
+
+O tambien
+
+```php
+<texto> ::= <letra> <texto> | <caracter>
+<letra> ::= [A-Z] | [a-z]
+```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -183,21 +197,7 @@ Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gr
 Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
-```php
-<text>          ::= <character> <text> | <character>
-<character>      ::= <letter> | <digit>
-<letter>         ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-<digit>          ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
-```
 
-O tambien
-
-```php
-<text>          ::= <character> <text> | <character>
-<character>      ::= <letter> | <digit>
-<letter>         ::= [A-Z] | [a-z]
-<digit>          ::= [0-9]
-```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
