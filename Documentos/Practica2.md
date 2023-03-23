@@ -197,7 +197,9 @@ O tambien
 Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
-
+```php
+<real> ::= ([0-9] [0-9]*) ("." [0-9]+ )?
+```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
