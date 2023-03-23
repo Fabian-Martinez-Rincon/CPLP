@@ -96,14 +96,47 @@ N = {<numero_entero>, <digito> }
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 S = <numero_entero>
 P = {
-<numero_entero>::=<digito><numero_entero> | <numero_entero><digito> | <digito>
-<digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+    <numero_entero>::=<digito><numero_entero> | <numero_entero><digito> | <digito>
+    <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 }
 ```
 
 - `a)` Identifique las componentes de la misma
+    - `N:` conjunto de símbolos no terminales, que en este caso son `<numero_entero>` y `<digito>`.
+    - `T:` conjunto de símbolos terminales, que son los dígitos del 0 al 9.
+    - `S:` símbolo inicial, que es `<numero_entero>`.
+    - `P:` conjunto de producciones, que definen cómo se generan las cadenas válidas en el lenguaje. En este caso, hay dos producciones para `<numero_entero>` y una para `<digito>`. Las producciones indican que un `<numero_entero>` puede ser generado concatenando un `<digito>` y otro `<numero_entero>`, o bien concatenando un `<numero_entero>` y un `<digito>`, o bien siendo simplemente un `<digito>`. La producción para `<digito>` indica que un `<digito>` puede ser cualquiera de los dígitos del 0 al 9.
 - `b)` Indique porqué es ambigua y corríjala
 
+La gramática es ambigua porque una misma cadena puede ser generada por más de un árbol de derivación. Por ejemplo, la cadena "123" puede ser generada de dos formas diferentes:
+
+- **<numero_entero>** → 
+    - \<digito> <numero_entero> → 
+    - 1 <numero_entero> →
+    - 1 \<digito> <numero_entero> → 
+    - 1 2 <numero_entero> → 
+    - 1 2 3
+- **<numero_entero>** → 
+    - <numero_entero> \<digito> 
+    - → 12 \<digito> 
+    - → 1 2 3
+
+Para corregir la ambigüedad, se puede modificar la gramática de varias formas posibles. Aquí se presenta una opción:
+
+```php
+N = {<numero_entero>, <digito>, <resto_numero>}
+T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+S = <numero_entero>
+P = {
+    <numero_entero>::=<digito><resto_numero>
+    <resto_numero>::= <digito><resto_numero> | ε
+    <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+}
+```
+
+La principal diferencia es que se ha introducido un nuevo símbolo no terminal <resto_numero>, que se encargará de generar los dígitos restantes después del primer dígito. Además, se ha modificado la producción de <numero_entero> para que sea la concatenación de un \<digito> y un <resto_numero>, y se ha añadido una nueva producción para <resto_numero> que indica que puede ser la concatenación de un \<digito> y otro <resto_numero>, o bien ser la cadena vacía ε.
+
+Con esta modificación, la gramática ya no es ambigua, ya que cada cadena generada solo tiene un árbol de derivación posible.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
