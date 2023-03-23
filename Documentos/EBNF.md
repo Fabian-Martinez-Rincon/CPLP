@@ -1,9 +1,9 @@
 <h1 align="center"> 🧠 EBNF
 </h1>
 
-- [Asterisco *](#asterisco)
-- [Interrogación ?](#interrogación)
-- [Suma +](#suma)
+- [Asterisco * La repetición cero o más veces de un elemento](#asterisco)
+- [Interrogación ? La repetición cero o una vez de un elemento](#interrogación)
+- [Suma + La repetición una o más veces de un elemento](#suma)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
