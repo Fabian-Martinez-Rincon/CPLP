@@ -120,7 +120,6 @@ P = {
 ```php
 <numero_entero> ::= <digito> <numero_entero> | <digito> | <numero_entero> <digito>
 <digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
-
 ```
 
 - `a)` Identifique las componentes de la misma
@@ -150,10 +149,18 @@ N = {<numero_entero>, <digito>, <resto_numero>}
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 S = <numero_entero>
 P = {
-    <numero_entero>::=<digito><resto_numero>
-    <resto_numero>::= <digito><resto_numero> | ε
-    <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+    <numero_entero> ::= <digito> <resto_numero>
+    <resto_numero> ::= <digito> <resto_numero> | " "
+    <digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 }
+```
+
+[Compilado](https://bnfplayground.pauliankline.com/?bnf=%3Cnumero_entero%3E%20%3A%3A%3D%20%3Cdigito%3E%20%3Cresto_numero%3E%0A%3Cresto_numero%3E%20%3A%3A%3D%20%3Cdigito%3E%20%3Cresto_numero%3E%20%7C%20%22%20%22%0A%3Cdigito%3E%20%3A%3A%3D%20%220%22%20%7C%20%221%22%20%7C%20%222%22%20%7C%20%223%22%20%7C%20%224%22%20%7C%20%225%22%20%7C%20%226%22%20%7C%20%227%22%20%7C%20%228%22%20%7C%20%229%22&name=Resto)
+
+```php
+<numero_entero> ::= <digito> <resto_numero>
+<resto_numero> ::= <digito> <resto_numero> | " "
+<digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ```
 
 La principal diferencia es que se ha introducido un nuevo símbolo no terminal <resto_numero>, que se encargará de generar los dígitos restantes después del primer dígito. Además, se ha modificado la producción de <numero_entero> para que sea la concatenación de un \<digito> y un <resto_numero>, y se ha añadido una nueva producción para <resto_numero> que indica que puede ser la concatenación de un \<digito> y otro <resto_numero>, o bien ser la cadena vacía ε.
