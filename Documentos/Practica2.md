@@ -32,6 +32,20 @@ herramientas necesarias para hacerlo
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+## BNF Para la Practica
+
+En la gramática de Backus-Naur Form (BNF) se utilizan diferentes símbolos para representar elementos gramaticales y construcciones sintácticas. Aquí te presento los símbolos más comunes utilizados en la notación BNF:
+
+- `::= :` se utiliza para indicar la definición de una regla de producción.
+- `| :` se utiliza para separar opciones dentro de una misma regla de producción.
+- `< >` : se utilizan para indicar no terminales (símbolos no léxicos o variables).
+- `" "` o ' ' : se utilizan para indicar literales o símbolos terminales (símbolos léxicos o constantes).
+- `[...] :` se utiliza para indicar que un elemento es opcional.
+- `{...} :` se utiliza para indicar que un elemento se puede repetir cero o más veces.
+- `(...) :` se utiliza para agrupar elementos.
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 ### **Ejercicio 1**
 Aca va el cuadro de la fotocopia
 
