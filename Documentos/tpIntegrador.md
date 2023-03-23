@@ -14,10 +14,10 @@ TRABAJO INTEGRADOR 2023
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-- [A Escriba fragmentos de código de mínimo 5 y máximo 10 líneas de extensión]()
-- [B Cite ejemplos de código (mínimo 5, máximo 15 líneas) en ambos lenguajes]()
-- [C Cite un ejemplo de código (5 líneas mínimo, 10 líneas máximo) para cada]()
-- [D Defina un ejemplo de código (5 líneas mínimo,15 líneas máximo) en cada]()
+- [A Escriba fragmentos de código de mínimo 5 y máximo 10 líneas de extensión](#a)
+- [B Cite ejemplos de código (mínimo 5, máximo 15 líneas) en ambos lenguajes](#b)
+- [C Cite un ejemplo de código (5 líneas mínimo, 10 líneas máximo) para cada](#c)
+- [D Defina un ejemplo de código (5 líneas mínimo,15 líneas máximo) en cada](#d)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
