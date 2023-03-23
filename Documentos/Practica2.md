@@ -91,7 +91,7 @@ Estas palabras reservadas tienen un significado especial en Python y no pueden s
 Dada la siguiente gramática escrita en BNF:
 
 ```php
-G= ( N, T, S, P)
+G = ( N, T, S, P)
 N = {<numero_entero>, <digito> }
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 S = <numero_entero>
@@ -101,7 +101,7 @@ P = {
 }
 ```
 
-Compilado
+[Compilado](https://bnfplayground.pauliankline.com/?bnf=%3Cnumero_entero%3E%20%20%20%20%3A%3A%3D%20%3Cdigito%3E%20%3Cnumero_entero%3E%20%7C%20%3Cdigito%3E%20%7C%20%3Cnumero_entero%3E%20%3Cdigito%3E%0A%3Cdigito%3E%20%20%20%20%20%3A%3A%3D%20%220%22%20%7C%20%221%22%20%7C%20%222%22%20%7C%20%223%22%20%7C%20%224%22%20%7C%20%225%22%20%7C%20%226%22%20%7C%20%227%22%20%7C%20%228%22%20%7C%20%229%22%0A&name=Ejercicio%20Fabo)
 
 ```php
 <numero_entero> ::= <digito> <numero_entero> | <digito> | <numero_entero> <digito>
