@@ -5,7 +5,7 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Nomadiix/CPLP)](https://github.com/Nomadiix/CPLP)
  </div>
 
-<h1 align="center"> 🐧 CPLP</h1>
+<h1 align="center"> 🧠 CPLP</h1>
 <div align="center">
 <img src="https://media.giphy.com/media/gFPxNhzEWdFCCRAqf0/giphy.gif"/>
 </div>
