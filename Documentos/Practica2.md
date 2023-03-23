@@ -34,6 +34,8 @@ herramientas necesarias para hacerlo
 
 ## BNF Para la Practica
 
+- [Pagina para testear](https://bnfplayground.pauliankline.com/)
+
 En la gramática de Backus-Naur Form (BNF) se utilizan diferentes símbolos para representar elementos gramaticales y construcciones sintácticas. Aquí te presento los símbolos más comunes utilizados en la notación BNF:
 
 - `::= :` se utiliza para indicar la definición de una regla de producción.
