@@ -31,4 +31,32 @@ En resumen, el asterisco (*) en EBNF se utiliza para indicar la repetición cero
 
 ### Interrogación ?
 
+El signo de pregunta (?) en EBNF (Extended Backus-Naur Form) se utiliza para denotar la repetición cero o una vez de un elemento en una gramática.
+
+Por ejemplo, si tenemos la regla de producción:
+
+```
+<nombre> ::= <primer-nombre> <apellido>?
+```
+
+Esto significa que un `<nombre>` se compone siempre de un `<primer-nombre>` seguido opcionalmente de un `<apellido>`. Si la regla de producción fuera así:
+
+```
+<nombre> ::= <primer-nombre> <apellido>*
+```
+
+En este caso, el signo de asterisco indicaría que un `<nombre>` puede tener cero o más `<apellido>`, lo cual no tendría mucho sentido en este contexto.
+
+Otro ejemplo podría ser la regla de producción:
+
+
+
+```
+<elemento> ::= <etiqueta> (<atributo>)*
+```
+
+Esto indica que un `<elemento>` se compone de una `<etiqueta>` seguida opcionalmente de cero o más repeticiones de un `<atributo>`. En otras palabras, un `<elemento>` puede tener cero o más `<atributo>`, pero siempre tendrá al menos una `<etiqueta>`.
+
+En resumen, el signo de pregunta (?) en EBNF se utiliza para indicar la repetición cero o una vez de un elemento en una gramática.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
