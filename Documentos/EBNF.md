@@ -60,3 +60,28 @@ Esto indica que un `<elemento>` se compone de una `<etiqueta>` seguida opcionalm
 En resumen, el signo de pregunta (?) en EBNF se utiliza para indicar la repetición cero o una vez de un elemento en una gramática.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+### Suma +
+
+En EBNF (Extended Backus-Naur Form), el símbolo de suma (+) se utiliza para denotar la repetición una o más veces de un elemento en una gramática.
+
+Por ejemplo, si tenemos la regla de producción:
+
+```
+<secuencia> ::= <elemento>+
+```
+
+Esto significa que una `<secuencia>` debe tener al menos un `<elemento>`, pero también puede tener varios elementos repetidos. En otras palabras, una secuencia es una lista de uno o más elementos.
+
+Otro ejemplo podría ser la regla de producción:
+
+```
+<expresión> ::= <número> | <expresión> <operador> <expresión>
+```
+
+
+En este caso, la barra vertical (|) representa una alternativa, es decir, `<expresión>` puede ser un `<número>` o una expresión que involucra dos expresiones unidas por un operador. La suma (+) se utiliza en la segunda alternativa para indicar que una expresión puede contener varios términos separados por operadores, como en una expresión matemática.
+
+En resumen, el símbolo de suma (+) en EBNF se utiliza para indicar la repetición una o más veces de un elemento en una gramática
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
