@@ -7,6 +7,22 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+## EBNF RESUMEN
+
+EBNF (Extended Backus-Naur Form) es una notación ampliada de la forma de Backus-Naur que se utiliza para definir gramáticas formales. Se utiliza en la especificación de lenguajes de programación, la definición de protocolos de comunicación y en la documentación de formatos de datos.
+
+Algunas de las características de EBNF incluyen:
+
+- Uso de símbolos adicionales para representar la repetición, la opción y la agrupación de elementos de la gramática.
+- Soporte para la definición de elementos terminales y no terminales.
+- Soporte para la definición de reglas de producción recursivas.
+- Capacidad para definir elementos opcionales y elementos que se repiten un número determinado de veces.
+- Permite la definición de elementos de gramática utilizando caracteres especiales, como letras mayúsculas, minúsculas, dígitos y otros símbolos.
+
+En resumen, EBNF es una notación ampliada de la forma de Backus-Naur que proporciona una forma estructurada y formal para definir gramáticas. Esto hace que sea más fácil para los desarrolladores de software entender y trabajar con las gramáticas de los lenguajes de programación, los protocolos de comunicación y otros formatos de datos.
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 ### Asterisco *
 
 El asterisco (*) en EBNF (Extended Backus-Naur Form) se utiliza para denotar la repetición cero o más veces de un elemento en una gramática.
