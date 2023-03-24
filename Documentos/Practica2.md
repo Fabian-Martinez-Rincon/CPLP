@@ -186,7 +186,7 @@ Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gr
 O tambien
 
 ```ebnf
-<texto> ::= <letra> <texto> | <caracter>
+<texto> ::= <letra> <texto> | <letra>
 <letra> ::= [A-Z] | [a-z]
 ```
 
@@ -209,6 +209,42 @@ Utilizando la gramática que desarrolló en los puntos 6 y 7, escriba el árbol 
 de:
 
 #### `a)` Conceptos
+
+```
+         <texto>
+           |
+     +-----+------+
+     |            |
+  <letra>     <texto>
+     |            |
+     C       +----+-----+
+             |          |
+           <letra>    <texto>
+             |          |
+             o       +----+-----+
+                      |          |
+                    <letra>    <texto>
+                      |          |
+                      n       +----+-----+
+                               |          |
+                             <letra>    <texto>
+                               |          |
+                               c       +----+-----+
+                                        |          |
+                                      <letra>    <texto>
+                                        |          |
+                                        e       +----+-----+
+                                                 |          |
+                                               <letra>    <texto>
+                                                 |          |
+                                                 p       +----+-----+
+                                                          |          |
+                                                        <letra>   <letra>
+                                                          |          |
+                                                          t          o
+```
+
+En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan las letras individuales de la palabra "Conceptos". La palabra se genera siguiendo la regla `<texto> ::= <letra> <texto> | <letra>`, lo que significa que cada letra se agrega a la cadena de texto a través de la regla `<letra> <texto>` hasta que no quedan más letras para agregar.
 
 #### `b)` Programación
 
@@ -258,7 +294,8 @@ de:
 En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan los valores reales. Aquí, el valor real es 1255869, que se compone de seis dígitos enteros. Entonces, la regla `<real>` se satisface simplemente tomando `[0-9]+` como la primera parte de la regla, y la segunda parte opcional `(("." [0-9]+)?)` se omite por completo.
 
 #### `d)` 854,26
-```ebnf
+
+```
                             <real>
                                 |
                         +------+------+
@@ -282,8 +319,73 @@ En este árbol, cada nodo interno representa una regla de la gramática, y los n
                                 2     |
 ```
 
+En este árbol, la primera parte de la regla `<real>` se satisface al tomar `[0-9]+` como la primera secuencia de dígitos (8, 5 y 4). Luego, la segunda parte de la regla se satisface al tomar el "." seguido de la secuencia de dígitos "26" como la parte decimal del número.
+
 #### `e)` Conceptos de lenguajes
 
+```
+         <texto>
+           |
+     +-----+------+
+     |            |
+  <letra>     <texto>
+     |            |
+     C       +----+-----+
+             |          |
+           <letra>    <texto>
+             |          |
+             o       +----+-----+
+                      |          |
+                    <letra>    <texto>
+                      |          |
+                      n       +----+-----+
+                               |          |
+                             <letra>    <texto>
+                               |          |
+                               c       +----+-----+
+                                        |          |
+                                      <letra>    <texto>
+                                        |          |
+                                        e       +----+-----+
+                                                 |          |
+                                               <letra>    <texto>
+                                                 |          |
+                                               p       +----+-----+
+                                                          |          |
+                                                        <letra>    <texto>
+                                                          |          |
+                                                          t       +----+-----+
+                                                                   |          |
+                                                                 <letra>   <texto>
+                                                                   |          |
+                                                                   o     +----+-----+
+                                                                             |          |
+                                                                           <letra>   <texto>
+                                                                             |          |
+                                                                             s      +----+-----+
+                                                                                      |          |
+                                                                                    <letra>    <texto>
+                                                                                      |          |
+                                                                                      d       +----+-----+
+                                                                                               |          |
+                                                                                             <letra>   <texto>
+                                                                                               |          |
+                                                                                               e     +----+-----+
+                                                                                                         |          |
+                                                                                                       <letra>    <texto>
+                                                                                                         |          |
+                                                                                                         l       +----+-----+
+                                                                                                                  |          |
+                                                                                                                <letra>    <texto>
+                                                                                                                  |          |
+                                                                                                                  e       +----+-----+
+                                                                                                                           |          |
+                                                                                                                         <letra>   <letra>
+                                                                                                                           |          |
+                                                                                                                           n          g
+```
+
+En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan las letras individuales de la frase "Conceptos de lenguajes". La frase se genera siguiendo la regla `<texto> ::= <letra>` `<texto>` | `<letra>`, lo que significa que cada letra y cada espacio se agregan a la cadena de texto a través de la regla `<letra>` `<texto>` hasta que no quedan más letras o espacios para agregar.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
