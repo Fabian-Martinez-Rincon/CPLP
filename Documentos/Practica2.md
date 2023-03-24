@@ -459,7 +459,11 @@ P= {
 
 - Para preguntar en clase pero yo hice los siguiente y mas o menos funciona. Lo unico que no mire bien bien es la sentencia `bloque`<br><br>
   ```ebnf
-  <sentencia_for> ::= "for " <identificador> " = " " IN " " 1.." <rango> " loop " <bloque> " end loop;"
+  <sentencia_for> ::= 
+    "for " <identificador> " = " " IN " " 1.." <rango> 
+    " loop " 
+        <bloque> 
+    " end loop;"
   <identificador> ::= [a-z] | [A-Z] 
   <rango> ::= [1-9]+
   <bloque> ::=  ([a-z] | [A-Z])*
