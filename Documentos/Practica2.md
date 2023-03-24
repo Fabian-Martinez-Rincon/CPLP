@@ -244,7 +244,12 @@ Arbol de definición
 
 ### **Ejercicio 10**
 
-- `a)` Defina con EBNF la gramática para una expresión numérica, dónde intervienen variables y números. Considerar los operadores +, -, * y / sin orden de prioridad. No considerar el uso de paréntesis.
+- `a)` Defina con EBNF la gramática para una expresión numérica, dónde intervienen variables y números. Considerar los operadores +, -, * y / sin orden de prioridad. No considerar el uso de paréntesis. <br><br>
+    ```ebnf
+    <operacion> ::= <numero> <signo> <numero>
+    <numero> ::= [0-9]+
+    <signo> ::= "+" | "-" | "*" | "/"
+    ```
 - `b)` A la gramática definida en el ejercicio anterior agregarle prioridad de operadores.
 - `c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior.
 
