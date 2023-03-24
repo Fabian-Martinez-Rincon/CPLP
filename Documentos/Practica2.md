@@ -422,8 +422,16 @@ Arbol de definición
     <numero> ::= [0-9]+
     <signo> ::= "+" | "-" | "*" | "/"
     ```
-- `b)` A la gramática definida en el ejercicio anterior agregarle prioridad de operadores.
-- `c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior.
+- `b)` A la gramática definida en el ejercicio anterior agregarle prioridad de operadores. <br><br>
+    ```ebnf
+    <operacion> ::= <termino> | <termino> <signo> <operacion>
+    <signo> ::= "+" | "-"
+    <termino> ::= <numero> | <numero> <multiplicativo> <termino>
+    <numero> ::= [0-9]+
+    <multiplicativo> ::= "*" | "/"
+    ```
+- `c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior. <br>
+    Basicamente lo primero que hago es determinar las multiplicaciones y divisiones del programa y dejo las sumas para el final.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
