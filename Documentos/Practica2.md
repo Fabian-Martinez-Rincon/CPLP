@@ -258,6 +258,30 @@ de:
 En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan los valores reales. Aquí, el valor real es 1255869, que se compone de seis dígitos enteros. Entonces, la regla `<real>` se satisface simplemente tomando `[0-9]+` como la primera parte de la regla, y la segunda parte opcional `(("." [0-9]+)?)` se omite por completo.
 
 #### `d)` 854,26
+```ebnf
+                            <real>
+                                |
+                        +------+------+
+                        |             |
+                    [0-9]+       ("." [0-9]+)?
+                        |                |
+                        8           +--+--+
+                        |           |     |
+                    +--+--+     [0-9]+  |
+                    |     |        |     |
+                    [0-9]+  |        2     |
+                    |     |              |
+                    5    +--+--+
+                        |     |
+                        [0-9]+  |
+                        |     |
+                        4    +--+--+
+                                |     |
+                            [0-9]+  |
+                                |     |
+                                2     |
+```
+
 #### `e)` Conceptos de lenguajes
 
 
