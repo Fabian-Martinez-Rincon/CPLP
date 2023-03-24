@@ -107,7 +107,7 @@ Estas palabras reservadas tienen un significado especial en Python y no pueden s
 
 Dada la siguiente gramática escrita en BNF:
 
-```php
+```ebnf
 G = ( N, T, S, P)
 N = {<numero_entero>, <digito> }
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -120,7 +120,7 @@ P = {
 
 [Compilado](https://bnfplayground.pauliankline.com/?bnf=%3Cnumero_entero%3E%20%20%20%20%3A%3A%3D%20%3Cdigito%3E%20%3Cnumero_entero%3E%20%7C%20%3Cdigito%3E%20%7C%20%3Cnumero_entero%3E%20%3Cdigito%3E%0A%3Cdigito%3E%20%20%20%20%20%3A%3A%3D%20%220%22%20%7C%20%221%22%20%7C%20%222%22%20%7C%20%223%22%20%7C%20%224%22%20%7C%20%225%22%20%7C%20%226%22%20%7C%20%227%22%20%7C%20%228%22%20%7C%20%229%22%0A&name=Ejercicio%20Fabo)
 
-```php
+```ebnf
 <numero_entero> ::= <digito> <numero_entero> | <digito> | <numero_entero> <digito>
 <digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ```
@@ -147,7 +147,7 @@ La gramática es ambigua porque una misma cadena puede ser generada por más de 
 
 Para corregir la ambigüedad, se puede modificar la gramática de varias formas posibles. Aquí se presenta una opción:
 
-```php
+```ebnf
 N = {<numero_entero>, <digito>, <resto_numero>}
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 S = <numero_entero>
@@ -160,7 +160,7 @@ P = {
 
 [Compilado](https://bnfplayground.pauliankline.com/?bnf=%3Cnumero_entero%3E%20%3A%3A%3D%20%3Cdigito%3E%20%3Cresto_numero%3E%0A%3Cresto_numero%3E%20%3A%3A%3D%20%3Cdigito%3E%20%3Cresto_numero%3E%20%7C%20%22%20%22%0A%3Cdigito%3E%20%3A%3A%3D%20%220%22%20%7C%20%221%22%20%7C%20%222%22%20%7C%20%223%22%20%7C%20%224%22%20%7C%20%225%22%20%7C%20%226%22%20%7C%20%227%22%20%7C%20%228%22%20%7C%20%229%22&name=Resto)
 
-```php
+```ebnf
 <numero_entero> ::= <digito> <resto_numero>
 <resto_numero> ::= <digito> <resto_numero> | " "
 <digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
@@ -176,7 +176,7 @@ Con esta modificación, la gramática ya no es ambigua, ya que cada cadena gener
 
 Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gramática para la definición de una palabra cualquiera.
 
-```php
+```ebnf
 <text> ::= <character> <text> | <character>
 <character> ::= <letter> | <digit>
 <letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
@@ -185,7 +185,7 @@ Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gr
 
 O tambien
 
-```php
+```ebnf
 <texto> ::= <letra> <texto> | <caracter>
 <letra> ::= [A-Z] | [a-z]
 ```
@@ -197,7 +197,7 @@ O tambien
 Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
-```php
+```ebnf
 <real> ::= ([0-9] [0-9]*) ("." [0-9]+ )?
 ```
 
@@ -222,7 +222,7 @@ de:
 Defina utilizando diagramas sintácticos la gramática para la definición de un
 identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
 
-```php
+```ebnf
 <real> ::= <letra> ( (([0-9]) | <letra> )*)
 <letra> ::= ([A-Z] | [a-z])
 ```
@@ -259,7 +259,7 @@ Arbol de definición
 
 La siguiente gramática intenta describir sintácticamente la sentencia for de ADA, indique cuál/cuáles son los errores justificando la respuesta
 
-```php
+```ebnf
 N= {<sentencia_for>,  <bloque>, <variable>, <letra>, <cadena>, <digito>, <otro>, <operacion>,
 <llamada_a_funcion>, <numero>,  <sentencia> }
 P= { <sentencia_for>::= for (i= IN 1..10) loop <bloque> end loop;
