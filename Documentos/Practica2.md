@@ -440,18 +440,31 @@ Arbol de definición
 La siguiente gramática intenta describir sintácticamente la sentencia for de ADA, indique cuál/cuáles son los errores justificando la respuesta
 
 ```ebnf
-N= {<sentencia_for>,  <bloque>, <variable>, <letra>, <cadena>, <digito>, <otro>, <operacion>,
-<llamada_a_funcion>, <numero>,  <sentencia> }
-P= { <sentencia_for>::= for (i= IN 1..10) loop <bloque> end loop;
-<variable>::= <letra> | <cadena>
-<cadena>::= { ( <letra> | <digito> | <otro> ) }+
-<letra>::=( a | .. | z | A | .. | Z )
-<digito>::= ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 )
-<bloque>::=  <sentencia> | <sentencia> <bloque> | <bloque> <sentencia> ;
-<sentencia>::= <sentencia_asignacion> | <llamada_a_funcion> | <sentencia_if> |
-<sentencia_for> |  <sentencia_while> | <sentencia_switch> }
+N= {
+    <sentencia_for>,  <bloque>, <variable>, <letra>, <cadena>, <digito>, <otro>, <operacion>,
+    <llamada_a_funcion>, <numero>,  <sentencia> 
+}
+
+P= { 
+    <sentencia_for>::= for (i= IN 1..10) loop <bloque> end loop;
+    <variable>::= <letra> | <cadena>
+    <cadena>::= { ( <letra> | <digito> | <otro> ) }+
+    <letra>::=( a | .. | z | A | .. | Z )
+    <digito>::= ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 )
+    <bloque>::=  <sentencia> | <sentencia> <bloque> | <bloque> <sentencia> ;
+    <sentencia>::= <sentencia_asignacion> | <llamada_a_funcion> | <sentencia_if> |
+    <sentencia_for> |  <sentencia_while> | <sentencia_switch> 
+}
 ```
 
+- Para preguntar en clase pero yo hice los siguiente y mas o menos funciona. Lo unico que no mire bien bien es la sentencia `bloque`<br><br>
+  ```ebnf
+  <sentencia_for> ::= "for " <identificador> " = " " IN " " 1.." <rango> " loop " <bloque> " end loop;"
+  <identificador> ::= [a-z] | [A-Z] 
+  <rango> ::= [1-9]+
+  <bloque> ::=  ([a-z] | [A-Z])*
+  ```
+- Machea `for n =  IN  1..6 loop as end loop;`
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
