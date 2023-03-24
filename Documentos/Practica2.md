@@ -478,6 +478,14 @@ P= {
 Realice en EBNF la gramática para la definición un tag div en html 5. (Puede
 ayudarse con el siguiente enlace (https://developer.mozilla.org/es/docs/Web/HTML/Elemento/div)
 
+```enbf
+<div> ::= 
+  "<div>" 
+    <bloque> 
+  "</div>"
+<bloque> ::= [0-9]*
+```
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 13**
@@ -491,6 +499,19 @@ debería agregar a la gramática para completar el ejercicio?
 
 Sobre un lenguaje de su preferencia escriba en EBNF la gramática para la definición de funciones o métodos o procedimientos (considere los parámetros en caso de ser necesario)
 
+```ebnf
+<div> ::= "funcion " <espacio> <identificador> <espacio> "(" <espacio> <parametros>? <espacio> ")" <espacio> 
+<espacio> ::= " "*
+<letras> ::= ([a-z] | [A-Z])
+
+<tipoDato> ::= "int" | "real" | "string"
+
+<parametros> ::= <parametro> <parametros> | <parametro>
+
+<parametro> ::= <tipoDato> <espacio> <identificador> ","
+
+<identificador> ::= <letras> ( ([0-9] | <letras> )*)
+```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
