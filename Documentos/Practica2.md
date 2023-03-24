@@ -208,11 +208,57 @@ desarrollar para BNF y explique las diferencias con la utilización de la gramá
 Utilizando la gramática que desarrolló en los puntos 6 y 7, escriba el árbol sintáctico
 de:
 
-- `a)` Conceptos
-- `b)` Programación
-- `c)` 1255869
-- `d)` 854,26
-- `e)` Conceptos de lenguajes
+#### `a)` Conceptos
+
+#### `b)` Programación
+
+#### `c)` 1255869
+```
+                        <real>
+                            |
+                    +------+------+
+                    |             |
+                [0-9]+       ("." [0-9]+)?
+                    |                |
+                    1              null
+                    |                 
+                +--+--+
+                |     |
+                [0-9]+  |
+                |     |
+                2    +--+--+
+                    |     |
+                    [0-9]+  |
+                    |     |
+                    5    +--+--+
+                            |     |
+                        [0-9]+  |
+                            |     |
+                            5     |
+                                |
+                                +--+--+
+                                |     |
+                            [0-9]+  |
+                                |     |
+                                8     |
+                                    |
+                                    +--+--+
+                                    |     |
+                                [0-9]+  |
+                                    |     |
+                                    6     |
+                                        |
+                                        +--+--+
+                                        |     |
+                                    [0-9]+  |
+                                        |     |
+                                        9     |
+```
+
+En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan los valores reales. Aquí, el valor real es 1255869, que se compone de seis dígitos enteros. Entonces, la regla `<real>` se satisface simplemente tomando `[0-9]+` como la primera parte de la regla, y la segunda parte opcional `(("." [0-9]+)?)` se omite por completo.
+
+#### `d)` 854,26
+#### `e)` Conceptos de lenguajes
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
