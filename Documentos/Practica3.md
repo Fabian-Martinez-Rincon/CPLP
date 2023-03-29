@@ -64,44 +64,63 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 Objetivo: Interpretar el concepto de semántica de los lenguajes de programación.
-Ejercicio 1: ¿Qué define la semántica?
-Ejercicio 2:
+## Ejercicio 1
+¿Qué define la semántica?
+
+## Ejercicio 2
+
 a. ¿Qué significa compilar un programa?
 b. Describa brevemente cada uno de los pasos necesarios para compilar un programa.
 c. ¿En qué paso interviene la semántica y cual es su importancia dentro de la
 compilación?
-Ejercicio 3: Con respecto al punto anterior ¿es lo mismo compilar un programa que interpretarlo?
-Justifique su respuesta mostrando las diferencias básicas, ventajas y desventajas de cada uno.
-Ejercicio 4: Explique claramente la diferencia entre un error sintáctico y uno semántico. Ejemplifique
-cada caso.
-Ejercicio 5: Sean los siguientes ejemplos de programas. Analice y diga qué tipo de error se produce
-(Semántico o Sintáctico) y en qué momento se detectan dichos errores (Compilación o Ejecución).
+
+## Ejercicio 3
+Con respecto al punto anterior ¿es lo mismo compilar un programa que interpretarlo? Justifique su respuesta mostrando las diferencias básicas, ventajas y desventajas de cada uno.
+
+
+## Ejercicio 4: Explique claramente la diferencia entre un error sintáctico y uno semántico. Ejemplifique cada caso.
+
+## Ejercicio 5
+Sean los siguientes ejemplos de programas. Analice y diga qué tipo de error se produce (Semántico o Sintáctico) y en qué momento se detectan dichos errores (Compilación o Ejecución).
 Aclaración: Los valores de la ayuda pueden ser mayores.
-a) Pascal
+
+#### a) Pascal
+
+```pas
 Program P
-var 5: integer;
-var a:char;
+var 
+    5: integer;
+var 
+    a:char;
 Begin
-for i:=5 to 10 do begin
-write(a);
-a=a+1;
-end;
+    for i:=5 to 10 do begin
+        write(a);
+        a=a+1;
+    end;
 End.
+```
+
 Ayuda: Sintáctico 2, Semántico 3
-b) Java:
+#### b) Java:
+
+```java
 public String tabla(int numero, arrayList<Boolean> listado)
 {
-String result = null;
-for(i = 1; i < 11; i--) {
-result += numero + "x" + i + "=" + (i*numero) + "\n";
-listado.get(listado.size()-1)=(BOOLEAN) numero>i;
+    String result = null;
+    for(i = 1; i < 11; i--) {
+        result += numero + "x" + i + "=" + (i*numero) + "\n";
+        listado.get(listado.size()-1)=(BOOLEAN) numero>i;
+    }
+    return true;
 }
-return true;
-}
+```
+
 Ayuda:
 Sintácticos 4, Semánticos 3, Lógico 1
 
-c) C
+#### c) C
+
+```C
 # include <stdio.h>
 int suma; /* Esta es una variable global */
 int main()
@@ -120,7 +139,10 @@ int numero;
     printf("El cuadrado de %d es %d\n",
     numero, numero_cuadrado);
 }
+```
+
 Ayuda: Sintácticos 2, Semánticos 6
+
 #### d)Python
 
 ```py
