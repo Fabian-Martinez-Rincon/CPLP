@@ -61,28 +61,41 @@
 ## Ejercicio 8
 
 
-<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 
 Objetivo: Interpretar el concepto de semántica de los lenguajes de programación.
 ## Ejercicio 1
 ¿Qué define la semántica?
 
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 ## Ejercicio 2
 
-a. ¿Qué significa compilar un programa?
-b. Describa brevemente cada uno de los pasos necesarios para compilar un programa.
-c. ¿En qué paso interviene la semántica y cual es su importancia dentro de la
-compilación?
+- `a)` ¿Qué significa compilar un programa?
+- `b)` Describa brevemente cada uno de los pasos necesarios para compilar un programa.
+- `c)` ¿En qué paso interviene la semántica y cual es su importancia dentro de la compilación?
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 3
+
 Con respecto al punto anterior ¿es lo mismo compilar un programa que interpretarlo? Justifique su respuesta mostrando las diferencias básicas, ventajas y desventajas de cada uno.
 
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## Ejercicio 4: Explique claramente la diferencia entre un error sintáctico y uno semántico. Ejemplifique cada caso.
+## Ejercicio 4
+
+Explique claramente la diferencia entre un error sintáctico y uno semántico. Ejemplifique cada caso.
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 5
+
 Sean los siguientes ejemplos de programas. Analice y diga qué tipo de error se produce (Semántico o Sintáctico) y en qué momento se detectan dichos errores (Compilación o Ejecución).
 Aclaración: Los valores de la ayuda pueden ser mayores.
+
+---
 
 #### a) Pascal
 
@@ -101,6 +114,9 @@ End.
 ```
 
 Ayuda: Sintáctico 2, Semántico 3
+
+---
+
 #### b) Java:
 
 ```java
@@ -115,12 +131,13 @@ public String tabla(int numero, arrayList<Boolean> listado)
 }
 ```
 
-Ayuda:
-Sintácticos 4, Semánticos 3, Lógico 1
+Ayuda: Sintácticos 4, Semánticos 3, Lógico 1
+
+---
 
 #### c) C
 
-```C
+```c
 # include <stdio.h>
 int suma; /* Esta es una variable global */
 int main()
@@ -142,6 +159,8 @@ int numero;
 ```
 
 Ayuda: Sintácticos 2, Semánticos 6
+
+---
 
 #### d)Python
 
@@ -170,6 +189,7 @@ r = input("Consultar otro número? SI (1) o NO (0)--->> ")
 
 Ayuda: Sintácticos 2, Semánticos 3
 
+---
 
 #### e) Ruby
 ```ruby
@@ -193,6 +213,8 @@ end
 
 Ayuda: Semánticos +4
 
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 ## Ejercicio 5
 Dado el siguiente código escrito en pascal. Transcriba la misma funcionalidad de acuerdo al lenguaje que haya cursado en años anteriores. Defina brevemente la sintaxis (sin hacer la gramática) y semántica para la utilización de arreglos y estructuras de control del ejemplo.
 
@@ -214,17 +236,30 @@ begin
 end;
 ```
 
-Observación: Aquí sólo se debe definir la instrucción y qué es lo que hace cada una; detallando
-alguna particularidad del lenguaje respecto de ella. Por ejemplo el for de java necesita definir una
-variable entera, una condición y un incremento para dicha variable.
+Observación: Aquí sólo se debe definir la instrucción y qué es lo que hace cada una; detallando alguna particularidad del lenguaje respecto de ella. Por ejemplo el for de java necesita definir una variable entera, una condición y un incremento para dicha variable.
 
-## Ejercicio 6: Explique cuál es la semántica para las variables predefinidas en lenguaje Ruby self y nil. ¿Qué valor toman; cómo son usadas por el lenguaje?
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## Ejercicio 7: Determine la semántica de null y undefined para valores en javascript.¿Qué diferencia hay entre ellos?
+## Ejercicio 6
 
-## Ejercicio 8: Determine la semántica de la sentencia break en C, PHP, javascript y Ruby. Cite las características más importantes de esta sentencia para cada lenguaje
+Explique cuál es la semántica para las variables predefinidas en lenguaje Ruby self y nil. ¿Qué valor toman; cómo son usadas por el lenguaje?
 
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-## Ejercicio 9:
+## Ejercicio 7
+
+Determine la semántica de null y undefined para valores en javascript.¿Qué diferencia hay entre ellos?
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+## Ejercicio 8
+
+Determine la semántica de la sentencia break en C, PHP, javascript y Ruby. Cite las características más importantes de esta sentencia para cada lenguaje
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+## Ejercicio 9
 
 Defina el concepto de ligadura y su importancia respecto de la semántica de un programa. ¿Qué diferencias hay entre ligadura estática y dinámica? Cite ejemplos (proponer casos sencillos)
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
