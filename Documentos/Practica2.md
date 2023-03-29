@@ -493,7 +493,7 @@ ayudarse con el siguiente enlace (https://developer.mozilla.org/es/docs/Web/HTML
 Defina en EBNF una gramática para la construcción de números primos.¿Qué
 debería agregar a la gramática para completar el ejercicio?
 
-La profe me toma de pelotudo
+No se puede porque tiene nros infinitos
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
