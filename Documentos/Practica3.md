@@ -121,28 +121,33 @@ int numero;
     numero, numero_cuadrado);
 }
 Ayuda: Sintácticos 2, Semánticos 6
-d)Python
+#### d)Python
+
+```py
 #!/usr/bin/python
 print "\nDEFINICION DE NUMEROS PRIMOS"
 r = 1
 while r = True:
-N = input("\nDame el numero a analizar: ")
-i = 3
-fact = 0
-if (N mod 2 == 0) and (N != 2):
-print "\nEl numero %d NO es primo\n" % N
-else:
-while i <= (N^0.5):
-if (N % i) == 0:
-mensaje="\nEl numero ingresado NO es primo\n" % N
-msg = mensaje[4:6]
-print msg
-fact = 1
-i+=2
-if fact == 0:
-print "\nEl numero %d SI es primo\n" % N
+    N = input("\nDame el numero a analizar: ")
+    i = 3
+    fact = 0
+    if (N mod 2 == 0) and (N != 2):
+        print "\nEl numero %d NO es primo\n" % N
+    else:
+        while i <= (N^0.5):
+            if (N % i) == 0:
+                mensaje="\nEl numero ingresado NO es primo\n" % N
+                msg = mensaje[4:6]
+                print msg
+                fact = 1
+        i+=2
+        if fact == 0:
+            print "\nEl numero %d SI es primo\n" % N
 r = input("Consultar otro número? SI (1) o NO (0)--->> ")
+```
+
 Ayuda: Sintácticos 2, Semánticos 3
+
 
 #### e) Ruby
 ```ruby
@@ -167,9 +172,7 @@ end
 Ayuda: Semánticos +4
 
 ## Ejercicio 5
-Dado el siguiente código escrito en pascal. Transcriba la misma funcionalidad de
-acuerdo al lenguaje que haya cursado en años anteriores. Defina brevemente la sintaxis (sin hacer la
-gramática) y semántica para la utilización de arreglos y estructuras de control del ejemplo.
+Dado el siguiente código escrito en pascal. Transcriba la misma funcionalidad de acuerdo al lenguaje que haya cursado en años anteriores. Defina brevemente la sintaxis (sin hacer la gramática) y semántica para la utilización de arreglos y estructuras de control del ejemplo.
 
 ```pas
 Procedure ordenar_arreglo(var arreglo: arreglo_de_caracteres;cont:integer);
@@ -193,16 +196,13 @@ Observación: Aquí sólo se debe definir la instrucción y qué es lo que hace 
 alguna particularidad del lenguaje respecto de ella. Por ejemplo el for de java necesita definir una
 variable entera, una condición y un incremento para dicha variable.
 
-## Ejercicio 6: Explique cuál es la semántica para las variables predefinidas en lenguaje Ruby self y
-nil. ¿Qué valor toman; cómo son usadas por el lenguaje?
+## Ejercicio 6: Explique cuál es la semántica para las variables predefinidas en lenguaje Ruby self y nil. ¿Qué valor toman; cómo son usadas por el lenguaje?
 
-## Ejercicio 7: Determine la semántica de null y undefined para valores en javascript.¿Qué diferencia
-hay entre ellos?
+## Ejercicio 7: Determine la semántica de null y undefined para valores en javascript.¿Qué diferencia hay entre ellos?
 
-## Ejercicio 8: Determine la semántica de la sentencia break en C, PHP, javascript y Ruby. Cite las
-características más importantes de esta sentencia para cada lenguaje
+## Ejercicio 8: Determine la semántica de la sentencia break en C, PHP, javascript y Ruby. Cite las características más importantes de esta sentencia para cada lenguaje
 
 
 ## Ejercicio 9:
-Defina el concepto de ligadura y su importancia respecto de la semántica de un programa. ¿Qué
-diferencias hay entre ligadura estática y dinámica? Cite ejemplos (proponer casos sencillos)
+
+Defina el concepto de ligadura y su importancia respecto de la semántica de un programa. ¿Qué diferencias hay entre ligadura estática y dinámica? Cite ejemplos (proponer casos sencillos)
