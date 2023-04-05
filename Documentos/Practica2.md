@@ -501,7 +501,7 @@ Sobre un lenguaje de su preferencia escriba en EBNF la gramática para la defini
 
 ```ebnf
 <div> ::= "funcion " <espacio> <identificador> <espacio> "(" <espacio> <parametros>? <espacio> ")" <espacio> 
-<espacio> ::= " "*
+<espacio> ::= "\s"*
 <letras> ::= ([a-z] | [A-Z])
 
 <tipoDato> ::= "int" | "real" | "string"
