@@ -1,4 +1,4 @@
-<h1 align="center"> 🧠 EBNF
+<h1 align="center"> EBNF
 </h1>
 
 - [Asterisco * La repetición cero o más veces de un elemento](#asterisco)
