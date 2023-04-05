@@ -13,7 +13,8 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 - [EBNF](/Documentos/EBNF.md)
-- [Practica 1](/Documentos/Practica1.md)
-- [Practica 2](/Documentos/Practica2.md)
+- [Practica 1 Teoria](/Documentos/Practica1.md)
+- [Practica 2 BNF/EBNF](/Documentos/Practica2.md)
+- [Practica 3 Semantica Estatica/Dinamica](/Documentos/Practica3.md)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
