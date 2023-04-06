@@ -56,11 +56,65 @@ int main() {
 }
 ```
 
+En este ejemplo de código C++, se pueden ver dos subconjuntos de componentes que se utilizan para definir una función y para imprimir un valor en la consola. Los programadores necesitan conocer las diferencias entre ellos y cuál subconjunto debe utilizarse en una situación particular.
+
+---
+
 **`El mismo concepto semántico - distinta sintaxis`** un ejemplo de esto sería el uso de la palabra clave "function" en JavaScript y la palabra clave "def" en Python, que se utilizan para definir funciones en ambos lenguajes, pero tienen una sintaxis diferente. Esto puede resultar confuso para los programadores que conocen un lenguaje y están aprendiendo otro.
+
+```javascript
+function suma(a, b) {
+  return a + b;
+}
+```
+
+```py
+def suma(a, b):
+  return a + b
+```
+
+En estos ejemplos de código JavaScript y Python, se puede ver que se utilizan diferentes palabras clave ("function" y "def") para definir una función en cada lenguaje, lo que puede resultar confuso para los programadores que conocen un lenguaje y están aprendiendo otro.
+
+---
 
 **`Distintos conceptos semánticos - la misma notación sintáctica`** un ejemplo de esto sería el uso del operador "+" en Python para concatenar cadenas y para sumar números. Esto puede resultar confuso para los programadores que no conocen las reglas semánticas detrás del operador.
 
+```python
+cadena1 = "Hola "
+cadena2 = "mundo"
+print(cadena1 + cadena2) #concatenación de cadenas
+print(2 + 3) #suma de números
+```
+
+En este ejemplo de código Python, se utiliza el mismo operador "+" para concatenar cadenas y para sumar números. Esto puede resultar confuso para los programadores que no conocen las reglas semánticas detrás del operador.
+
+---
+
 **`Abuso de operadores sobrecargados`** un ejemplo de esto sería el lenguaje C++, que permite a los programadores sobrecargar los operadores para que realicen acciones personalizadas. Si se abusa de esta característica, puede resultar difícil para los programadores comprender el significado de una expresión sin conocer la implementación subyacente del operador sobrecargado.
+
+```c++
+class NumeroComplejo {
+public:
+  NumeroComplejo(double r = 0.0, double i = 0.0) : real(r), imag(i) {}
+
+  NumeroComplejo operator+(const NumeroComplejo& otro) {
+    return NumeroComplejo(real + otro.real, imag + otro.imag);
+  }
+
+private:
+  double real;
+  double imag;
+};
+
+int main() {
+  NumeroComplejo a(1.0, 2.0);
+  NumeroComplejo b(3.0, 4.0);
+  NumeroComplejo c = a + b;
+  return 0;
+}
+```
+
+En este ejemplo de código C++, se sobrecarga el operador "+" para sumar números complejos. Si se abusa de esta característica, puede resultar difícil para los programadores comprender el significado de una expresión sin conocer la implementación subyacente del operador sobrecargado.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
