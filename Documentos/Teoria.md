@@ -120,16 +120,16 @@ En este ejemplo de código C++, se sobrecarga el operador "+" para sumar número
 
 ### Claridad en los bindings
 
-Los elementos de los lenguajes de programación pueden ligarse a sus atributos o propiedades en diferentes momentos.
+La claridad en los bindings es fundamental para garantizar la correcta ejecución del programa. Los bindings son los enlaces entre los elementos de un lenguaje de programación y sus atributos o propiedades. Si estos enlaces no están claros, pueden producirse errores o comportamientos inesperados en el programa.
 
-- [Definición del lenguaje]()
-- [Implementación del lenguaje]()
-- [En escritura del programa]()
-- [Compilación]()
-- [Cargado del programa]()
-- [En ejecución]()
+- **`Definición del lenguaje`** En la definición del lenguaje, se establecen las reglas sintácticas y semánticas que deben seguir los programas escritos en ese lenguaje. Por ejemplo, en el lenguaje C++, el símbolo "->" se utiliza para acceder a las propiedades de un objeto a través de un puntero.
+- **`Implementación del lenguaje`** En la implementación del lenguaje, se define cómo se ejecutarán las instrucciones y cómo se realizarán las operaciones en el programa. Por ejemplo, en el lenguaje Python, el operador "+" se sobrecarga para permitir la concatenación de cadenas y la suma de números.
+- **`Escritura del programa`** En la escritura del programa, los programadores deben entender cómo se relacionan las variables y los valores en el programa. Por ejemplo, en el lenguaje Java, se utiliza la palabra clave "new" para crear una instancia de un objeto y asignarla a una variable.
+- **`Compilación`** En la compilación, el código fuente se convierte en código ejecutable que puede ser entendido por el sistema operativo o la máquina virtual. Durante este proceso, se deben establecer correctamente los bindings entre las funciones, los objetos y los valores en el programa.
+- **`Cargado del programa`** En el momento de cargar el programa, se deben establecer los bindings entre el código ejecutable y los recursos del sistema, como la memoria y los archivos. Si estos enlaces no se establecen correctamente, el programa puede fallar al ejecutarse.
+- **`En ejecución`** Durante la ejecución del programa, los bindings se utilizan para acceder a las propiedades de los objetos, pasar valores entre funciones y realizar operaciones en el programa. Si estos enlaces no están claros, pueden producirse errores en tiempo de ejecución.
 
-La ligadura en cualquier caso debe ser clara
+La ligadura en cualquier caso debe ser clara.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -155,13 +155,40 @@ seguridad
 
 Capacidad de definir y usar estructuras u operaciones complicadas de manera que sea posible ignorar muchos de los detalles. (Abstracción de procesos y de datos)
 
+Por ejemplo, en un lenguaje de programación orientado a objetos como Java, la abstracción se logra mediante la definición de clases, que encapsulan datos y comportamientos relacionados en una unidad cohesiva. Una clase define la estructura y el comportamiento de un objeto en términos de propiedades y métodos abstractos, sin entrar en detalles de implementación. Esto permite a los programadores crear y manipular objetos de manera más intuitiva y eficiente.
+
+En un lenguaje de programación funcional como Haskell, la abstracción se logra mediante la definición de funciones puras, que toman uno o más argumentos y producen un resultado sin tener efectos secundarios. Al definir funciones en términos de entradas y salidas abstractas, en lugar de su implementación detallada, los programadores pueden crear programas más concisos y comprensibles.
+
+En general, la abstracción se utiliza en el diseño de lenguajes de programación para simplificar la complejidad de los programas y permitir a los programadores pensar en términos más abstractos y de más alto nivel. Al proporcionar mecanismos para definir conceptos complejos en términos más simples y abstractos, los lenguajes de programación pueden mejorar la legibilidad, la reutilización y la mantenibilidad del código.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ortogonalidad
+
+La ortogonalidad en el diseño de lenguajes de programación se refiere a la independencia y coherencia de las características del lenguaje. En un lenguaje ortogonal, cada característica se puede combinar con cualquier otra característica sin restricciones, y las reglas del lenguaje se aplican de manera consistente.
+
+**Un ejemplo** de un lenguaje que no cumple con la ortogonalidad sería un lenguaje en el que ciertas combinaciones de características no están permitidas o dan lugar a resultados inesperados. Por ejemplo, si en un lenguaje de programación no se permite combinar la herencia de clases con la sobrecarga de operadores, esto sería una violación de la ortogonalidad.
+
+Otro ejemplo podría ser un lenguaje en el que la sintaxis de una característica cambia dependiendo del contexto en el que se utiliza. Por ejemplo, en algunos lenguajes de programación, el operador de asignación puede tener diferentes formas dependiendo de si se utiliza en una declaración de variable o en una expresión. Esto puede hacer que el lenguaje sea más difícil de entender y utilizar de manera correcta.
+
+En resumen, un lenguaje que no cumple con la ortogonalidad puede limitar la expresividad y la flexibilidad de los programadores al restringir las combinaciones de características que pueden utilizar, o al hacer que las reglas del lenguaje sean inconsistentes o difíciles de entender.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Eficiencia
 
+- Tiempo y Espacio
+- Esfuerzo humano
+- Optimizable
+
+La eficiencia en un lenguaje de programación se refiere a su capacidad para ejecutar programas de manera rápida y con un uso eficiente de los recursos del sistema, como la memoria y la CPU. Los lenguajes de programación más eficientes son aquellos que pueden realizar tareas complejas en el menor tiempo posible y con el menor consumo de recursos.
+
+La eficiencia de un lenguaje puede estar influenciada por varios factores, como el diseño del lenguaje, la implementación del compilador o intérprete, y la arquitectura del sistema en el que se ejecuta el programa.
+
+En general, los lenguajes de programación que se consideran más eficientes son aquellos que están diseñados para ser compilados en código de máquina, ya que el código generado por un compilador puede ejecutarse más rápido que el código interpretado por un intérprete. Además, los lenguajes que permiten al programador tener un mayor control sobre la gestión de la memoria, como el lenguaje C, también suelen ser más eficientes que los lenguajes que gestionan la memoria de manera automática, como el lenguaje Python.
+
+Sin embargo, la eficiencia de un lenguaje también puede verse afectada por la complejidad del algoritmo utilizado en el programa, y no solo por el lenguaje en sí mismo. En muchos casos, es posible escribir programas más eficientes utilizando técnicas de optimización, independientemente del lenguaje de programación utilizado.
+
+En resumen, la eficiencia es un aspecto importante a considerar en la elección de un lenguaje de programación, especialmente si se espera que el programa resultante deba ejecutarse en dispositivos con recursos limitados o en entornos de alta demanda de recursos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
