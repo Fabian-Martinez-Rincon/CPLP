@@ -67,6 +67,9 @@ seguridad
 
 ### Abstracción
 
+Capacidad de definir y usar estructuras u operaciones complicadas de manera que sea posible ignorar muchos de los detalles. (Abstracción de procesos y de datos)
+
+
 ---
 
 ### Ortogonalidad
