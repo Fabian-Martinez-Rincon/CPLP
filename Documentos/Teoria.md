@@ -538,8 +538,15 @@ Ejemplo Definición de nros Enteros
 <td>
 
 ```ebnf
-<enterosig>::= [(+|-)] <digito>{<digito>}*
+<enterosig>::= [(+|-)]<digito>{<digito>}*
 ```
+
+Tambien podria ser:
+
+```ebnf
+<enterosig>::= [-]{<digito>}+
+```
+
 
 </td>
 
@@ -550,7 +557,13 @@ Ejemplo Definición de nros Enteros
 
 ### CONWAY
 
+- Es un grafo sintáctico o carta sintáctica
+- Cada diagrama tiene una entrada y una salida, y el camino determina el análisis.
+- Cada diagrama representa una regla o producción
+- Para que una sentencia sea válida, debe haber una camino desde la entrada hasta la salida que la describa.
+- Se visualiza y entiende mejor que BNF o EBNF
 
+![conwayInvertido](https://user-images.githubusercontent.com/55964635/230680253-acf2eef4-44b7-4f24-a94e-0fee7992cbaf.png)
 
 ---
 
