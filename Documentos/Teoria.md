@@ -653,6 +653,8 @@ En C, los errores de declaración de variables duplicadas también se pueden det
 - **¿Cómo detectar errores de variables no declaradas antes de referenciarlas (ej. Python)?**<br>
 En Python, los errores de variables no declaradas antes de referenciarlas se pueden detectar en tiempo de compilación mediante el uso de linters y herramientas de análisis estático de código. Estas herramientas escanean el código fuente en busca de referencias a variables que no han sido declaradas previamente y generan una advertencia o un error. Por ejemplo, si se intenta utilizar una variable "edad" antes de declararla en Python, una herramienta de análisis estático de código generará una advertencia.
 
+---
+
 ### Gramatica de Atributos
 
 - Para describir la sintaxis y la semántica estática formalmente sirven las denominadas gramáticas de atributos, inventadas por Knuth en 1968.
@@ -665,3 +667,20 @@ En Python, los errores de variables no declaradas antes de referenciarlas se pue
 - Las ecuaciones (reglas semánticas) permiten detectar errores y obtener valores de atributos.
 - Los atributos están directamente relacionados a los símbolos gramaticales (terminales y no terminales)
 - Las GA se suelen expresar en forma tabular para obtener el valor del atributo
+
+Otra explicacion un poco más concisa.
+
+---
+
+La gramática de atributos es una técnica utilizada en la teoría de compiladores para calcular valores o propiedades para cada símbolo no terminal de una gramática. Los atributos se pueden utilizar para representar información semántica sobre un programa, como el tipo de una expresión o la dirección de memoria asignada a una variable.
+
+Aquí hay un ejemplo simple de una gramática de atributos para un lenguaje de expresiones aritméticas:
+
+```GSC
+E -> E1 + T {E.val = E1.val + T.val}
+E -> T {E.val = T.val}
+T -> T1 * F {T.val = T1.val * F.val}
+T -> F {T.val = F.val}
+F -> ( E ) {F.val = E.val}
+F -> num {F.val = num.valor}
+```
