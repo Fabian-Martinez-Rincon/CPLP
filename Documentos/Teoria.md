@@ -515,7 +515,9 @@ Una vez que definimos subconjuntos y sabemos que estan bien, no hace falta que l
 - **`[ ]`** elemento optativo puede o no estar
 - **`(|)`** selección de una alternativa
 - **`{}`** repetición
-- **`\*`** 0 o mas veces + una o mas veces
+- **`*`** 0 o mas veces 
+- **`+`** una o mas veces
+- **`?`** cero o una vez
 
 Ejemplo Definición de nros Enteros
 
@@ -525,10 +527,10 @@ Ejemplo Definición de nros Enteros
 </tr>
 <tr>
 
-<td>BNF
+<td>
 
 ```ebnf
-<enterosig> ::= + <entero> | - <entero> | <entero>
+<enterosig> ::= +<entero> | -<entero> | <entero>
 <entero> ::= <digito> | <entero><digito>
 ```
 
