@@ -570,3 +570,49 @@ Tambien podria ser:
 ## Semántica
 
 Conjunto de reglas para dar significado a los programas sintácticamente válidos.
+
+Con otras palabras:
+
+La semántica describe el significado de los símbolos, palabras y frases de un lenguaje ya sea lenguaje natural o lenguaje informático que es sintácticamente válido
+
+Para luego poder darle significado a una construcción del lenguaje
+
+Ejemplos Practicos
+- La variable `x` no fue declarada
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a, result;
+    char cadena;
+
+    cadena = "h";
+    result = a + x;
+    printf(resul);
+    return 0;
+  }
+  ```
+- En una expresión se combinan diferentes tipos de datos y no hay reglas que lo permitan o la resuelvan
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a, result;
+    char cadena;
+
+    cadena = "h";
+    result = a + cadena;
+    printf(resul);
+    return 0;
+  }
+  ```
+- Se declararon 2 variables con el mismo nombre en un mismo entorno
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a;
+    int a, b;
+
+    b = a * 2;
+    printf(resul);
+    return 0;
+  }
+  ```
