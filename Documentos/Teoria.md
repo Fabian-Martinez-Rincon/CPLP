@@ -442,14 +442,43 @@ Los árboles de derivación son útiles para entender cómo se analiza sintácti
   GN = ( N, T, S, P)
   N = { <natural>, <digito> } T = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }
   S = <natural>
-  P = {<natural> ::= <digito> | <digito> <natural>,
-  <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}
+  P = {
+    <natural> ::= <digito> | <digito> <natural>,
+    <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+  }
   ```
 - Cualquier gramática que tiene una producción recursiva describe un lenguaje infinito.
+- Regla recursiva por la izquierda
+  - La asociatividad es por la izquierda
+  - El símbolo no terminal de la parte izquierda de una regla de producción aparece al comienzo de la parte derecha
+- Regla recursiva por la derecha
+  - La asociatividad es por la derecha
+  - El símbolo no terminal de la parte izquierda de una regla de producción aparece al final de la parte derecha
 
 ---
 
 ### Gramaticas ambiguas
+
+- Una gramática es ambigua si una sentencia puede derivarse de mas de una forma
+```ebnf
+G= ( N, T, S, P)
+N = { <id>, <exp>, <asig>}
+T = { A, B, C, +, *, -, /, :=}
+S = <asig>
+P1 = {
+  <asig> ::= <id> := <exp>
+  <exp> ::= 
+    <exp>+<exp>|
+    <exp>*<exp>|
+    <exp>-<exp>|
+    <exp>/<exp>|
+    <id>
+  <id> ::= A | B | C
+}
+```
+
+En estos casos a la hora de generar el arbol de derivación, podemos entrar por cualquier opción, y esto genera arboles distintos para una misma expresión.
+
 
 ---
 
