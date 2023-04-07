@@ -633,3 +633,20 @@ int main(){
 </tr>
  
 </table>
+
+### Semantica Estática
+
+- No está relacionada con el significado de la ejecución del programa, está más relacionado con las formas válidas.
+- El análisis está ubicado entre el análisis sintáctico y el análisis de semántica dinámica, pero más cercano a la sintaxis.
+- Se las llama así porque el análisis para el chequeo se hace en compilación (antes de la ejecución).
+
+La semántica estática en un lenguaje de programación se refiere a la evaluación de los programas en tiempo de compilación. En este sentido, los errores de compatibilidad de tipos, errores de declaración de variables duplicadas y errores de variables no declaradas antes de referenciarlas, son ejemplos de errores de semántica estática que se pueden detectar en tiempo de compilación.
+
+Para responder a cada pregunta específica:
+
+- **¿Cómo detectar errores de compatibilidad de tipos (ej. C)?** <br>
+En C, los errores de compatibilidad de tipos se pueden detectar en tiempo de compilación. El compilador verificará que los tipos de datos utilizados en las operaciones sean compatibles entre sí. Si el compilador encuentra una operación con tipos de datos incompatibles, generará un error de compilación. Por ejemplo, si se intenta sumar un entero y un carácter en C, el compilador generará un error porque los tipos de datos son incompatibles.
+- **¿Cómo detectar errores de declaración de variables duplicadas (ej. C)?** <br>
+En C, los errores de declaración de variables duplicadas también se pueden detectar en tiempo de compilación. Si se intenta declarar dos variables con el mismo nombre en el mismo ámbito, el compilador generará un error. Por ejemplo, si se intenta declarar dos variables con el nombre "contador" dentro de la misma función en C, el compilador generará un error.
+- **¿Cómo detectar errores de variables no declaradas antes de referenciarlas (ej. Python)?**<br>
+En Python, los errores de variables no declaradas antes de referenciarlas se pueden detectar en tiempo de compilación mediante el uso de linters y herramientas de análisis estático de código. Estas herramientas escanean el código fuente en busca de referencias a variables que no han sido declaradas previamente y generan una advertencia o un error. Por ejemplo, si se intenta utilizar una variable "edad" antes de declararla en Python, una herramienta de análisis estático de código generará una advertencia.
