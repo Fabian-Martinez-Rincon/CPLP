@@ -13,6 +13,16 @@
     - [Caracteristicas](#características-de-la-sintáxis)
     - [Elementos](#elementos-de-la-sintáxis)
     - [Estructura](#estructura-sintáctica)
+    - [Como definir la sintáxis]()
+    - [BNF]()
+    - [Gramática]()
+    - [Arboles Sintacticos]()
+    - [Arboles de Derivación]()
+    - [Producciones recursivas]()
+    - [Gramaticas ambiguas]()
+    - [Subgramáticas]()
+    - [EBNF]()
+    - [CONWAY]()
 - [Semantica](#semántica)
 
 
@@ -308,6 +318,10 @@ Un poco mas explicado
 - **`Sintaxis abstracta`** En Python, la estructura abstracta de una función es la siguiente: `def nombreDeLaFuncion(parametro1, parametro2):`. Esto es lo que se conoce como una declaración de función, y se utiliza para definir una función en Python. La estructura abstracta de la declaración de función incluye el nombre de la función, los parámetros que recibe (en este caso, `parametro1` y `parametro2`), y dos puntos (`:`) al final de la línea. El código de la función en sí se escribe en líneas siguientes, con una indentación de cuatro espacios.
 - **`Sintaxis concreta`** En Python, la sintaxis concreta para definir una lista es la siguiente: `miLista = [1, 2, 3, 4, 5]`. Una lista en Python es una colección ordenada de elementos, y se puede definir utilizando corchetes (`[` y `]`). En este ejemplo, estamos definiendo una lista llamada miLista con cinco elementos: los números del 1 al 5.
 - **`Sintaxis pragmática`** En Python, la sintaxis pragmática para imprimir un mensaje en la consola es la siguiente: `print("Hola, mundo!")`. La función `print()` se utiliza para imprimir un mensaje en la consola o en la salida estándar. En este ejemplo, estamos imprimiendo el mensaje "Hola, mundo!".
+
+### Cómo definir la sintáxis
+
+
 
 ---
 
