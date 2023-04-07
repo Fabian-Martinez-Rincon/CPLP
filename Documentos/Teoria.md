@@ -577,14 +577,7 @@ La semántica describe el significado de los símbolos, palabras y frases de un 
 
 Para luego poder darle significado a una construcción del lenguaje
 
-Ejemplos Practicos
-- 
-
-- 
-
-- 
-
-
+***Ejemplos Practicos***
 
 <table>
 <tr>
