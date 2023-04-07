@@ -359,13 +359,93 @@ un conjunto infinito (conjunto de todos los programas bien escritos)
 
 ### Arboles Sintacticos
 
+Los árboles sintácticos son una herramienta utilizada en los lenguajes de programación para representar la estructura sintáctica de un programa. En esencia, un árbol sintáctico es una representación visual de cómo se relacionan los diferentes elementos del programa según las reglas sintácticas del lenguaje.
+
+En un árbol sintáctico, cada nodo representa un elemento del programa, como una palabra clave, un identificador, un operador, etc. Los nodos están conectados entre sí por medio de aristas que indican cómo se relacionan entre sí. El nodo raíz del árbol representa el programa completo, mientras que los nodos hoja representan los elementos más pequeños del programa.
+
+Los árboles sintácticos son particularmente útiles para entender cómo un programa es parseado (analizado) por un compilador o un intérprete. Además, pueden ser utilizados como herramientas para detectar errores sintácticos en el código fuente, ya que un programa que no cumple con las reglas sintácticas del lenguaje no podrá ser representado mediante un árbol sintáctico válido.
+
+Aquí te dejo un ejemplo simple de un árbol sintáctico para la expresión matemática `2 + 3 * 4`
+
+```markdown
+       +
+      / \
+     2   *
+        / \
+       3   4
+```
+
+En este árbol, el nodo raíz es el operador `+`, y tiene dos nodos hijos: uno que representa el número `2` y otro que representa la operación `3 * 4`. El nodo hijo de la operación de multiplicación a su vez tiene dos nodos hijos, que representan los números `3` y `4`, respectivamente.
+
+Este árbol sintáctico muestra la estructura jerárquica de la expresión matemática, y es útil para entender cómo se evalúa esta expresión.
+
+
 ---
 
 ### Arboles de Derivación
 
+Los árboles de derivación (también conocidos como árboles de análisis) son otra herramienta utilizada en los lenguajes de programación para representar la estructura sintáctica de un programa. A diferencia de los árboles sintácticos, que muestran la estructura jerárquica de un programa, los árboles de derivación representan la derivación (o reducción) de una regla gramatical en un programa.
+
+En un árbol de derivación, cada nodo representa una regla gramatical del lenguaje, y los nodos hoja representan los elementos del programa, como identificadores, números, operadores, etc. El proceso de construcción de un árbol de derivación implica la aplicación de las reglas gramaticales del lenguaje de manera recursiva para derivar el programa.
+
+Aquí te dejo un ejemplo simple de un árbol de derivación para la expresión matemática `2 + 3 * 4` utilizando la notación de Backus-Naur (BNF):
+
+```ebnf
+<expr> ::= <term> | <expr> "+" <term>
+<term> ::= <factor> | <term> "*" <factor>
+<factor> ::= <number> | "(" <expr> ")"
+
+<expr>
+ |
+ +-- <term>
+     |
+     +-- <factor>
+         |
+         +-- <number> (2)
+     |
+     +-- "*" 
+     |
+     +-- <factor>
+         |
+         +-- <expr>
+             |
+             +-- <term>
+                 |
+                 +-- <factor>
+                     |
+                     +-- <number> (3)
+                 |
+                 +-- "*" 
+                 |
+                 +-- <factor>
+                     |
+                     +-- <number> (4)
+```
+
+En este árbol de derivación, cada nodo interior representa una regla gramatical, mientras que los nodos hoja representan los elementos terminales del programa. El nodo raíz del árbol representa la regla gramatical `<expr>`, que se deriva recursivamente aplicando las reglas `<term>` y `<factor>` según las operaciones `+` y `*` en la expresión original.
+
+Los árboles de derivación son útiles para entender cómo se analiza sintácticamente un programa, y pueden ser utilizados como herramientas para detectar errores sintácticos en el código fuente. Sin embargo, a diferencia de los árboles sintácticos, los árboles de derivación no muestran la estructura jerárquica del programa, y pueden ser más difíciles de interpretar visualmente.
+
 ---
 
 ### Producciones recursivas
+
+
+- Son las que hacen que el conjunto de sentencias descripto sea infinito
+- Ejemplo de producciones recursivas:
+  ```ebnf
+  <natural> ::= <digito> | <digito><digito> | ....... |
+  <digito>..............<digito>
+  ```
+- Si lo planteamos recursivamente
+  ```ebnf
+  GN = ( N, T, S, P)
+  N = { <natural>, <digito> } T = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }
+  S = <natural>
+  P = {<natural> ::= <digito> | <digito> <natural>,
+  <digito> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}
+  ```
+- Cualquier gramática que tiene una producción recursiva describe un lenguaje infinito.
 
 ---
 
