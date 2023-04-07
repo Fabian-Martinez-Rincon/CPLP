@@ -517,6 +517,33 @@ Una vez que definimos subconjuntos y sabemos que estan bien, no hace falta que l
 - **`{}`** repetición
 - **`\*`** 0 o mas veces + una o mas veces
 
+Ejemplo Definición de nros Enteros
+
+<table>
+<tr>
+  <td>BNF</td><td>EBNF</td>
+</tr>
+<tr>
+
+<td>BNF
+
+```ebnf
+<enterosig> ::= + <entero> | - <entero> | <entero>
+<entero> ::= <digito> | <entero><digito>
+```
+
+</td>
+<td>
+
+```ebnf
+<enterosig>::= [(+|-)] <digito>{<digito>}*
+```
+
+</td>
+
+</tr>
+</table>
+
 ---
 
 ### CONWAY
