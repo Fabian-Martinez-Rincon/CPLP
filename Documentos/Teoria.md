@@ -676,7 +676,7 @@ La gramática de atributos es una técnica utilizada en la teoría de compilador
 
 Aquí hay un ejemplo simple de una gramática de atributos para un lenguaje de expresiones aritméticas:
 
-```scss
+```r
 E -> E1 + T {E.val = E1.val + T.val}
 E -> T {E.val = T.val}
 T -> T1 * F {T.val = T1.val * F.val}
