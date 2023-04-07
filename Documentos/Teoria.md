@@ -202,6 +202,29 @@ Conjunto de reglas que definen como componer letras, dígitos y otros caracteres
 
 Por ejemplo
 
+<table>
+<tr> <td>Ejemplo en pascal</td>
+  <td>
+
+```pas
+v: array [1..10] of integer;
+```
+
+  </td>
+</tr>
+<tr><td>Ejemplo en C</td>
+  <td>
+
+```c
+int v[10];
+```
+
+  </td>
+</tr>
+</table>
+
+---
+
 ### Características de la sintáxis
 
 - La sintáxis debe ayudar al programador a escribir programas correctos sintácticamente
@@ -213,6 +236,8 @@ Por ejemplo
   - Falta de ambigüedad
 
 La sintáxis establece reglas que definen cómo deben combinarse las componentes básicas, llamadas **`“word”`**, para formar sentencias y programas.
+
+---
 
 ### Elementos de la sintáxis
 
@@ -234,6 +259,8 @@ Detallados
 - Permiten al compilador y al programador expresarse claramente
 - Hacen los programas más legibles y permiten una rápida traducción
 
+---
+
 ### Estructura Sintáctica
 
 - **`Vocabulario o words`** Conjunto de caracteres y palabras necesarias para construir  expresiones, sentencias y programas. Ej: identificadores, operadores, palabras claves, etc. Las words no son elementales se construyen a partir del alfabeto 
@@ -245,9 +272,13 @@ Detallados
   - Tiene un fuerte impacto en la facilidad de escritura y legibilidad
   - Hay sentencias simples, estructuradas y anidadas.
 
+---
+
 ### Reglas léxicas y sintácticas.
 - **`Reglas léxicas`** Conjunto de reglas para formar las “word”, a partir de los caracteres del alfabeto
 - **`Reglas sintácticas`** Conjunto de reglas que definen como formar las “expresiones” y “sentencias”
+
+---
 
 ### Tipos de Sintáxis
 
