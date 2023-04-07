@@ -321,6 +321,70 @@ Un poco mas explicado
 
 ### Cómo definir la sintáxis
 
+- Se necesita una descripción finita para definir
+un conjunto infinito (conjunto de todos los programas bien escritos)
+- Formas para definir la sintaxis:
+  - `Lenguaje natural`. Ej.: Fortran
+  - Utilizando la gramática libre de contexto, definida por Backus y Naun: `BNF`. Ej: Algol
+  - `Diagramas sintácticos` son equivalentes a BNF pero mucho mas intuitivos
+
+---
+
+### BNF
+
+- Es una notación formal para describir la sintaxis
+- Es un metalenguaje. Significa que esta por encima de un lenguaje, ya que podemos definir un lenguaje
+- Utiliza metasímbolos **< > ::= |**
+- **Terminal** Un terminal es cuando ya no tengo posibilidad de finirlo
+- Define las reglas por medio de “producciones”. Nos permiten definir las reglas de nuestra sintaxis
+  - Ejemplo:
+  - < digito > ::= 0|1|2|3|4|5|6|7|8|9
+  - `< digito >` No terminal
+  - `::=` Metasimbolo
+  - `0|1|2|3|4|5|6|7|8|9` Terminales
+
+---
+
+### Gramática
+
+- Conjunto de reglas finita que define un conjunto infinito de posibles sentencias válidas en el lenguaje.
+- Una gramática esta formada por una 4-tupla
+- **G = ( N, T, S, P)**
+  - `N` Conjunto de Símbolos no terminales
+  - `T` Conjunto de Símbolos terminales
+  - `S` Símbolo distinguido de la gramática que pertenece a N
+  - `P` Conjunto de producciones
+
+---
+
+### Arboles Sintacticos
+
+---
+
+### Arboles de Derivación
+
+---
+
+### Producciones recursivas
+
+---
+
+### Gramaticas ambiguas
+
+---
+
+### Subgramáticas
+
+---
+
+### EBNF
+
+---
+
+### CONWAY
+
+---
+
 
 
 ---
