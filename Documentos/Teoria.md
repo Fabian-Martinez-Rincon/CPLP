@@ -1,15 +1,19 @@
 <h1 align="center"> Teoria </h1>
 
 
-- [Objetivos de Diseño]()
-    - [Simplicidad y Legibilidad]()
-    - [Claridad en los bindings]()
-    - [Confiabilidad]()
-    - [Soporte]()
-    - [Abstracción]()
-    - [Ortogonalidad]()
-    - [Eficiencia]()
-
+- Objetivos de Diseño
+    - [Simplicidad y Legibilidad](#simplicidad-y-legibilidad)
+    - [Claridad en los bindings](#claridad-en-los-bindings)
+    - [Confiabilidad](#confiabilidad)
+    - [Soporte](#soporte)
+    - [Abstracción](#abstracción)
+    - [Ortogonalidad](#ortogonalidad)
+    - [Eficiencia](#eficiencia)
+- [Sintáxis](#sintáxis)
+    - [Caracteristicas](#características-de-la-sintáxis)
+    - [Elementos](#elementos-de-la-sintáxis)
+    - [Estructura](#estructura-sintáctica)
+- [Semantica](#semántica)
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -135,8 +139,7 @@ La ligadura en cualquier caso debe ser clara.
 
 ### Confiabilidad
 
-La confiabilidad está relacionada con la 
-seguridad
+La confiabilidad está relacionada con la seguridad
 - **`Chequeo de tipos`** Cuanto antes se encuentren errores menos costoso resulta realizar los arreglos que se requieran.
 - **`Manejo de excepciones`** La habilidad para interceptar errores en tiempo de ejecución, tomar medidas correctivasy continuar.
 
@@ -192,3 +195,77 @@ Sin embargo, la eficiencia de un lenguaje también puede verse afectada por la c
 En resumen, la eficiencia es un aspecto importante a considerar en la elección de un lenguaje de programación, especialmente si se espera que el programa resultante deba ejecutarse en dispositivos con recursos limitados o en entornos de alta demanda de recursos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+## Sintáxis
+
+Conjunto de reglas que definen como componer letras, dígitos y otros caracteres para formar los programas
+
+Por ejemplo
+
+### Características de la sintáxis
+
+- La sintáxis debe ayudar al programador a escribir programas correctos sintácticamente
+- La sintáxis establecen reglas que sirven para que el programador se comunique con el procesador 
+- La  sintáxis debe contemplar soluciones a caracterísitcas tales como:
+  - Legibilidad
+  - Verificabilidad
+  - Traducción
+  - Falta de ambigüedad
+
+La sintáxis establece reglas que definen cómo deben combinarse las componentes básicas, llamadas **`“word”`**, para formar sentencias y programas.
+
+### Elementos de la sintáxis
+
+- Alfabeto o conjunto de caracteres
+- Identificadores
+- Operadores
+- Palabra clave y palabra reservada
+- Comentarios y uso de blancos
+
+Detallados
+
+- **`Identificadores`** Elección más ampliamente utilizada: Cadena de letras y dígitos, que deben comenzar con una letra. Si se restringe la longitud se pierde legibilidad
+- **`Operadores`** Con los operadores de suma, resta, etc. la mayoría de los lenguajes utilizan +, -. En los otros operadores no hay tanta uniformidad (**|^)
+- **`Comentarios`** Hacen los programas más legibles
+- **`Palabra clave y palabra reservada`** Palabra clave o keywords, son palabras claves que tienen un significado dentro de un contexto. Palabra reservada, son palabras claves que además no pueden ser usadas por el programador como identificador de otra entidad.
+
+**Ventajas de su uso:**
+
+- Permiten al compilador y al programador expresarse claramente
+- Hacen los programas más legibles y permiten una rápida traducción
+
+### Estructura Sintáctica
+
+- **`Vocabulario o words`** Conjunto de caracteres y palabras necesarias para construir  expresiones, sentencias y programas. Ej: identificadores, operadores, palabras claves, etc. Las words no son elementales se construyen a partir del alfabeto 
+- **`Expresiones`**
+  - Son funciones que a partir de un conjunto de datos devuelven un resultado.
+  - Son bloques sintácticos básicos a partir de los cuales se construyen las sentencias y programas
+- **`Sentencias`**
+  - Componente sintáctico más importante.
+  - Tiene un fuerte impacto en la facilidad de escritura y legibilidad
+  - Hay sentencias simples, estructuradas y anidadas.
+
+### Reglas léxicas y sintácticas.
+- **`Reglas léxicas`** Conjunto de reglas para formar las “word”, a partir de los caracteres del alfabeto
+- **`Reglas sintácticas`** Conjunto de reglas que definen como formar las “expresiones” y “sentencias”
+
+### Tipos de Sintáxis
+
+**ABSTRACTA** Se refiere básicamente a la estructura
+
+```pas
+while (x!= y)   while x<>y do
+{ begin
+  ----------- --------
+};
+```
+
+**CONCRETA** Se refiere básicamente a la parte léxica
+
+**PRAGMÁTICA** Se refiere básicamente al uso práctico
+
+---
+
+## Semántica
+
+Conjunto de reglas para dar significado a los programas sintácticamente válidos.
