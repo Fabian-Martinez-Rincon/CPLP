@@ -24,7 +24,8 @@
     - [EBNF](#ebnf)
     - [CONWAY](#conway)
 - [Semantica](#semántica)
-
+  - [Estatica](#semantica-estática)
+    - [Gramática de atributos](#gramatica-de-atributos)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -579,58 +580,58 @@ Para luego poder darle significado a una construcción del lenguaje
 
 ***Ejemplos Practicos***
 
-<table>
-<tr>
-<td> La variable `x` no fue declarada </td> <td> En una expresión se combinan diferentes tipos de datos y no hay reglas que lo permitan o la resuelvan </td><td> Se declararon 2 variables con el mismo nombre en un mismo entorno </td>
-</tr>
-<tr>
-<td>
- 
-```c
-#include <stdio.h>
-int main(){
-  int a, result;
-  char cadena;
+  <table>
+  <tr>
+  <td> La variable `x` no fue declarada </td> <td> En una expresión se combinan diferentes tipos de datos y no hay reglas que lo permitan o la resuelvan </td><td> Se declararon 2 variables con el mismo nombre en un mismo entorno </td>
+  </tr>
+  <tr>
+  <td>
+  
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a, result;
+    char cadena;
 
-  cadena = "h";
-  result = a + x;
-  printf(resul);
-  return 0;
-}
-```
-</td>
-<td>
- 
-```c
-#include <stdio.h>
-int main(){
-  int a, result;
-  char cadena;
+    cadena = "h";
+    result = a + x;
+    printf(resul);
+    return 0;
+  }
+  ```
+  </td>
+  <td>
+  
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a, result;
+    char cadena;
 
-  cadena = "h";
-  result = a + cadena;
-  printf(resul);
-  return 0;
-}
-```
- 
-</td>
- <td>
- 
-```c
-#include <stdio.h>
-int main(){
-  int a;
-  int a, b;
+    cadena = "h";
+    result = a + cadena;
+    printf(resul);
+    return 0;
+  }
+  ```
+  
+  </td>
+  <td>
+  
+  ```c
+  #include <stdio.h>
+  int main(){
+    int a;
+    int a, b;
 
-  b = a * 2;
-  printf(resul);
-  return 0;
-}
-```
+    b = a * 2;
+    printf(resul);
+    return 0;
+  }
+  ```
 
-</td>
-</tr>
+  </td>
+  </tr>
  
 </table>
 
@@ -639,6 +640,7 @@ int main(){
 - No está relacionada con el significado de la ejecución del programa, está más relacionado con las formas válidas.
 - El análisis está ubicado entre el análisis sintáctico y el análisis de semántica dinámica, pero más cercano a la sintaxis.
 - Se las llama así porque el análisis para el chequeo se hace en compilación (antes de la ejecución).
+- BNF/EBNF no sirve para esto. Estas son gramáticas libres de contexto no se meten con el significado si con las formas
 
 La semántica estática en un lenguaje de programación se refiere a la evaluación de los programas en tiempo de compilación. En este sentido, los errores de compatibilidad de tipos, errores de declaración de variables duplicadas y errores de variables no declaradas antes de referenciarlas, son ejemplos de errores de semántica estática que se pueden detectar en tiempo de compilación.
 
@@ -650,3 +652,16 @@ En C, los errores de compatibilidad de tipos se pueden detectar en tiempo de com
 En C, los errores de declaración de variables duplicadas también se pueden detectar en tiempo de compilación. Si se intenta declarar dos variables con el mismo nombre en el mismo ámbito, el compilador generará un error. Por ejemplo, si se intenta declarar dos variables con el nombre "contador" dentro de la misma función en C, el compilador generará un error.
 - **¿Cómo detectar errores de variables no declaradas antes de referenciarlas (ej. Python)?**<br>
 En Python, los errores de variables no declaradas antes de referenciarlas se pueden detectar en tiempo de compilación mediante el uso de linters y herramientas de análisis estático de código. Estas herramientas escanean el código fuente en busca de referencias a variables que no han sido declaradas previamente y generan una advertencia o un error. Por ejemplo, si se intenta utilizar una variable "edad" antes de declararla en Python, una herramienta de análisis estático de código generará una advertencia.
+
+### Gramatica de Atributos
+
+- Para describir la sintaxis y la semántica estática formalmente sirven las denominadas gramáticas de atributos, inventadas por Knuth en 1968.
+- Son **gramáticas sensibles al contexto** (GSC). Generalmente resuelven los aspectos de la semántica estática.
+- La usan los compiladores
+- A las construcciones del lenguaje se les asocia información a través de **`atributos`** asociados a los símbolos (terminales o no terminales) de la gramática
+- Un atributo puede ser el valor de una variable, el tipo de una variable o expresión, lugar que ocupa una variable en la memoria, dígitos significativos de un número, etc.
+- Los valores de los atributos se obtienen mediante las llamadas “**ecuaciones o reglas semánticas**” asociadas a las producciones gramaticales.
+- Las reglas sintácticas (producciones) son similares a BNF.
+- Las ecuaciones (reglas semánticas) permiten detectar errores y obtener valores de atributos.
+- Los atributos están directamente relacionados a los símbolos gramaticales (terminales y no terminales)
+- Las GA se suelen expresar en forma tabular para obtener el valor del atributo
