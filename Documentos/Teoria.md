@@ -502,19 +502,24 @@ P = {
 }
 ```
 
+Una vez que definimos subconjuntos y sabemos que estan bien, no hace falta que los volvamos a tratar de implementar, ya que al ser reglas, estas mismas se pueden reutilizar.
+
 "La filosofía de composición es la forma en que trabajan los compiladores"
-
-
 
 ---
 
 ### EBNF
 
+- Esta gramática es la **BNF extendida**
+- Los metasimbolos que incorporados son:
+- **`[ ]`** elemento optativo puede o no estar
+- **`(|)`** selección de una alternativa
+- **`{}`** repetición
+- **`\*`** 0 o mas veces + una o mas veces
+
 ---
 
 ### CONWAY
-
----
 
 
 
