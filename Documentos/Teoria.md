@@ -684,3 +684,9 @@ T -> F {T.val = F.val}
 F -> ( E ) {F.val = E.val}
 F -> num {F.val = num.valor}
 ```
+
+En esta gramática, cada regla de producción está asociada con un conjunto de atributos. Por ejemplo, en la regla de producción `E -> E1 + T`, se define el atributo `val` para el símbolo no terminal `E` como la suma de los atributos `val` para los símbolos no terminales `E1` y `T`.
+
+Para calcular los valores de los atributos, se utiliza un algoritmo de evaluación de atributos que recorre el árbol de análisis sintáctico generado por la gramática. Por ejemplo, para evaluar la expresión `2 + 3 * 4`, el algoritmo de evaluación de atributos calcularía primero el valor de `3 * 4` y luego sumaría `2` al resultado.
+
+Otro ejemplo de gramática de atributos podría ser el siguiente para un lenguaje de programación simple que permita declarar variables:
