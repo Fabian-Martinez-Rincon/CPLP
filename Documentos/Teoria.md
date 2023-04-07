@@ -275,8 +275,21 @@ Detallados
 ---
 
 ### Reglas léxicas y sintácticas.
-- **`Reglas léxicas`** Conjunto de reglas para formar las “word”, a partir de los caracteres del alfabeto
-- **`Reglas sintácticas`** Conjunto de reglas que definen como formar las “expresiones” y “sentencias”
+
+**`Reglas léxicas`** Conjunto de reglas para formar las “word”, a partir de los caracteres del alfabeto
+
+Un ejemplo:
+
+- Diferencias entre mayúsculas y minúsculas
+- Símbolo de distinto. 
+  - En C `!=`
+  - En Pascal `<>`
+
+**`Reglas sintácticas`** Conjunto de reglas que definen como formar las “expresiones” y “sentencias”
+
+Un ejemplo
+
+El `if` en C no lleva `then`, en Pascal si
 
 ---
 
