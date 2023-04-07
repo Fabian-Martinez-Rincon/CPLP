@@ -484,6 +484,28 @@ En estos casos a la hora de generar el arbol de derivación, podemos entrar por 
 
 ### Subgramáticas
 
+Sea la gramática para identificadores 
+```ebnf
+GI = ( N, T, S, P)
+N = { <id>, <letra>, <digito>, <otro> }
+T = { A, ................, Z, 0, ........, 1}
+S = <id>
+P = { 
+  <id> ::= <letra> | <letra><otro>,
+  <otro> ::= 
+    <letra> |
+    <digito> | 
+    <letra><otro> |
+    <digito><otro>,
+  <letra> ::= A | B | C | .............| Z
+  <digito> ::= 0 | 1 | 2 | | 9 
+}
+```
+
+"La filosofía de composición es la forma en que trabajan los compiladores"
+
+
+
 ---
 
 ### EBNF
