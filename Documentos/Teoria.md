@@ -690,3 +690,40 @@ En esta gramática, cada regla de producción está asociada con un conjunto de 
 Para calcular los valores de los atributos, se utiliza un algoritmo de evaluación de atributos que recorre el árbol de análisis sintáctico generado por la gramática. Por ejemplo, para evaluar la expresión `2 + 3 * 4`, el algoritmo de evaluación de atributos calcularía primero el valor de `3 * 4` y luego sumaría `2` al resultado.
 
 Otro ejemplo de gramática de atributos podría ser el siguiente para un lenguaje de programación simple que permita declarar variables:
+
+```r
+programa -> declaraciones sentencias {programa.tabla = declaraciones.tabla}
+declaraciones -> declaracion declaraciones {declaraciones.tabla = agregarVariable(declaracion.tabla, declaraciones.tabla)}
+declaraciones -> vacio {declaraciones.tabla = tablaDeSimbolosVacia()}
+declaracion -> tipo identificador {declaracion.tabla = agregarVariable(identificador.valor, tipo.tipo, declaracion.tabla)}
+sentencias -> sentencia sentencias {sentencias.tabla = sentencia.tabla}
+sentencias -> vacio {sentencias.tabla = tablaDeSimbolosVacia()}
+sentencia -> identificador = expresion {sentencia.tabla = verificarTipo(identificador, expresion, sentencia.tabla)}
+sentencia -> imprimir ( expresion ) {sentencia.tabla = verificarTipoExpresion(expresion, sentencia.tabla)}
+expresion -> expresion1 + expresion2 {expresion.tipo = verificarTipo(expresion1.tipo, expresion2.tipo)}
+expresion -> expresion1 - expresion2 {expresion.tipo = verificarTipo(expresion1.tipo, expresion2.tipo)}
+expresion -> identificador {expresion.tipo = buscarTipo(identificador.valor, expresion.tabla)}
+expresion -> entero {expresion.tipo = int}
+```
+
+Esta gramática describe un lenguaje de programación simple que permite declarar variables, asignarles valores y mostrar valores por pantalla.
+
+Las reglas de producción que comienzan con "programa" y "declaraciones" se utilizan para definir la tabla de símbolos del programa, que se utiliza para almacenar información sobre las variables declaradas en el programa.
+
+- `programa -> declaraciones sentencias` indica que la tabla de símbolos del programa es la misma que la tabla de símbolos de las declaraciones.
+- `declaraciones -> declaracion declaraciones` indica que se pueden declarar varias variables en una lista, y que cada variable se agrega a la tabla de símbolos del programa utilizando la función `agregarVariable`. Esta función toma como argumentos la tabla de símbolos actual y la información de la variable a agregar.
+- `declaraciones -> vacio` indica que la tabla de símbolos del programa está vacía si no se declaran variables.
+- `declaracion -> tipo identificador` indica que cada declaración de variable debe incluir un tipo y un identificador, y que la información de la variable se agrega a la tabla de símbolos utilizando la función `agregarVariable`.
+- `sentencias` se utilizan para procesar las sentencias del programa, que pueden ser asignaciones de variables o impresiones de valores por pantalla. 
+- `sentencias -> sentencia sentencias` indica que se pueden tener varias sentencias en una lista, y que la tabla de símbolos de la lista de sentencias es la misma que la tabla de símbolos de la sentencia.
+- `sentencias -> vacio` indica que la tabla de símbolos de la lista de sentencias está vacía si no hay sentencias.
+- `sentencia` procesan las diferentes tipos de sentencias.
+- `sentencia -> identificador = expresion` indica que la sentencia es una asignación de valor a una variable. La regla utiliza la función "`verificarTipo`" para asegurarse de que el tipo de la expresión sea compatible con el tipo de la variable a la que se le asigna el valor. La función "`verificarTipo`" toma como argumentos el identificador de la variable, la expresión y la tabla de símbolos actual.
+- `sentencia -> imprimir ( expresion )` indica que la sentencia es una instrucción para imprimir un valor por pantalla. La regla utiliza la función `verificarTipoExpresion` para asegurarse de que el tipo de la expresión sea compatible con el tipo de valor que se quiere imprimir. La función `verificarTipoExpresion` toma como argumentos la expresión y la tabla de símbolos actual.
+- `expresion` se utilizan para procesar las expresiones matemáticas del programa. 
+- `expresion -> expresion1 + expresion2` indica que la expresión es una suma de dos valores, y utiliza la función "`verificarTipo`" para asegurarse de que los tipos de las dos expresiones sean compatibles. La función "`verificarTipo`" toma como argumentos los tipos de las dos expresiones.
+- `expresion -> expresion1 - expresion2` indica que la expresión es una resta de dos valores, y utiliza la función "`verificarTipo`" para asegurarse de que los tipos de las dos expresiones sean compatibles.
+- `expresion -> identificador` indica que la expresión es una referencia a una variable, y utiliza la función `buscarTipo` para obtener el tipo de la variable a partir de su identificador. La función `buscarTipo` toma como argumentos el identificador de la variable y la tabla de símbolos actual.
+- `expresion -> entero` indica que la expresión es un valor entero, y su tipo se establece como "int".
+
+En resumen, esta gramática de atributos utiliza funciones semánticas para agregar información a la tabla de símbolos del programa y para verificar la compatibilidad de tipos en las diferentes partes del código. Estas funciones se llaman "atributos" y se utilizan para procesar los nodos del árbol de análisis sintáctico generado a partir del código fuente del programa.
