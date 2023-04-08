@@ -26,6 +26,12 @@
 - [Semantica](#semántica)
   - [Estatica](#semantica-estática)
     - [Gramática de atributos](#gramatica-de-atributos)
+  - [Dinamica](#semantica-dinamica)
+    - [Axiomática]()
+    - [Denotacional]()
+    - [Operacional]()
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -635,7 +641,7 @@ Para luego poder darle significado a una construcción del lenguaje
  
 </table>
 
-### Semantica Estática
+## Semantica Estática
 
 - No está relacionada con el significado de la ejecución del programa, está más relacionado con las formas válidas.
 - El análisis está ubicado entre el análisis sintáctico y el análisis de semántica dinámica, pero más cercano a la sintaxis.
@@ -667,6 +673,25 @@ En Python, los errores de variables no declaradas antes de referenciarlas se pue
 - Las ecuaciones (reglas semánticas) permiten detectar errores y obtener valores de atributos.
 - Los atributos están directamente relacionados a los símbolos gramaticales (terminales y no terminales)
 - Las GA se suelen expresar en forma tabular para obtener el valor del atributo
+
+Como funciona la gramática de atributos:
+
+- Usa la tabla y machea si encuentra la producción/regla y del otro lado la ecuación que me permite llegar a los atributos.
+- Mira las Reglas (símil BNF/EBNF) y busca atributos para terminales y no terminales.
+- Si encuentra el atributo debe llegar a obtener su valor.
+- Para obtenerlo genera ecuaciones.
+
+De la ejecución de las ecuaciones:
+- se ingresan símbolos a la tabla de símbolos,
+- Detectar y dar mensajes de error
+- detecta dos variables iguales,
+- controla tipo y variables de igual tipo,
+- ciertas combinaciones no permitidas (reglas específicas del lenguaje)
+- otras cosas no permitidas por el lenguaje
+- Es decir, el chequeo de semántica estática
+- Generar un código para el siguiente paso
+
+En definitiva, se debe tratar de representar todo lo que necesitemos que salte antes de la ejecución y no seadetectado sintácticamente
 
 Otra explicacion un poco más concisa.
 
@@ -727,3 +752,34 @@ Las reglas de producción que comienzan con "programa" y "declaraciones" se util
 - `expresion -> entero` indica que la expresión es un valor entero, y su tipo se establece como "int".
 
 En resumen, esta gramática de atributos utiliza funciones semánticas para agregar información a la tabla de símbolos del programa y para verificar la compatibilidad de tipos en las diferentes partes del código. Estas funciones se llaman "atributos" y se utilizan para procesar los nodos del árbol de análisis sintáctico generado a partir del código fuente del programa.
+
+## Semantica Dinamica
+
+- Es la que describe el significado de ejecutar las diferentes construcciones del lenguaje de programación.
+- Su efecto se ve durante la ejecución del programa.
+- Influirá la interacción con el usuario y errores de la programación
+- `Recordemos` Los programas sólo se pueden ejecutar si son correctos en la sintáxis y la semántica estática.
+
+#### ¿Cómo se describe la semántica dinámica?
+
+- No es fácil escribirla
+- No existen herramientas estándar (fáciles y claras) como en el caso de la sintáxis (diagramas sintácticos y BNF)
+- Es complejo describir relación entre entrada y salida del programa
+- Es complejo describir cómo se ejecutará en cierta plataforma.
+- Etc.
+
+#### Soluciones más utilizadas
+
+- Formales y complejas:
+  - Semántica axiomática
+  - Semántica denotacional
+- No formal:
+  - Semántica operacional
+  - Sirven para comprobar la ejecución, la exactitud de un lenguaje, comparar funcionalidades de distintos programas.
+  - Se pueden usar combinados, no sirven todos para todos los tipos de lenguajes de programación
+
+Veremos una descripción general para conocerlos
+
+### Semantica Axiomática
+### Semantica Denotacional
+### Semantica Operacional

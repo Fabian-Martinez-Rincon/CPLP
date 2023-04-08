@@ -126,10 +126,10 @@ P = {
 ```
 
 - `a)` Identifique las componentes de la misma
-    - `N:` conjunto de símbolos no terminales, que en este caso son `<numero_entero>` y `<digito>`.
-    - `T:` conjunto de símbolos terminales, que son los dígitos del 0 al 9.
-    - `S:` símbolo inicial, que es `<numero_entero>`.
-    - `P:` conjunto de producciones, que definen cómo se generan las cadenas válidas en el lenguaje. En este caso, hay dos producciones para `<numero_entero>` y una para `<digito>`. Las producciones indican que un `<numero_entero>` puede ser generado concatenando un `<digito>` y otro `<numero_entero>`, o bien concatenando un `<numero_entero>` y un `<digito>`, o bien siendo simplemente un `<digito>`. La producción para `<digito>` indica que un `<digito>` puede ser cualquiera de los dígitos del 0 al 9.
+    - `N` conjunto de símbolos no terminales, que en este caso son `<numero_entero>` y `<digito>`.
+    - `T` conjunto de símbolos terminales, que son los dígitos del 0 al 9.
+    - `S` símbolo inicial, que es `<numero_entero>`.
+    - `P` conjunto de producciones, que definen cómo se generan las cadenas válidas en el lenguaje. En este caso, hay dos producciones para `<numero_entero>` y una para `<digito>`. Las producciones indican que un `<numero_entero>` puede ser generado concatenando un `<digito>` y otro `<numero_entero>`, o bien concatenando un `<numero_entero>` y un `<digito>`, o bien siendo simplemente un `<digito>`. La producción para `<digito>` indica que un `<digito>` puede ser cualquiera de los dígitos del 0 al 9.
 - `b)` Indique porqué es ambigua y corríjala
 
 La gramática es ambigua porque una misma cadena puede ser generada por más de un árbol de derivación. Por ejemplo, la cadena "123" puede ser generada de dos formas diferentes:
@@ -177,17 +177,27 @@ Con esta modificación, la gramática ya no es ambigua, ya que cada cadena gener
 Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gramática para la definición de una palabra cualquiera.
 
 ```ebnf
-<text> ::= <character> <text> | <character>
-<character> ::= <letter> | <digit>
-<letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+N = {<text>, <character>, <letter>, <digit>}
+T = {0, 1, 2, 3,....,Z}
+S = <text>
+P = {
+  <text> ::= <character> <text> | <character>
+  <character> ::= <letter> | <digit>
+    <letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+    <digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+}
 ```
 
 O tambien
 
 ```ebnf
-<texto> ::= <letra> <texto> | <letra>
-<letra> ::= [A-Z] | [a-z]
+N = {<text>, <character>, <letter>, <digit>}
+T = {0, 1, 2, 3,....,Z}
+S = <text>
+P = {
+  <texto> ::= <letra> <texto> | <letra>
+  <letra> ::= [A-Z] | [a-z]
+}
 ```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -198,7 +208,13 @@ Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
 ```ebnf
-<real> ::= ([0-9] [0-9]*) ("." [0-9]+ )?
+N = {<real> <nro>}
+T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+S = <real>
+P = {
+  <real> ::=  <nro> ("." <nro>)?
+  <nro> ::= [0-9]+
+}
 ```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -391,11 +407,10 @@ En este árbol, cada nodo interno representa una regla de la gramática, y los n
 
 ### **Ejercicio 9**
 
-Defina utilizando diagramas sintácticos la gramática para la definición de un
-identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
+Defina utilizando diagramas sintácticos la gramática para la definición de un identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
 
 ```ebnf
-<real> ::= <letra> ( (([0-9]) | <letra> )*)
+<real> ::= <letra> ([0-9] | <letra> )*
 <letra> ::= ([A-Z] | [a-z])
 ```
 
