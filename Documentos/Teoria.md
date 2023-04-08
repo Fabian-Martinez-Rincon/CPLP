@@ -1053,5 +1053,67 @@ sal
 
 En ambos casos se cumplen varias sub-etapas, las principales son:
 
+Como funcionan?
+
+![eeeee](https://user-images.githubusercontent.com/55964635/230736134-42033360-5e6f-4070-b5fe-73abf164e6fc.png)
+
+---
+
 ### 1) Etapa de Análisis
+
+- Análisis léxico (Programa Scanner)
+- Análisis sintáctico (Programa Parser)
+- Análisis semántico (P. Semántica estática)
+
+---
+
+#### Análisis léxico (Scanner)
+
+- Es el que lleva más tiempo
+- Hace el análisis a nivel de palabra (LEXEMA)
+- Divide el programa en sus elementos: identificadores, delimitadores, símbolos especiales, números, palabras clave, palabras reservadas, comentarios, etc.
+- Analiza el tipo de cada TOKEN para ver si son válidos
+- Filtra comentarios y separadores como: espacios en blanco, tabulaciones, etc.
+- Genera errores si la entrada no coincide con ninguna categoría léxica
+- Convierte a representación interna los números en punto fijo o punto flotante
+- Pone los identificadores en la tabla de símbolos
+- Reemplaza cada símbolo por su entrada en la tabla de símbolos
+- El resultado de este paso será el descubrimiento de los items léxicos o tokens. 
+
+Ejemplo de token, lexema y regla
+
+| ID | Componente Léxico | Lexema | Patrón |
+| --- | --- | --- | --- |
+| 201 | IF | if | if |
+| 202 | OP_RELACIONAL | <, >, != , == |  |
+| 203 | IDENTIFICADOR | var, s1, suma, prom | letra (letra | digito | gb)* |
+| 204 | ENTERO | 2, 23, 5124 | (digito)+ |
+
+---
+
+#### Análisis sintáctico (Parser)
+
+- El análisis se realiza a nivel de sentencia.
+- Se identifican las estructuras; sentencias, declaraciones, expresiones, etc. ayudándose con los tokens.
+- El analizador sintáctico se alterna con el análisis lexico y semántico. Usualmente se utilizan técnicas basadas en gramáticas formales.
+- Se usa una gramática para construir el "árbol sintáctico" del programa.
+- Toma una sentencia y se compara con el "árbol derivación" para ver si lo que entra es correcto
+
+---
+
+### Análisis semántico (semántica estática)
+
+- Fase medular, una de las más importantes
+- Las estructuras sintácticas reconocidas por el analizador sintáctico son procesadas y la estructura del código ejecutable continúa tomando forma.
+- Se agrega otro tipo de información implícita (como variables no declaradas)
+
+---
+
 ### 2) Etapa de Síntesis
+
+- Optimización del código
+- Generación del código
+- **`1)`** más vinculado al código fuente
+- **`2)`** más vinculado a características del código objeto y del hradware y arquitectura
+
+---
