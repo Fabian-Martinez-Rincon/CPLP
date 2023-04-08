@@ -1,7 +1,7 @@
 <h1 align="center"> Teoria </h1>
 
 
-- Objetivos de Diseño
+- Objetivos de Diseño (Clase 1)
     - [Simplicidad y Legibilidad](#simplicidad-y-legibilidad)
     - [Claridad en los bindings](#claridad-en-los-bindings)
     - [Confiabilidad](#confiabilidad)
@@ -23,7 +23,7 @@
     - [Subgramáticas](#subgramáticas)
     - [EBNF](#ebnf)
     - [CONWAY](#conway)
-- [Semantica](#semántica)
+- [Semantica (Clase 2)](#semántica)
   - [Estatica](#semantica-estática)
     - [Gramática de atributos](#gramatica-de-atributos)
   - [Dinamica](#semantica-dinamica)
@@ -42,8 +42,12 @@
   - [Combinación de tecnicas](#combinación-de-tecnicas)
 - [Compiladores](#compiladores)
   - [Etapa de Análisis](#1-etapa-de-análisis)
+    - [Análisis léxico](#análisis-léxico-scanner)
+    - [Análisis sintáctico](#análisis-sintáctico-parser)
+    - [Análisis semántico](#análisis-semántico-semántica-estática)
   - [Etapa de Síntesis](#2-etapa-de-síntesis)
-
+    - [Optimización del código]()
+    - [Generación del código]()
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1101,11 +1105,61 @@ Ejemplo de token, lexema y regla
 
 ---
 
-### Análisis semántico (semántica estática)
+#### Análisis semántico (semántica estática)
 
 - Fase medular, una de las más importantes
 - Las estructuras sintácticas reconocidas por el analizador sintáctico son procesadas y la estructura del código ejecutable continúa tomando forma.
 - Se agrega otro tipo de información implícita (como variables no declaradas)
+- Se realiza la comprobación de tipos (aplica gramática de atributos)
+- Se agrega a la tabla de símbolos los descriptores de tipos
+- Se realizan comprobaciones de duplicados, problema de tipos, etc.
+- Se realizan comprobaciones de nombres. (ej: toda variable debe estar declarada en su entorno)
+- Es el nexo entre etapas inicial y final del compilador (Análisis y Síntesis)
+
+#### Generación de código intermedio
+
+- Transformación del código fuente en una representación de código intermedio para una máquina abstracta.
+- A esta representación intermedia, que se parece al código objeto pero que sigue siendo independiente de la máquina, se le llama código intermedio.
+- El código objeto es dependiente de la máquina
+- Debe ser fácil de producir
+- Debe ser fácil de traducir al programa objeto
+- Hay varias técnicas
+- El código intermedio más habitual es el código de 3-direcciones.
+- Pasa todo el código a secuencia de proposiciones de la forma x := y op z
+
+#### Ejemplo de generación de código intermedio
+
+- Código de 3-direcciones Forma: A:= B op C,
+- `A`, `B`, `C` son operandos/variables
+- `op` es un operador binario
+- Se permiten condicionales simples
+- Se permiten saltos.
+- Cada sentencia se traduce en N líneas
+
+Codigo
+
+```pascal
+while (a >0) and (b<(a*4-5)) do 
+  a:=b*a-10;
+```
+
+Codigo Traducido
+
+```asembly
+L1: if (a>0) goto L2 
+  goto L3 
+L2: t1:=a*4 
+  t2:=t1-5 
+  if (b < t2) goto L4 
+  goto L3
+
+L4: t1:=b*a
+  t2:=t1-10
+  a:=t2
+  goto L1
+L3: …….
+```
+
 
 ---
 
@@ -1116,4 +1170,70 @@ Ejemplo de token, lexema y regla
 - **`1)`** más vinculado al código fuente
 - **`2)`** más vinculado a características del código objeto y del hradware y arquitectura
 
+**Etapa de Síntesis:**
+
+- Construye el programa ejecutable y genera el código necesario
+- Interviene el Linkeditor (Programa). Si hay traducción separada de módulos se enlazan los distintos módulos objeto del programa (módulos, unidades, librerías, procedimientos, funciones, subrutinas, macros, etc.)
+- Se genera el módulo de carga. Programa objeto completo
+- Se realiza el proceso de optimización. (Optativo)
+- El cargador Loader (Programa) lo carga en memoria
+
 ---
+
+#### Optimización
+
+- No se hace siempre y no lo hacen todos los compiladores.
+- Es Optativo
+- Los optimizadores de código (programas) pueden ser herramientas independientes, o estar incluidas en los compiladores e invocarse por medio de opciones de compilación.
+- Hay diversas formas y cosas a optimizar:
+- elegir entre velocidad de ejecución y tamaño del código ejecutable.
+- generar código para un microprocesador específico dentro de una familia de microprocesadores,
+- eliminar la comprobación de rangos o desbordamientos de pila
+- evaluación para expresiones booleanas,
+- eliminación de código muerto o no utilizado,
+- eliminación de funciones no utilizadas
+- Etc...
+
+<table>
+<tr>
+  <td>Ejemplo anterior</td>
+  <td>Luego optimización
+</td>
+</tr>
+<tr>
+<td>
+
+```Assembly
+L1: if (a>0) goto L2
+  goto L3
+L2: t1:=a*4
+  t2:=t1-5
+  if (b < t2) goto L4
+  goto L3
+L4: t1:=b*a
+  t2:=t1-10
+  a:=t2
+  goto L1
+L3: …….
+```
+
+</td>
+
+<td>
+
+```Assembly
+L1: if (a<=0) goto L3
+  t1:=a*4
+  t2:=t1-5
+  if (b >= t2) goto L3
+  t1:=b*a
+  t2:=t1-10
+  a:=t2
+  goto L1
+L3: …….
+```
+
+</td>
+
+</tr>
+</table>
