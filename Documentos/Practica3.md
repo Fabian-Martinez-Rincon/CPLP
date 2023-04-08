@@ -164,9 +164,15 @@ End.
 ```
 
 Ayuda: Sintáctico 2, Semántico 3
-- En la linea 1, tiene que terminar con punto y coma
-- falta declarar i
 
+Sintacticos
+- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
+- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+
+Semanticos
+- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
+- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
+- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
 
 ---
 

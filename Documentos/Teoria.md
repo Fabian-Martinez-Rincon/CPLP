@@ -27,10 +27,22 @@
   - [Estatica](#semantica-estática)
     - [Gramática de atributos](#gramatica-de-atributos)
   - [Dinamica](#semantica-dinamica)
-    - [Axiomática]()
-    - [Denotacional]()
-    - [Operacional]()
-
+    - [Axiomática](#semantica-axiomática)
+    - [Denotacional](#semantica-denotacional)
+    - [Operacional](#semantica-operacional)
+- [Interpretación](#interpretación)
+- [Compilación](#compilación)
+- [Interpretación vs Compilación](#interpretación-vs-compilación)
+  - [Por como se ejecuta](#por-como-se-ejecuta)
+  - [Por orden de ejecución](#por-orden-de-ejecución)
+  - [Por el tiempo consumido de ejecución](#por-el-tiempo-consumido-de-ejecución)
+  - [Por la eficiencia posterior](#por-la-eficiencia-posterior)
+  - [Por el espacio ocupado](#por-el-espacio-ocupado)
+  - [Por la detección de errores](#por-la-detección-de-errores)
+  - [Combinación de tecnicas](#combinación-de-tecnicas)
+- [Compiladores](#compiladores)
+  - [Etapa de Análisis](#1-etapa-de-análisis)
+  - [Etapa de Síntesis](#2-etapa-de-síntesis)
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -641,6 +653,8 @@ Para luego poder darle significado a una construcción del lenguaje
  
 </table>
 
+---
+
 ## Semantica Estática
 
 - No está relacionada con el significado de la ejecución del programa, está más relacionado con las formas válidas.
@@ -753,6 +767,8 @@ Las reglas de producción que comienzan con "programa" y "declaraciones" se util
 
 En resumen, esta gramática de atributos utiliza funciones semánticas para agregar información a la tabla de símbolos del programa y para verificar la compatibilidad de tipos en las diferentes partes del código. Estas funciones se llaman "atributos" y se utilizan para procesar los nodos del árbol de análisis sintáctico generado a partir del código fuente del programa.
 
+---
+
 ## Semantica Dinamica
 
 - Es la que describe el significado de ejecutar las diferentes construcciones del lenguaje de programación.
@@ -780,6 +796,262 @@ En resumen, esta gramática de atributos utiliza funciones semánticas para agre
 
 Veremos una descripción general para conocerlos
 
-### Semantica Axiomática
-### Semantica Denotacional
-### Semantica Operacional
+---
+
+## Semantica Axiomática
+
+- Considera al programa como “una máquina de estados” donde cada instrucción provoca un cambio de estado.
+- Se parte de un axioma (verdad) que sirve para verificar "estados y condiciones" a probar
+- Los constructores de un lenguaje de programación se formalizan describiendo como su ejecución provoca un cambio de estado (cada vez que se ejecuta).
+- Se desarrolló para probar la corrección de los programas.
+- La notación empleada es el “cálculo de predicados”
+- Un estado se describe con un predicado
+- El predicado describe los valores de las variables en ese estado
+- Existe un estado anterior y un estado posterior a la ejecución del constructor.
+- Cada sentencia se precede y se continúa con una expresión lógica que describe las restricciones y relaciones entre los datos.
+
+La semántica axiomatica es una rama de la lógica matemática que se enfoca en describir la semántica de un lenguaje formal a través de la definición de un conjunto de axiomas y reglas de inferencia.
+
+Un ejemplo práctico de la semántica axiomatica puede ser la especificación formal de un lenguaje de programación. En este caso, los axiomas y reglas de inferencia describen la semántica del lenguaje, es decir, cómo se comportan los programas en términos de su significado.
+
+Por ejemplo, supongamos que queremos especificar la semántica de un lenguaje de programación muy simple que solo permite la definición de variables y la asignación de valores a esas variables. Podríamos definir los siguientes axiomas y reglas de inferencia:
+
+- `1)` Axioma de definición de variables: Toda variable debe ser declarada antes de ser usada.
+- `2)` Axioma de asignación de valores: Se puede asignar un valor a una variable declarada previamente.
+- `3)` Regla de inferencia de igualdad: Si dos expresiones son iguales, entonces pueden ser reemplazadas una por la otra sin afectar el resultado del programa.
+
+A partir de estos axiomas y reglas de inferencia, podemos definir la semántica de nuestro lenguaje de programación. Por ejemplo, si tenemos el siguiente programa:
+
+```
+x = 5
+y = x + 3
+```
+
+Podemos inferir que la variable `x` debe ser declarada antes de ser usada (por el axioma 1), que se puede asignar un valor a `x` (por el axioma 2), que se puede sumar `x` y `3` para obtener el valor de y (por la regla de igualdad), y que finalmente `y` tendrá el valor `8`. De esta manera, podemos especificar la semántica de nuestro lenguaje de programación de manera rigurosa y formal, lo que permite verificar la corrección de los programas escritos en ese lenguaje.
+
+---
+
+## Semantica Denotacional
+
+- Se basa en la teoría de funciones recursivas y modelos matemáticos
+- Se diferencia de la axiomática por la forma que describe los estados:
+- **`Axiomática`** lo describe a través de los PREDICADOS (con variables de estado)
+- **`Denotacional`** lo describe a través de FUNCIONES (funciones recursivas)
+- Define una correspondencia entre los constructores sintácticos y sus significados
+- Describe la dependencia funcional entre el resultado de la ejecución y sus datos iniciales
+
+Producción definir binarios: 
+```ebnf
+<Nbin>::=0|1|<Nbin> 0 | <Nbin> 1
+FNbin(0) = 0 FNbin(<Nbin> 0) = 2 * FNbin(<Nbin>)
+FNbin(1) = 1 FNbin(<Nbin> 1) = 2 * FNbin(<Nbin>) + 1
+
+110 El resultado es un 6
+FNbin(<Nbin>0)
+2* FNbin(<Nbin>1)
+2*[2*FNbin(1)+1]
+2*[2*1+1]
+2*[3]
+6 
+```
+
+---
+
+## Semantica Operacional
+
+- El significado de un programa se describe mediante otro lenguaje de bajo nivel implementado sobre una máquina abstracta
+- Los cambios que se producen en el estado de la máquina abstracta, cuando se ejecuta una sentencia del lenguaje de programación, definen su significado
+- Es un método informal porque se basa en otro lenguaje de bajo nivel y puede llevar a errores
+- Es el más utilizado en los libros de texto para explicar el significado (PL/1 fue el primero)
+
+Ejemplo con codigo
+
+<table>
+<tr>
+ <td>Lenguaje</td><td>Maquina abstracta</td>
+</tr>
+<tr>
+
+<td>
+
+```pas
+for i:=pri to ult do
+begin
+  ...................
+end
+```
+
+</td>
+<td>
+
+```pas
+i:= pri (inicializo i)
+lazo if i > ult goto sal
+  .....
+  i:=i+1
+  goto lazo
+sal
+```
+
+</td>
+
+</tr>
+</table>
+
+
+## Interpretación
+
+- Hay un Programa escrito en lenguaje de programación interpretado
+- Ej: Lisp, Smalltalk, Basic, Python, Ruby, PHP, Perl, etc.
+- Hay un Programa llamado Intérprete que realiza la traducción de ese lenguaje interpretado en el momento de ejecución
+ El proceso que realiza cuando se ejecuta sobre cada una de las sentencias del programa es:
+  - Leer
+  - Analizar
+  - Decodificar
+  - Ejecutar
+  - Una a una las sentencias de programa
+- Sólo pasa por ciertas instrucciones no por todas, según sea la ejecución (ventajas y desventajas)
+- El Intérprete cuenta con una serie de herramientas para la traducción a lenguaje de máquina
+- Por cada posible acción hay un subprograma en lenguaje de máquina que ejecuta esa acción.
+- La interpretación se realiza llamando a estos subprogramas en la secuencia adecuada hasta generar el resultado de la ejecución.
+- Un intérprete ejecuta repetidamente la siguiente secuencia de acciones:
+  - **`Obtiene`** la próxima sentencia
+  - **`Determina`** la acción a ejecutar
+  - **`Ejecuta`** la acción
+
+## Compilación
+
+- Elegimos un lenguaje de alto nivel de este tipo.
+- Ej.: Ada, C ++, Fortran, Pascal,.....
+- Tenemos nuestro programa escrito
+- Usamos un programa llamado Compilador que realiza la traducción a un lenguaje de máquina
+- Se traduce/compila antes de ser ejecutado.
+- Pasa por todas las instrucciones antes de la ejecución (ventajas y desventajas)
+- El código que se genera se guarda y se puede reusar ya compilado.
+- La compilación implica varias etapas, que analizaremos luego......
+- El compilador toma todo el programa escrito en un lenguaje de alto nivel que llamamos lenguaje fuente antes de su ejecución.
+- Luego de la compilación va a generar un lenguaje objeto que es generalmente el ejecutable (escrito en lenguaje de máquina) o un lenguaje de nivel intermedio (o lenguaje ensamblador).
+
+---
+
+## Interpretación vs Compilación
+
+### Por como se ejecuta
+
+- **`Intérprete`**
+  - Ejecuta el programa de entrada directamente línea a línea
+  - Dependerá de la acción del usuario o de la entrada de datos y de alguna decisión del programa
+  - Siempre se debe tener el Programa Interprete
+  - El programa fuente será público (necesito ambos)
+- **`Compilador`**
+  - Se utiliza el compilador antes de la ejecución
+  - Produce un programa equivalente en lenguaje objeto
+  - El programa fuente no será publico
+
+---
+
+### Por orden de ejecución
+
+- **`Intérprete`**
+  - Sigue el orden lógico de ejecución (no necesariamente recorre todo el código)
+- **`Compilador`**
+  - Sigue el orden físico de las sentencias (recorre todo)
+
+---
+
+### Por el tiempo consumido de ejecución
+
+- **`Intérprete`**
+  - Por cada sentencia que pasa realiza el proceso de decodificación (lee, analiza y ejecuta) para determinar las operaciones y sus operandos. Es repetitivo
+  - Si la sentencia está en un proceso iterativo (ej.: for/while), se realizará la tarea de decodificación tantas veces como sea requerido
+  - La velocidad de proceso se puede ver afectada
+- **`Compilador`**
+  - Pasa por todas las sentencias.
+  - No repite lazos
+  - Traduce todo de una sola vez.
+  - Genera código objeto ya compilado.
+  - La velocidad de compilar dependerá del tamaño del código
+
+---
+
+### Por la eficiencia posterior
+
+- **`Intérprete`**
+  - Más lento en ejecución. Se repite el proceso cada vez que se ejecuta el programa
+  - Para ser ejecutado en otra máquina se necesita tener si o si el intérprete instalado
+  - El programa fuente será publico
+- **`Compilador`**
+  - Más rápido ejecutar desde el punto de vista del hardware porque ya está en un lenguaje de más bajo nivel.
+  - Detectó más errores al pasar por todas las sentencias
+  - Está listo para ser ejecutado. Ya compilado es más eficiente.
+  - Por ahí tardó más en compilar porque se verifica todo previamente
+  - El programa fuente no será publico
+
+
+---
+
+### Por el espacio ocupado
+
+- **`Intérprete`**
+  - No pasa por todas las sentencias entonces ocupa menos espacio de memoria.
+  - Cada sentencia se deja en la forma original y las instrucciones interpretadas necesarias para ejecutarlas se almacenan en los subprogramas del interprete en memoria
+  - Cosas cómo tablas de símbolos, variables y otros se generan cuando se usan en forma más dinámica
+- **`Compilador`**
+  - Si pasa por todas las sentencias
+  - Una sentencia puede ocupar decenas o centenas de sentencias de máquina al pasar a código objeto
+  - Cosas cómo tablas de símbolos, variables, etc. se generan siempre se usen o no
+  - Entonces el compilador hace ocupar más espacio
+
+---
+
+### Por la detección de errores
+
+- **`Intérprete`**
+  - Las sentencias del código fuente pueden ser relacionadas directamente con la sentencia en ejecución entonces se puede ubicar el error.
+  - Es más fácil detectarlos por donde pasa la ejecución
+  - Es más fácil corregirlos
+- **`Compilador`**
+  - Se pierde la referencia entre el código fuente y el código objeto.
+  - Es casi imposible ubicar el error, pobres en significado para el programador.
+  - Se deben usar otras técnicas (ej. Semántica Dinámica)
+
+---
+
+### Combinación de tecnicas
+
+- Interpretación pura y Compilación pura son dos extremos
+- En la práctica muchos lenguajes combinan ambas técnicas para sacar provecho a cada una
+- Los compiladores y los intérpretes se diferencian en como reportan los errores de ejecución,
+- También, hay otras diferencias que vimos anteriormente en la Comparación
+- Ciertos entornos de programación contienen las dos versiones: interpretación y compilación
+
+#### 1 - Primero Interpreto y luego Compilo
+
+- Se utiliza el intérprete en la etapa de desarrollo para facilitar el diagnóstico de errores.
+- Con el programa validado se compila para generar un código objeto más eficiente.
+
+#### 2 - Primero Compilo y luego Interpreto
+
+- Se hace traducción a un código intermedio a bajo nivel que luego se interpretará
+- Sirve para generar código portable, es decir, código fácil de transferir a diferentes máquinas y con diferentes arquitecturas.
+- Ejemplos:
+- Compilador Java genera código intermedio llamado “bytecodes”. Luego es interpretado por JavaScript en la máquina cliente.
+- C# (Cii Sharp) de Microsoft .NET
+- VB.NET (Visual Basic . NET de Microsoft)
+- PHYTON, etc.
+
+
+---
+
+## Compiladores
+
+- Traducen todo el programa
+- Pueden generar un "código ejecutable" (.exe) o un "código intermedio" (.obj)
+- Ej. de programas que se compilan:
+  - C, Ada, Pascal, etc.
+- La compilación puede ejecutarse en 1 o 2 etapas
+
+En ambos casos se cumplen varias sub-etapas, las principales son:
+
+### 1) Etapa de Análisis
+### 2) Etapa de Síntesis
