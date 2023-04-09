@@ -46,7 +46,7 @@
     - [Análisis sintáctico](#análisis-sintáctico-parser)
     - [Análisis semántico](#análisis-semántico-semántica-estática)
   - [Etapa de Síntesis](#2-etapa-de-síntesis)
-    - [Optimización del código]()
+    - [Optimización del código](#optimización)
     - [Generación del código]()
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -1193,6 +1193,10 @@ L3: …….
 - eliminación de código muerto o no utilizado,
 - eliminación de funciones no utilizadas
 - Etc...
+
+`Ejemplo` Posibles optimizaciones locales:
+
+Cuando hay 2 saltos seguidos se puede quedar 1 solo
 
 <table>
 <tr>
