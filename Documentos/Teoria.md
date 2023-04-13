@@ -47,7 +47,8 @@
     - [Análisis semántico](#análisis-semántico-semántica-estática)
   - [Etapa de Síntesis](#2-etapa-de-síntesis)
     - [Optimización del código](#optimización)
-    - [Generación del código]()
+    - [Generación del código](#generación-de-código-intermedio)
+- [Concepto de ligadura (Binding) Clase 3]()
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -1241,3 +1242,63 @@ L3: …….
 
 </tr>
 </table>
+
+---
+
+## Concepto de ligadura
+
+#### Semantica
+
+<table>
+<tr>
+  <td>ENTIDAD</td>
+  <td>ATRIBUTO
+</td>
+</tr>
+<tr>
+<td>
+
+- Variable 
+- Rutina 
+- Sentencia
+
+</td>
+
+<td>
+
+- nombre, tipo, área de memoria, etc 
+- nombre, parámetros formales, parámetros  reales, etc 
+- acción asociada
+
+
+</td>
+
+</tr>
+</table>
+
+DESCRIPTOR: lugar donde se almacenan los 
+atributos
+
+#### Binding
+
+- `1)` Los programas trabajan con entidades
+- `2)` Las entidades tienen atributos
+- `3)` Estos atributos tienen que establecerse antes de poder usar la entidad
+- `4)` LIGADURA: es la asociación entre la entidad y el atributo
+
+#### Ligadura
+Diferencias entre los lenguajes de programación
+
+- El número de entidades
+- El número de atributos que se les pueden ligar
+- El momento en que se hacen las ligaduras (binding time).
+- La estabilidad de la ligadura: una vez establecida se puede modificar?
+
+#### Momento de Ligadura
+
+- Estatico
+  - Definición del lenguaje
+  - Implementación del lenguaje
+  - Compilación (procesamiento)
+- Dinamico
+  - Ejecución
