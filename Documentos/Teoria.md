@@ -1250,29 +1250,19 @@ L3: …….
 #### Semantica
 
 <table>
-<tr>
-  <td>ENTIDAD</td>
-  <td>ATRIBUTO
-</td>
-</tr>
-<tr>
-<td>
+<tr><td>ENTIDAD</td><td>ATRIBUTO</td></tr><tr><td>
 
 - Variable 
 - Rutina 
 - Sentencia
 
-</td>
-
-<td>
+</td><td>
 
 - nombre, tipo, área de memoria, etc 
 - nombre, parámetros formales, parámetros  reales, etc 
 - acción asociada
 
-
 </td>
-
 </tr>
 </table>
 
