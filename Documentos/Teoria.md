@@ -1269,12 +1269,16 @@ L3: …….
 DESCRIPTOR: lugar donde se almacenan los 
 atributos
 
+---
+
 #### Binding
 
 - `1)` Los programas trabajan con entidades
 - `2)` Las entidades tienen atributos
 - `3)` Estos atributos tienen que establecerse antes de poder usar la entidad
 - `4)` LIGADURA: es la asociación entre la entidad y el atributo
+
+---
 
 #### Ligadura
 Diferencias entre los lenguajes de programación
@@ -1284,6 +1288,8 @@ Diferencias entre los lenguajes de programación
 - El momento en que se hacen las ligaduras (binding time).
 - La estabilidad de la ligadura: una vez establecida se puede modificar?
 
+---
+
 #### Momento de Ligadura
 
 - Estatico
@@ -1292,3 +1298,62 @@ Diferencias entre los lenguajes de programación
   - Compilación (procesamiento)
 - Dinamico
   - Ejecución
+
+---
+
+#### Momento y Estabilidad
+
+- Una ligadura es estática si se establece antes de la ejecución y no se puede cambiar. El termino estático referencia al momento del binding y a su estabilidad.
+- Una ligadura es dinámica si se establece en el momento de la ejecución y puede cambiarse de acuerdo a alguna regla especifica del lenguaje
+
+Excepción: constantes
+
+#### Ejemplos
+
+<table><tr><td> En Definición </td><td>En Implementación</td><td>En Compilación</td><td>En Ejecución</td></tr>
+
+<tr><td>
+
+- Forma de las sentencias
+- Estructura del programa
+- Nombres de los tipos predefinidos
+
+**En lenguaje C**
+
+- **int**
+- Para denominar a los enteros
+
+</td><td>
+
+Representación de los números y sus operaciones
+
+**En lenguaje C**
+
+- **int**
+- Representación
+- Operaciones que pueden realizarse sobre ellos
+
+</td><td>
+
+Asignación del tipo a las variables
+
+**En Lenguaje C**
+
+- **int a**
+- Se liga tipo a la variable
+
+</td>
+<td>
+
+- Variables con sus valores
+- Variables con su lugar de almacenamiento
+
+**En lenguaje C**
+
+- **int a**
+- el valor de una variable entera se liga en ejecución y puede cambiarse muchas veces.
+
+</td>
+</tr>
+
+</table>

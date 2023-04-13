@@ -32,7 +32,9 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-#### Ejercicio 1: a) Tome una de las variables de la línea 3 del siguiente código e indique y defina cuales son sus atributos:
+## Ejercicio 1
+
+a) Tome una de las variables de la línea 3 del siguiente código e indique y defina cuales son sus atributos:
 
 ```pas
 1.Procedure Practica4();
@@ -59,13 +61,14 @@ b) Compare los atributos de la variable del punto a) con los atributos de la var
 
 ### Ejercicio 2
 
-#### a. Indique cuales son las diferentes formas de inicializar una variable en el momento de la declaración de la misma.
+a. Indique cuales son las diferentes formas de inicializar una variable en el momento de la declaración de la misma.
 
-#### b. Analice en los lenguajes: Java, C, Phyton y Ruby las diferentes formas de inicialización de variables que poseen. Realice un cuadro comparativo de esta característica.
+b. Analice en los lenguajes: Java, C, Phyton y Ruby las diferentes formas de inicialización de variables que poseen. Realice un cuadro comparativo de esta característica.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 3: Explique los siguientes conceptos asociados al atributo l-valor de una:
+### Ejercicio 3
+Explique los siguientes conceptos asociados al atributo l-valor de una:
 - `a` Variable estática.
 - `b` Variable automática o semiestática.
 - `c` Variable dinámica.
@@ -77,7 +80,7 @@ Investigue sobre que tipos de variables respecto de su l-valor hay en los lengua
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 4:
+### Ejercicio 4
 - `a)` ¿A qué se denomina variable local y a qué se denomina variable global?
 - `b)` ¿Una variable local puede ser estática respecto de su l-valor? En caso afirmativo dé un ejemplo
 - `c)` Una variable global ¿siempre es estática? Justifique la respuesta.
@@ -85,7 +88,7 @@ Investigue sobre que tipos de variables respecto de su l-valor hay en los lengua
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 5:
+### Ejercicio 5
 - `a)` En Ada hay dos tipos de constantes, las numéricas y las comunes. Indique a que se debe dicha clasificación.
 - `b)` En base a lo respondido en el punto a), determine el momento de ligadura de las constantes del siguiente código:
 - `H` constant Float:= 3,5;
@@ -94,7 +97,8 @@ Investigue sobre que tipos de variables respecto de su l-valor hay en los lengua
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 6: Sea el siguiente archivo con funciones de C:
+### Ejercicio 6
+Sea el siguiente archivo con funciones de C:
 
 ```ada
 Archivo.c
@@ -120,7 +124,8 @@ Analice si llegaría a tener el mismo comportamiento en cuanto a alocación de m
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 7: Sea el siguiente segmento de código escrito en Java, indique para los identificadores si son globales o locales.
+### Ejercicio 7
+Sea el siguiente segmento de código escrito en Java, indique para los identificadores si son globales o locales.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -168,7 +173,8 @@ Clase Domicilio {
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 8: Sea el siguiente ejercicio escrito en Pascal
+### Ejercicio 8
+Sea el siguiente ejercicio escrito en Pascal
 
 ```pas
 1- Program Uno;
@@ -197,14 +203,16 @@ Clase Domicilio {
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 9: Elija un lenguaje y escriba un ejemplo:
+### Ejercicio 9
+Elija un lenguaje y escriba un ejemplo:
 - `a)` En el cual el tiempo de vida de un identificador sea mayor que su alcance
 - `b)` En el cual el tiempo de vida de un identificador sea menor que su alcance
 - `c)` En el cual el tiempo de vida de un identificador sea igual que su alcance
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 10: Si tengo la siguiente declaración al comienzo de un procedimiento:
+### Ejercicio 10
+Si tengo la siguiente declaración al comienzo de un procedimiento:
 
 ```c
 int c; en C
@@ -216,7 +224,10 @@ var c:integer; en Pascal
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 11: a) Responda Verdadero o Falso para cada opción. El tipo de dato de una variable es?
+### Ejercicio 11
+
+a) Responda Verdadero o Falso para cada opción. El tipo de dato de una variable es?
+
 - `I)` Un string de caracteres que se usa para referenciar a la variable y operaciones que se pueden realizar sobre ella.
 - `II)` Conjunto de valores que puede tomar y un rango de instrucciones en el que se conoce el nombre.
 - `III)` Conjunto de valores que puede tomar y lugar de memoria asociado con la variable.
