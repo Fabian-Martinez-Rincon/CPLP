@@ -137,7 +137,8 @@ Ambos lenguajes permiten el uso de la cláusula finally para definir un bloque d
 
 La ortogonalidad en Python y JavaScript se refiere a la independencia y coherencia de los distintos conceptos y elementos que conforman estos lenguajes, lo cual permite una gran flexibilidad y facilidad de uso.
 
-#### Python 
+#### Python
+
 Un ejemplo de ortogonalidad en Python es el uso de operadores, ya que estos pueden ser utilizados con distintos tipos de datos sin restricciones.
 
 ```python
