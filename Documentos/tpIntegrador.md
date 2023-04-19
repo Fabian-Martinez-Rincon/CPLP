@@ -51,10 +51,12 @@ PÁGINAS incluyendo la portada.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### `A)` 
+## `Ejercicio A)` 
 Escriba fragmentos de código de mínimo 5 y máximo 10 líneas de extensión que permitan ejemplificar al menos tres criterios de evaluación en los lenguajes asignados. Puede citar un ejemplo para cada criterio elegido y compararlo entre los lenguajes, colocando una breve descripción textual para cada uno.
 
-#### Simplicidad y legibilidad:
+---
+
+### Simplicidad y legibilidad:
 Básicamente es la forma en la que el lenguaje está diseñado para ser fácil de leer/entender
 
 `Python`
@@ -72,9 +74,10 @@ print("La media es:", media)
 ```
 
 
-Este código muestra cómo calcular la media de una lista de números en Python utilizando una función. La sintaxis es clara y fácil de entender, con el uso de nombres de variables descriptivos y una indentación adecuada para las estructuras de control de flujo.
+Este código muestra cómo calcular la media de una lista de números en Python utilizando una función. La sintaxis es clara y fácil de entender, con el uso de nombres de variables descriptivos y una indentación adecuada para las estructuras de control.
 
-JavaScript
+`JavaScript`
+```javascript
 function calcularMedia(lista) {
   let suma = 0;
   for (let i = 0; i < lista.length; i++) {
@@ -86,23 +89,56 @@ function calcularMedia(lista) {
 let numeros = [2, 4, 6, 8, 10];
 let media = calcularMedia(numeros);
 console.log("La media es:", media);
+```
 
-Este código muestra cómo calcular la media de una lista de números en JavaScript utilizando una función personalizada. La sintaxis es sencilla y utiliza nombres de variables descriptivos, aunque la estructura de control de flujo (el bucle for) es un poco más detallada que en Python
+Este código muestra cómo calcular la media de una lista de números en JavaScript utilizando una función personalizada. La sintaxis es sencilla y utiliza nombres de variables descriptivos, aunque la estructura de control es un poco más detallada que en Python
+
+---
+
+
+### Confiabilidad
+
+Podemos ilustrar la confiabilidad de estos lenguajes con su manejo de excepciones
+
+#### Python
+Tiene un sistema integrado de manejo de excepciones que permite detectar y manejar errores de manera segura. El siguiente fragmento de código muestra cómo capturar una excepción y manejarla de manera adecuada:
+
+```python 
+try:
+    resultado = 10 / 0
+except ZeroDivisionError:
+    print("No se puede dividir entre cero")
+```
+
+Javascript
+En JavaScript, se pueden manejar excepciones utilizando el bloque try...catch. Este bloque permite envolver el código que puede generar una excepción en un bloque try, y luego manejar la excepción en un bloque catch que se ejecutará si se produce una excepción. El bloque try contiene el código que se ejecutará normalmente, mientras que el bloque catch contiene el código que se ejecutará en caso de que se produzca una excepción.
+
+	try {
+ 	   let resultado = 10 / 0 
+}
+catch (error) {
+  	  console.log("No se puede dividir entre cero")
+}
+
+Comparación Python y Javascript en confiabilidad:
+Tanto Python como JavaScript tienen mecanismos integrados para el manejo de excepciones, aunque con algunas diferencias en su sintaxis y funcionamiento.
+En ambos se pone el código/operación que puede generar una excepción en el bloque try{...} y en caso de producirse se corta y se salta directamente al bloque de código contenido dentro de except, en caso de python, o catch, en caso de Javascript. Se pueden manejar múltiples excepciones en ambos y ejecutar un código dependiendo de la excepción capturada.
+Ambos lenguajes permiten el uso de la cláusula finally para definir un bloque de código que siempre se ejecutará, independientemente de si se produce una excepción o no.
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### `B)`
+## `Ejercicio B)`
 Cite ejemplos de código (mínimo 5, máximo 15 líneas) en ambos lenguajes asignados que permitan analizar A NIVEL SINTÁCTICO 4 estructuras de control de manera comparada entre los lenguajes asignados. Coloque una breve descripción a cada ejemplo.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### `C)`
+## `Ejercicio C)`
 Cite un ejemplo de código (5 líneas mínimo, 10 líneas máximo) para cada lenguaje asignado donde pueda distinguirse con claridad chequeos de semántica estática y dinámica a la hora de ejecutar/interpretar código. Debe poder entenderse con claridad, más allá de la naturaleza del lenguaje, distintos tipos de errores que se controlan y el momento en que dichos chequeos se realizan hasta poder ejecutar propiamente el programa.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### `D)`
+## `Ejercicio D)`
 Defina un ejemplo de código (5 líneas mínimo,15 líneas máximo) en cada lenguaje seleccionado donde se visualicen los distintos tipos de variables que soporta el lenguaje en cuanto al tiempo de vida, y realice una tabla donde se sitúen todos los identificadores junto con los valores de sus atributos tal como se vió en la práctica correspondiente.
 
 
