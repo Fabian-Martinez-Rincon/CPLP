@@ -3,20 +3,21 @@ TRABAJO INTEGRADOR 2023
 
 </h2>
 
+### Grupo 27 (Python/JavaScript)
+- Fabian Martinez Rincon 18153/1
+- Iñaki Agustin Lapeyre 19508/3
+- Luciano Ariel Lopez 14994/0
 
 
-Tareas
-- [ ] Caratula (Con los detalles)
-    - [ ] Nombres
-    - [ ] Legajos
-    - [ ] Nro Del Grupo
-    - [ ] Lenguajes
-    - [ ] Biografias
-- [ ] Enunciados
+
+
 
 <details> <summary> IMPORTANTE: </summary>
 
 <br>
+
+La entrega de cada parte del trabajo es obligatoria se debe realizar únicamente en un archivo pdf, el cual debe contener las siguientes partes:
+
 
 - `1)` Una carátula (una carilla) con el nombre y legajo de cada uno de los integrantes del grupo que hayan participado del trabajo, el número de grupo asignado por la cátedra y los lenguajes asignados; así como la bibliografía consultada. No se puede referenciar wikipedia. Las referencias deben ser de páginas oficiales del lenguaje, de libros, de manuales del lenguaje, de documentación de cátedras de enseñanza del lenguaje, de papers/artículos, entre otros.
 - `2)` El enunciado y desarrollo de la tarea pedida (código fuente incluido).
@@ -30,8 +31,6 @@ Tareas
 
 </details>
 
-La entrega de cada parte del trabajo es obligatoria se debe realizar únicamente en un
-archivo pdf, el cual debe contener las siguientes partes:
 
 
 
