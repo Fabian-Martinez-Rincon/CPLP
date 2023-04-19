@@ -51,8 +51,44 @@ PÁGINAS incluyendo la portada.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### `A)`
+### `A)` 
 Escriba fragmentos de código de mínimo 5 y máximo 10 líneas de extensión que permitan ejemplificar al menos tres criterios de evaluación en los lenguajes asignados. Puede citar un ejemplo para cada criterio elegido y compararlo entre los lenguajes, colocando una breve descripción textual para cada uno.
+
+#### Simplicidad y legibilidad:
+Básicamente es la forma en la que el lenguaje está diseñado para ser fácil de leer/entender
+
+`Python`
+```python
+def calcular_media(lista):
+    suma = 0
+    for num in lista:
+        suma += num
+    media = suma / len(lista)
+    return media
+
+numeros = [2, 4, 6, 8, 10]
+media = calcular_media(numeros)
+print("La media es:", media)
+```
+
+
+Este código muestra cómo calcular la media de una lista de números en Python utilizando una función. La sintaxis es clara y fácil de entender, con el uso de nombres de variables descriptivos y una indentación adecuada para las estructuras de control de flujo.
+
+JavaScript
+function calcularMedia(lista) {
+  let suma = 0;
+  for (let i = 0; i < lista.length; i++) {
+    suma += lista[i];
+  }
+  let media = suma / lista.length;
+  return media;
+}
+let numeros = [2, 4, 6, 8, 10];
+let media = calcularMedia(numeros);
+console.log("La media es:", media);
+
+Este código muestra cómo calcular la media de una lista de números en JavaScript utilizando una función personalizada. La sintaxis es sencilla y utiliza nombres de variables descriptivos, aunque la estructura de control de flujo (el bucle for) es un poco más detallada que en Python
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
