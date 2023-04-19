@@ -95,12 +95,11 @@ Este código muestra cómo calcular la media de una lista de números en JavaScr
 
 ---
 
-
 ### Confiabilidad
 
 Podemos ilustrar la confiabilidad de estos lenguajes con su manejo de excepciones
 
-#### Python
+#### `Python`
 Tiene un sistema integrado de manejo de excepciones que permite detectar y manejar errores de manera segura. El siguiente fragmento de código muestra cómo capturar una excepción y manejarla de manera adecuada:
 
 ```python 
@@ -110,20 +109,69 @@ except ZeroDivisionError:
     print("No se puede dividir entre cero")
 ```
 
-Javascript
+#### `Javascript`
+
 En JavaScript, se pueden manejar excepciones utilizando el bloque try...catch. Este bloque permite envolver el código que puede generar una excepción en un bloque try, y luego manejar la excepción en un bloque catch que se ejecutará si se produce una excepción. El bloque try contiene el código que se ejecutará normalmente, mientras que el bloque catch contiene el código que se ejecutará en caso de que se produzca una excepción.
 
-	try {
- 	   let resultado = 10 / 0 
+ 
+```javascript
+try {
+    let resultado = 10 / 0 
 }
 catch (error) {
-  	  console.log("No se puede dividir entre cero")
+    console.log("No se puede dividir entre cero")
 }
+```
 
-Comparación Python y Javascript en confiabilidad:
+#### `Comparación Python y Javascript en confiabilidad`
+
 Tanto Python como JavaScript tienen mecanismos integrados para el manejo de excepciones, aunque con algunas diferencias en su sintaxis y funcionamiento.
+
 En ambos se pone el código/operación que puede generar una excepción en el bloque try{...} y en caso de producirse se corta y se salta directamente al bloque de código contenido dentro de except, en caso de python, o catch, en caso de Javascript. Se pueden manejar múltiples excepciones en ambos y ejecutar un código dependiendo de la excepción capturada.
+
 Ambos lenguajes permiten el uso de la cláusula finally para definir un bloque de código que siempre se ejecutará, independientemente de si se produce una excepción o no.
+
+---
+
+### ORTOGONALIDAD
+
+La ortogonalidad en Python y JavaScript se refiere a la independencia y coherencia de los distintos conceptos y elementos que conforman estos lenguajes, lo cual permite una gran flexibilidad y facilidad de uso.
+
+#### Python 
+Un ejemplo de ortogonalidad en Python es el uso de operadores, ya que estos pueden ser utilizados con distintos tipos de datos sin restricciones.
+
+```python
+a = 5
+b = 2
+c = a + b   # la variable c será igual a 7
+d = a * b   # la variable d será igual a 10
+e = a / b   # la variable e será igual a 2.5
+f = a % b   # la variable f será igual a 1
+g = "Hola, "
+h = "mundo!"
+i = g + h   # la variable i será igual a "Hola, mundo!"
+```
+
+#### Javascript
+Un ejemplo de ortogonalidad en JavaScript es el uso de operadores y funciones en diferentes tipos de datos, lo que permite una mayor flexibilidad en el código.
+
+```javascript
+let a = 5;
+let b = 2;
+let c = a + b;   // la variable c será igual a 7
+let d = a * b;   // la variable d será igual a 10
+let e = "Hola, ";
+let f = "mundo!";
+let g = e + f;   // la variable g será igual a "Hola, mundo!"
+
+function sumar(a, b) {  return a + b;}
+
+let resultado1 = sumar(2, 3);   // la variable resultado1 será igual a 5
+let resultado2 = sumar("Hola, ", "mundo!");   // la variable resultado2 será igual a "Hola, mundo!"
+```
+
+Comparación Python y Javascript en ortogonalidad:
+Tanto Python como JavaScript son lenguajes que ofrecen una alta ortogonalidad, pero existen diferencias en su implementación, especialmente en lo que respecta a su tipado, manejo de excepciones y enfoque de orientación a objetos.
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
