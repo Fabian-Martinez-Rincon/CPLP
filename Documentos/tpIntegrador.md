@@ -9,12 +9,11 @@ TRABAJO INTEGRADOR 2023
     - [ ] Nro Del Grupo
     - [ ] Lenguajes
     - [ ] Biografias
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
+- [ ] Enunciados
 
-IMPORTANTE:
-La entrega de cada parte del trabajo es obligatoria se debe realizar únicamente en un
-archivo pdf, el cual debe contener las siguientes partes:
+<details> <summary> IMPORTANTE: </summary>
+
+<br>
 
 - `1)` Una carátula (una carilla) con el nombre y legajo de cada uno de los integrantes del grupo que hayan participado del trabajo, el número de grupo asignado por la cátedra y los lenguajes asignados; así como la bibliografía consultada. No se puede referenciar wikipedia. Las referencias deben ser de páginas oficiales del lenguaje, de libros, de manuales del lenguaje, de documentación de cátedras de enseñanza del lenguaje, de papers/artículos, entre otros.
 - `2)` El enunciado y desarrollo de la tarea pedida (código fuente incluido).
@@ -25,6 +24,13 @@ archivo pdf, el cual debe contener las siguientes partes:
     - La segunda entrega deberá contener las correcciones de la primera (en caso de haberla desaprobado) en el mismo documento entregado.
     - Cada grupo tendrá asignado un lenguaje Principal y uno secundario y un ayudante y día de la práctica. El ayudante sólo asistirá y responderá consultas sin ser obligatorio remitirse a la práctica y ayudante asignado para disipar dudas. Sin embargo se recomienda contactar con el ayudante para tener una mejor respuesta.
     - En el transcurso de la cursada se llamará a coloquio a cada grupo en el día asignado para realizar preguntas sobre el trabajo integrador. Esta nota (entre otras) servirá para determinar la nota final del alumno.
+
+</details>
+
+La entrega de cada parte del trabajo es obligatoria se debe realizar únicamente en un
+archivo pdf, el cual debe contener las siguientes partes:
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
