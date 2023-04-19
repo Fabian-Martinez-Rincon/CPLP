@@ -23,6 +23,7 @@
     - [Subgramáticas](#subgramáticas)
     - [EBNF](#ebnf)
     - [CONWAY](#conway)
+---
 - [Semantica (Clase 2)](#semántica)
   - [Estatica](#semantica-estática)
     - [Gramática de atributos](#gramatica-de-atributos)
@@ -30,6 +31,13 @@
     - [Axiomática](#semantica-axiomática)
     - [Denotacional](#semantica-denotacional)
     - [Operacional](#semantica-operacional)
+      - [Variable]()
+      - [Concepto]()
+      - [Nombre]()
+      - [Alcance]()
+      - [Tipo]()
+      - [L-Value]()
+      - [R-Value]()
 - [Interpretación](#interpretación)
 - [Compilación](#compilación)
 - [Interpretación vs Compilación](#interpretación-vs-compilación)
@@ -48,6 +56,9 @@
   - [Etapa de Síntesis](#2-etapa-de-síntesis)
     - [Optimización del código](#optimización)
     - [Generación del código](#generación-de-código-intermedio)
+
+---
+
 - [Concepto de ligadura (Binding) Clase 3]()
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -904,6 +915,27 @@ sal
 </table>
 
 
+## Variable 
+
+#### Abstracción
+
+- **`Variable`** -> Celda de Memoria
+- **`Nombre`** -> Dirección
+- **`Sentencia de Asignación`** -> Modificación destructiva del valor
+
+#### Concepto
+
+`x = 8`
+
+¿Qué me dispara esa sentencia? ¿Me da alguna información? ¿Cuál?
+- **`Nombre`** string de caracteres que se usa para referenciar a la variable. (identificador)
+- **`Alcance`** es el rango de instrucciones en el que se conoce el nombre
+- **`Tipo`** valores y operaciones
+- **`L-value`** es el lugar de memoria asociado con la variable (tiempo de vida)
+- **`R-value`** es el valor codificado almacenado en la ubicación de la variable
+
+---
+
 ## Interpretación
 
 - Hay un Programa escrito en lenguaje de programación interpretado
@@ -923,6 +955,8 @@ sal
   - **`Obtiene`** la próxima sentencia
   - **`Determina`** la acción a ejecutar
   - **`Ejecuta`** la acción
+
+---
 
 ## Compilación
 
