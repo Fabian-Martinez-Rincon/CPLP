@@ -302,14 +302,15 @@ ZeroDivisionError: division by zero
 </td><td>
 
 ```javascript
-function suma(a, b) {
-    return a + b / "HOLA";
+function division(a, b) {
+    return a / b;
 }
 
 let x = 5;
-let y = 10;
-let resultado = suma(x, y);
+let y = 0;
+let resultado = division(x, y);
 ```
+Error
 ```
 NaN
 ```
@@ -341,15 +342,38 @@ miFuncion();
 miFuncion2();
 console.log(`valor de x final: ${x}`);
 ```
-</td><td>
 
 | Identificado | Lvalo | RValo | Alcance | T. vida |
 | --- | --- | --- | --- | --- |
-| x |  automatica | 10, 15 | 1-4, 7-> | 1 -> | 
+| x |  automatica | 10, 15 | 1-4, 7-> | <- 1 -> | 
 | mi_funcion |  |  |  | 2-> | 2-6 |
-| y | automatica | 5 | 3-6 | 3-6 |
-| x (local) | automatica | 11 | 4-6 | 4-6 |
+| y | automatica | 5 | 3-6 | 2-6 |
+| x (local) | automatica | 11 | 4-6 | 2-6 |
 | mi_funcion2 |  |  | 7-> | 7-9 |
+</td><td>
+
+```python
+x = 10
+def mi_funcion():
+    y = 5
+    x = 11
+    print(f"valor de x local: {x}, valor de y local: {y}")
+def mi_funcion2():
+    global x;
+    x = x + 5
+print(f"valor de x inicial: {x}")
+mi_funcion()
+mi_funcion2()
+print(f"valor de x final: {x}")
+```
+
+| Identificado | Lvalo | RValo | Alcance | T. vida |
+| --- | --- | --- | --- | --- |
+| x |  automatica | 10, 15 | 1-4, 6-> | <- 1 -> | 
+| mi_funcion |  |  | 2-> | 2-5 |
+| y | automatica | 5 | 3-5 | 2-5 |
+| x (local) | automatica | 11 | 4-5 | 2-5 |
+| mi_funcion2 |  |  | 6-> | 6-9 |
 </td> </table>
 
 
