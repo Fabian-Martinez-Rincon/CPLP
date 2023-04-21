@@ -1,0 +1,421 @@
+<!DOCTYPE html><html><head>
+      <title>tpIntegrador</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\fabian\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.8\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h2 align="center"> CONCEPTOS Y PARADIGMAS DE LENGUAJES DE PROGRAMACI&#xD3;N
+TRABAJO INTEGRADOR 2023
+</h2>
+<h3 class="mume-header" id="grupo-27-pythonjavascript">Grupo 27 (Python/JavaScript)</h3>
+
+<ul>
+<li>Fabian Martinez Rincon 18153/1</li>
+<li>I&#xF1;aki Agustin Lapeyre 19508/3</li>
+<li>Luciano Ariel Lopez 14994/0</li>
+</ul>
+<details> <summary> IMPORTANTE: </summary>
+<br>
+<p>La entrega de cada parte del trabajo es obligatoria se debe realizar &#xFA;nicamente en un archivo pdf, el cual debe contener las siguientes partes:</p>
+<ul>
+<li><code>1)</code> Una car&#xE1;tula (una carilla) con el nombre y legajo de cada uno de los integrantes del grupo que hayan participado del trabajo, el n&#xFA;mero de grupo asignado por la c&#xE1;tedra y los lenguajes asignados; as&#xED; como la bibliograf&#xED;a consultada. No se puede referenciar wikipedia. Las referencias deben ser de p&#xE1;ginas oficiales del lenguaje, de libros, de manuales del lenguaje, de documentaci&#xF3;n de c&#xE1;tedras de ense&#xF1;anza del lenguaje, de papers/art&#xED;culos, entre otros.</li>
+<li><code>2)</code> El enunciado y desarrollo de la tarea pedida (c&#xF3;digo fuente incluido).</li>
+<li><code>3)</code> El archivo entregado debe tener el siguiente nombre ParteNgrupoXX.pdf (respetar este formato de nombre) donde N es el n&#xFA;mero de Parte y XX representa el nro. de grupo asignado por la c&#xE1;tedra. S&#xF3;lo debe ser subido a la plataforma por un integrante del grupo que hayan participado del trabajo y debe respetar la extensi&#xF3;n de p&#xE1;ginas m&#xE1;xima indicada en el trabajo con fuente Arial 11 para el contenido de cada una de ambas entregas (SIN EXCEPCION, &#xED;ncluida la car&#xE1;tula). Pautas del Trabajo Integrador:
+<ul>
+<li>Los grupos estar&#xE1;n conformados por 4 personas sin excepci&#xF3;n.</li>
+<li>En caso de que un alumno quede como &#xFA;nico integrante de grupo debe comunicarlo a los JTP para ser reasignado a otro grupo.</li>
+<li>Se debe entregar en forma obligatoria las dos entregas del Trabajo Integrador.</li>
+<li>La segunda entrega deber&#xE1; contener las correcciones de la primera (en caso de haberla desaprobado) en el mismo documento entregado.</li>
+<li>Cada grupo tendr&#xE1; asignado un lenguaje Principal y uno secundario y un ayudante y d&#xED;a de la pr&#xE1;ctica. El ayudante s&#xF3;lo asistir&#xE1; y responder&#xE1; consultas sin ser obligatorio remitirse a la pr&#xE1;ctica y ayudante asignado para disipar dudas. Sin embargo se recomienda contactar con el ayudante para tener una mejor respuesta.</li>
+<li>En el transcurso de la cursada se llamar&#xE1; a coloquio a cada grupo en el d&#xED;a asignado para realizar preguntas sobre el trabajo integrador. Esta nota (entre otras) servir&#xE1; para determinar la nota final del alumno.</li>
+</ul>
+</li>
+</ul>
+</details>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+<ul>
+<li><a href="#a">A) Escriba fragmentos de c&#xF3;digo de m&#xED;nimo 5 y m&#xE1;ximo 10 l&#xED;neas de extensi&#xF3;n</a></li>
+<li><a href="#b">B) Cite ejemplos de c&#xF3;digo (m&#xED;nimo 5, m&#xE1;ximo 15 l&#xED;neas) en ambos lenguajes</a></li>
+<li><a href="#c">C) Cite un ejemplo de c&#xF3;digo (5 l&#xED;neas m&#xED;nimo, 10 l&#xED;neas m&#xE1;ximo) para cada</a></li>
+<li><a href="#d">D) Defina un ejemplo de c&#xF3;digo (5 l&#xED;neas m&#xED;nimo,15 l&#xED;neas m&#xE1;ximo) en cada</a></li>
+</ul>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+<p>Considerando los lenguajes asignados a su grupo, resuelva cada uno de los puntos del<br>
+enunciado.</p>
+<p>1era Parte (Fecha Final de entrega: viernes 21/04/2023). EXTENSI&#xD3;N M&#xC1;XIMA 6<br>
+P&#xC1;GINAS incluyendo la portada.</p>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+<h2 class="mume-header" id="ejercicio-a"><code>Ejercicio A)</code></h2>
+
+<p>Escriba fragmentos de c&#xF3;digo de m&#xED;nimo 5 y m&#xE1;ximo 10 l&#xED;neas de extensi&#xF3;n que permitan ejemplificar al menos tres criterios de evaluaci&#xF3;n en los lenguajes asignados. Puede citar un ejemplo para cada criterio elegido y compararlo entre los lenguajes, colocando una breve descripci&#xF3;n textual para cada uno.</p>
+<hr>
+<h3 class="mume-header" id="simplicidad-y-legibilidad">Simplicidad y legibilidad:</h3>
+
+<p>B&#xE1;sicamente es la forma en la que el lenguaje est&#xE1; dise&#xF1;ado para ser f&#xE1;cil de leer/entender</p>
+<p><code>Python</code></p>
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">calcular_media</span><span class="token punctuation">(</span>lista<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    suma <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword keyword-for">for</span> num <span class="token keyword keyword-in">in</span> lista<span class="token punctuation">:</span>
+        suma <span class="token operator">+=</span> num
+    media <span class="token operator">=</span> suma <span class="token operator">/</span> <span class="token builtin">len</span><span class="token punctuation">(</span>lista<span class="token punctuation">)</span>
+    <span class="token keyword keyword-return">return</span> media
+
+numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span>
+media <span class="token operator">=</span> calcular_media<span class="token punctuation">(</span>numeros<span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">&quot;La media es:&quot;</span><span class="token punctuation">,</span> media<span class="token punctuation">)</span>
+</pre><p>Este c&#xF3;digo muestra c&#xF3;mo calcular la media de una lista de n&#xFA;meros en Python utilizando una funci&#xF3;n. La sintaxis es clara y f&#xE1;cil de entender, con el uso de nombres de variables descriptivos y una indentaci&#xF3;n adecuada para las estructuras de control.</p>
+<p><code>JavaScript</code></p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-function">function</span> <span class="token function">calcularMedia</span><span class="token punctuation">(</span><span class="token parameter">lista</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-let">let</span> suma <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword control-flow keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-let">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> lista<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    suma <span class="token operator">+=</span> lista<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword keyword-let">let</span> media <span class="token operator">=</span> suma <span class="token operator">/</span> lista<span class="token punctuation">.</span><span class="token property-access">length</span><span class="token punctuation">;</span>
+  <span class="token keyword control-flow keyword-return">return</span> media<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword keyword-let">let</span> numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> media <span class="token operator">=</span> <span class="token function">calcularMedia</span><span class="token punctuation">(</span>numeros<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">&quot;La media es:&quot;</span><span class="token punctuation">,</span> media<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>Este c&#xF3;digo muestra c&#xF3;mo calcular la media de una lista de n&#xFA;meros en JavaScript utilizando una funci&#xF3;n personalizada. La sintaxis es sencilla y utiliza nombres de variables descriptivos, aunque la estructura de control es un poco m&#xE1;s detallada que en Python</p>
+<hr>
+<h3 class="mume-header" id="confiabilidad">Confiabilidad</h3>
+
+<p>Podemos ilustrar la confiabilidad de estos lenguajes con su manejo de excepciones</p>
+<h4 class="mume-header" id="python"><code>Python</code></h4>
+
+<p>Tiene un sistema integrado de manejo de excepciones que permite detectar y manejar errores de manera segura. El siguiente fragmento de c&#xF3;digo muestra c&#xF3;mo capturar una excepci&#xF3;n y manejarla de manera adecuada:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-try">try</span><span class="token punctuation">:</span>
+    resultado <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">/</span> <span class="token number">0</span>
+<span class="token keyword keyword-except">except</span> ZeroDivisionError<span class="token punctuation">:</span>
+    <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">&quot;No se puede dividir entre cero&quot;</span><span class="token punctuation">)</span>
+</pre><h4 class="mume-header" id="javascript"><code>Javascript</code></h4>
+
+<p>En JavaScript, se pueden manejar excepciones utilizando el bloque try...catch. Este bloque permite envolver el c&#xF3;digo que puede generar una excepci&#xF3;n en un bloque try, y luego manejar la excepci&#xF3;n en un bloque catch que se ejecutar&#xE1; si se produce una excepci&#xF3;n. El bloque try contiene el c&#xF3;digo que se ejecutar&#xE1; normalmente, mientras que el bloque catch contiene el c&#xF3;digo que se ejecutar&#xE1; en caso de que se produzca una excepci&#xF3;n.</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword control-flow keyword-try">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-let">let</span> resultado <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">/</span> <span class="token number">0</span> 
+<span class="token punctuation">}</span>
+<span class="token keyword control-flow keyword-catch">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">&quot;No se puede dividir entre cero&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</pre><h4 class="mume-header" id="comparaci%C3%B3n-python-y-javascript-en-confiabilidad"><code>Comparaci&#xF3;n Python y Javascript en confiabilidad</code></h4>
+
+<p>Tanto Python como JavaScript tienen mecanismos integrados para el manejo de excepciones, aunque con algunas diferencias en su sintaxis y funcionamiento.</p>
+<p>En ambos se pone el c&#xF3;digo/operaci&#xF3;n que puede generar una excepci&#xF3;n en el bloque try{...} y en caso de producirse se corta y se salta directamente al bloque de c&#xF3;digo contenido dentro de except, en caso de python, o catch, en caso de Javascript. Se pueden manejar m&#xFA;ltiples excepciones en ambos y ejecutar un c&#xF3;digo dependiendo de la excepci&#xF3;n capturada.</p>
+<p>Ambos lenguajes permiten el uso de la cl&#xE1;usula finally para definir un bloque de c&#xF3;digo que siempre se ejecutar&#xE1;, independientemente de si se produce una excepci&#xF3;n o no.</p>
+<hr>
+<h3 class="mume-header" id="ortogonalidad">ORTOGONALIDAD</h3>
+
+<p>La ortogonalidad en Python y JavaScript se refiere a la independencia y coherencia de los distintos conceptos y elementos que conforman estos lenguajes, lo cual permite una gran flexibilidad y facilidad de uso.</p>
+<h4 class="mume-header" id="python-1">Python</h4>
+
+<p>Un ejemplo de ortogonalidad en Python es el uso de operadores, ya que estos pueden ser utilizados con distintos tipos de datos sin restricciones.</p>
+<pre data-role="codeBlock" data-info="python" class="language-python">a <span class="token operator">=</span> <span class="token number">5</span>
+b <span class="token operator">=</span> <span class="token number">2</span>
+c <span class="token operator">=</span> a <span class="token operator">+</span> b   <span class="token comment"># la variable c ser&#xE1; igual a 7</span>
+d <span class="token operator">=</span> a <span class="token operator">*</span> b   <span class="token comment"># la variable d ser&#xE1; igual a 10</span>
+e <span class="token operator">=</span> a <span class="token operator">/</span> b   <span class="token comment"># la variable e ser&#xE1; igual a 2.5</span>
+f <span class="token operator">=</span> a <span class="token operator">%</span> b   <span class="token comment"># la variable f ser&#xE1; igual a 1</span>
+g <span class="token operator">=</span> <span class="token string">&quot;Hola, &quot;</span>
+h <span class="token operator">=</span> <span class="token string">&quot;mundo!&quot;</span>
+i <span class="token operator">=</span> g <span class="token operator">+</span> h   <span class="token comment"># la variable i ser&#xE1; igual a &quot;Hola, mundo!&quot;</span>
+</pre><h4 class="mume-header" id="javascript-1">Javascript</h4>
+
+<p>Un ejemplo de ortogonalidad en JavaScript es el uso de operadores y funciones en diferentes tipos de datos, lo que permite una mayor flexibilidad en el c&#xF3;digo.</p>
+<pre data-role="codeBlock" data-info="javascript" class="language-javascript"><span class="token keyword keyword-let">let</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> c <span class="token operator">=</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>   <span class="token comment">// la variable c ser&#xE1; igual a 7</span>
+<span class="token keyword keyword-let">let</span> d <span class="token operator">=</span> a <span class="token operator">*</span> b<span class="token punctuation">;</span>   <span class="token comment">// la variable d ser&#xE1; igual a 10</span>
+<span class="token keyword keyword-let">let</span> e <span class="token operator">=</span> <span class="token string">&quot;Hola, &quot;</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> f <span class="token operator">=</span> <span class="token string">&quot;mundo!&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-let">let</span> g <span class="token operator">=</span> e <span class="token operator">+</span> f<span class="token punctuation">;</span>   <span class="token comment">// la variable g ser&#xE1; igual a &quot;Hola, mundo!&quot;</span>
+
+<span class="token keyword keyword-function">function</span> <span class="token function">sumar</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token keyword control-flow keyword-return">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span><span class="token punctuation">}</span>
+
+<span class="token keyword keyword-let">let</span> resultado1 <span class="token operator">=</span> <span class="token function">sumar</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// la variable resultado1 ser&#xE1; igual a 5</span>
+<span class="token keyword keyword-let">let</span> resultado2 <span class="token operator">=</span> <span class="token function">sumar</span><span class="token punctuation">(</span><span class="token string">&quot;Hola, &quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;mundo!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// la variable resultado2 ser&#xE1; igual a &quot;Hola, mundo!&quot;</span>
+</pre><p>Comparaci&#xF3;n Python y Javascript en ortogonalidad:<br>
+Tanto Python como JavaScript son lenguajes que ofrecen una alta ortogonalidad, pero existen diferencias en su implementaci&#xF3;n, especialmente en lo que respecta a su tipado, manejo de excepciones y enfoque de orientaci&#xF3;n a objetos.</p>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+<h2 class="mume-header" id="ejercicio-b"><code>Ejercicio B)</code></h2>
+
+<p>Cite ejemplos de c&#xF3;digo (m&#xED;nimo 5, m&#xE1;ximo 15 l&#xED;neas) en ambos lenguajes asignados que permitan analizar A NIVEL SINT&#xC1;CTICO 4 estructuras de control de manera comparada entre los lenguajes asignados. Coloque una breve descripci&#xF3;n a cada ejemplo.</p>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+<h2 class="mume-header" id="ejercicio-c"><code>Ejercicio C)</code></h2>
+
+<p>Cite un ejemplo de c&#xF3;digo (5 l&#xED;neas m&#xED;nimo, 10 l&#xED;neas m&#xE1;ximo) para cada lenguaje asignado donde pueda distinguirse con claridad chequeos de sem&#xE1;ntica est&#xE1;tica y din&#xE1;mica a la hora de ejecutar/interpretar c&#xF3;digo. Debe poder entenderse con claridad, m&#xE1;s all&#xE1; de la naturaleza del lenguaje, distintos tipos de errores que se controlan y el momento en que dichos chequeos se realizan hasta poder ejecutar propiamente el programa.</p>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+<h2 class="mume-header" id="ejercicio-d"><code>Ejercicio D)</code></h2>
+
+<p>Defina un ejemplo de c&#xF3;digo (5 l&#xED;neas m&#xED;nimo,15 l&#xED;neas m&#xE1;ximo) en cada lenguaje seleccionado donde se visualicen los distintos tipos de variables que soporta el lenguaje en cuanto al tiempo de vida, y realice una tabla donde se sit&#xFA;en todos los identificadores junto con los valores de sus atributos tal como se vi&#xF3; en la pr&#xE1;ctica correspondiente.</p>
+<img src="https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif" height="20" width="100%">
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
