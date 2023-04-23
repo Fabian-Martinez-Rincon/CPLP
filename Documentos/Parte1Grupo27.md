@@ -1,16 +1,3 @@
-<h2 align="center"> CONCEPTOS Y PARADIGMAS DE LENGUAJES DE PROGRAMACIÓN
-TRABAJO INTEGRADOR 2023
-
-</h2>
-
-### Grupo 27 (Python/JavaScript)
-- Fabian Martinez Rincon 18153/1
-- Iñaki Agustin Lapeyre 19508/3
-- Luciano Ariel Lopez 14994/0
-- Fabrizio Torrico Acosta 19433/0
-
----
-
 - [A) Escriba fragmentos de código de mínimo 5 y máximo 10 líneas de extensión](#a)
 - [B) Cite ejemplos de código (mínimo 5, máximo 15 líneas) en ambos lenguajes](#b)
 - [C) Cite un ejemplo de código (5 líneas mínimo, 10 líneas máximo) para cada](#c)
@@ -328,52 +315,52 @@ Defina un ejemplo de código (5 líneas mínimo,15 líneas máximo) en cada leng
 <table> <td>
 
 ```javascript
-let x = 10
-function miFuncion() {
-    const y = 5;
-    const x = 11;
-    console.log(`valor de x local: ${x}, valor de y local: ${y}`);
-}
-function miFuncion2() {
-    x = x + 5;
-}
-console.log(`valor de x inicial: ${x}`);
-miFuncion();
-miFuncion2();
-console.log(`valor de x final: ${x}`);
+1.let x = 10
+2.function miFuncion() {
+3.    const y = 5;
+4.    const x = 11;
+5.    console.log(`valor de x local: ${x}, valor de y local: ${y}`);
+6.}
+7.function miFuncion2() {
+8.    x = x + 5;
+9.}
+10.console.log(`valor de x inicial: ${x}`);
+11.miFuncion();
+12.miFuncion2();
+13.console.log(`valor de x final: ${x}`);
 ```
 
 | Identificado | Lvalo | RValo | Alcance | T. vida |
 | --- | --- | --- | --- | --- |
-| x |  automatica | 10, 15 | 1-4, 7-> | <- 1 -> | 
-| mi_funcion |  |  |  | 2-> | 2-6 |
-| y | automatica | 5 | 3-6 | 2-6 |
-| x (local) | automatica | 11 | 4-6 | 2-6 |
-| mi_funcion2 |  |  | 7-> | 7-9 |
+| x |  dinamica | 10, 15 | 1-4, 7-13 -> | <- 1-13 -> | 
+| miFuncion | dinamica |  | 2-13 | 2-6 |
+| y | dinamica | 5 | 3-6 | 2-6 |
+| x (local) | dinamica | 11 | 4-6 | 2-6 |
+| miFuncion2 | dinamica |  | 7-13 | 7-9 |
 </td><td>
 
 ```python
-x = 10
-def mi_funcion():
-    y = 5
-    x = 11
-    print(f"valor de x local: {x}, valor de y local: {y}")
-def mi_funcion2():
-    global x;
-    x = x + 5
-print(f"valor de x inicial: {x}")
-mi_funcion()
-mi_funcion2()
-print(f"valor de x final: {x}")
+1.x = 10
+2.def mi_funcion():
+3.    y = 5
+4.    x = 11
+5.    print(f"valor de x local: {x}, valor de y local: {y}")
+6.def mi_funcion2():
+7.    global x;
+8.    x = x + 5
+9.print(f"valor de x inicial: {x}")
+10.mi_funcion()
+11.mi_funcion2()
+12.print(f"valor de x final: {x}")
 ```
 
 | Identificado | Lvalo | RValo | Alcance | T. vida |
 | --- | --- | --- | --- | --- |
-| x |  automatica | 10, 15 | 1-4, 6-> | <- 1 -> | 
-| mi_funcion |  |  | 2-> | 2-5 |
-| y | automatica | 5 | 3-5 | 2-5 |
-| x (local) | automatica | 11 | 4-5 | 2-5 |
-| mi_funcion2 |  |  | 6-> | 6-9 |
+| x |  dinamica | 10, 15 | 1-4, 6-12-> | <- 1-12 -> | 
+| mi_funcion | dinamica |  | 2-12 | 2-5 |
+| y | dinamica | 5 | 3-5 | 2-5 |
+| x (local) | dinamica | 11 | 4-5 | 2-5 |
+| mi_funcion2 | dinamica |  | 6-13 | 6-9 |
 </td> </table>
 
 

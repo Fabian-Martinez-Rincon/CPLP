@@ -50,7 +50,7 @@ En la gramática de Backus-Naur Form (BNF) se utilizan diferentes símbolos para
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 1**
-Aca va el cuadro de la fotocopia
+![Ejercicio1](https://user-images.githubusercontent.com/55964635/233866278-933fe5c8-8af3-4bb0-a21a-6c9208b3284e.jpg)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -58,18 +58,66 @@ Aca va el cuadro de la fotocopia
 
 ¿Cuál es la importancia de la sintaxis para un lenguaje? ¿Cuáles son sus elementos?
 
-La sintaxis es fundamental en cualquier lenguaje de programación ya que es la que permite definir las reglas y estructuras para escribir el código fuente de manera clara, concisa y coherente. La sintaxis es esencial para que el programa pueda ser interpretado y ejecutado correctamente por la máquina, ya que esta solo entiende un conjunto específico de instrucciones bien definidas. La sintaxis también ayuda a que el código sea más fácil de leer y entender por otros programadores.
+Conjunto de reglas que definen como componer letras, dígitos y otros caracteres para formar los programas
 
-#### Los elementos de la sintaxis en un lenguaje de programación incluyen:
+Por ejemplo
 
-- **`Palabras reservadas:`** <br> son las palabras que tienen un significado especial en el lenguaje y que no pueden ser utilizadas como nombres de variables o funciones. Por ejemplo, en JavaScript, las palabras reservadas son if, else, for, while, function, etc.
-- **`Identificadores:`** <br> son los nombres de variables, funciones, objetos, clases, etc. Los identificadores deben seguir ciertas reglas de nomenclatura, como no contener espacios, comenzar con una letra o un guión bajo, etc.
-- **`Operadores:`** <br> son los símbolos que representan operaciones matemáticas, lógicas, de comparación, etc. Por ejemplo, en JavaScript, los operadores incluyen +, -, *, /, &&, ||, >, <, etc.
-- **`Delimitadores:`** <br> son los símbolos que se utilizan para separar o agrupar elementos en el código. Por ejemplo, en JavaScript, los delimitadores incluyen (), {}, [], ;, etc.
-- Literales: son los valores constantes que aparecen directamente en el código fuente. Por ejemplo, en JavaScript, los literales pueden ser números, cadenas de texto, booleanos, objetos, etc.
-- **`Comentarios:`** <br> son los textos que se utilizan para explicar el código o hacer anotaciones para otros programadores. Los comentarios no son interpretados por la máquina y no afectan el funcionamiento del programa.
+<table>
+<tr> <td>Ejemplo en pascal</td>
+  <td>
 
-En resumen, la sintaxis es crucial para cualquier lenguaje de programación, ya que define las reglas y estructuras para escribir código legible y coherente. Sin una sintaxis bien definida, el código sería difícil de interpretar y ejecutar por la máquina, y sería difícil de entender para otros programadores.
+```pas
+v: array [1..10] of integer;
+```
+
+  </td>
+</tr>
+<tr><td>Ejemplo en C</td>
+  <td>
+
+```c
+int v[10];
+```
+
+  </td>
+</tr>
+</table>
+
+---
+
+### Características de la sintáxis
+
+- La sintáxis debe ayudar al programador a escribir programas correctos sintácticamente
+- La sintáxis establecen reglas que sirven para que el programador se comunique con el procesador 
+- La  sintáxis debe contemplar soluciones a caracterísitcas tales como:
+  - Legibilidad
+  - Verificabilidad
+  - Traducción
+  - Falta de ambigüedad
+
+La sintáxis establece reglas que definen cómo deben combinarse las componentes básicas, llamadas **`“word”`**, para formar sentencias y programas.
+
+---
+
+### Elementos de la sintáxis
+
+- Alfabeto o conjunto de caracteres
+- Identificadores
+- Operadores
+- Palabra clave y palabra reservada
+- Comentarios y uso de blancos
+
+Detallados
+
+- **`Identificadores`** Elección más ampliamente utilizada: Cadena de letras y dígitos, que deben comenzar con una letra. Si se restringe la longitud se pierde legibilidad
+- **`Operadores`** Con los operadores de suma, resta, etc. la mayoría de los lenguajes utilizan +, -. En los otros operadores no hay tanta uniformidad (**|^)
+- **`Comentarios`** Hacen los programas más legibles
+- **`Palabra clave y palabra reservada`** Palabra clave o keywords, son palabras claves que tienen un significado dentro de un contexto. Palabra reservada, son palabras claves que además no pueden ser usadas por el programador como identificador de otra entidad.
+
+**Ventajas de su uso:**
+
+- Permiten al compilador y al programador expresarse claramente
+- Hacen los programas más legibles y permiten una rápida traducción
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -77,7 +125,15 @@ En resumen, la sintaxis es crucial para cualquier lenguaje de programación, ya 
 
 ¿Explique a qué se denomina regla lexicográfica y regla sintáctica?
 
-Las reglas lexicográficas y sintácticas son fundamentales en la definición y construcción de lenguajes formales, incluyendo los lenguajes de programación. Las reglas lexicográficas definen cómo se deben estructurar y utilizar los elementos léxicos de un lenguaje, mientras que las reglas sintácticas definen cómo se deben estructurar y utilizar los elementos sintácticos del lenguaje. Ambas reglas son esenciales para garantizar que los programas escritos en un lenguaje formal sean interpretados y ejecutados correctamente.
+Las reglas léxicas y sintácticas le dan la apariencia externa al lenguaje, establecen reglas para la estructura de la sintaxis. La estructura de la sintaxis se compone de:
+
+- `Words` Vocabulario o words es el conjunto de palabras y caracteres necesarios para construir expresiones, sentencias y programas. 
+  - Por ejemplo: identificadores, operadores, palabras clave, etc. Las words no son elementales, se construyen a partir del alfabeto.
+- `Expresiones` No son más que funciones a partir de un conjunto de datos que devuelven un valor, son bloques sintácticos.
+- `Sentencias` Es el componente más importante. Tiene un fuerte impacto en la escritura y legibilidad. Hay sentencias simples, estructuradas y anidadas.
+- Las reglas de la estructura son:
+  - `Reglas léxicas`: Conjunto de reglas para formar las word, a partir de caracteres del alfabeto. Por ejemplo: diferencias entre mayúsculas y minúsculas, símbolos distintos, etc.
+  - `Reglas sintácticas`: Conjunto de reglas que definen cómo formar las expresiones y sentencias. Por ejemplo: cuando se escriba la sentencia if se debe escribir la palabra if, luego la condición, luego el then, el begin, la sentencia, etc.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -126,10 +182,11 @@ P = {
 ```
 
 - `a)` Identifique las componentes de la misma
-    - `N` conjunto de símbolos no terminales, que en este caso son `<numero_entero>` y `<digito>`.
-    - `T` conjunto de símbolos terminales, que son los dígitos del 0 al 9.
-    - `S` símbolo inicial, que es `<numero_entero>`.
-    - `P` conjunto de producciones, que definen cómo se generan las cadenas válidas en el lenguaje. En este caso, hay dos producciones para `<numero_entero>` y una para `<digito>`. Las producciones indican que un `<numero_entero>` puede ser generado concatenando un `<digito>` y otro `<numero_entero>`, o bien concatenando un `<numero_entero>` y un `<digito>`, o bien siendo simplemente un `<digito>`. La producción para `<digito>` indica que un `<digito>` puede ser cualquiera de los dígitos del 0 al 9.
+  - `G` Gramática, son reglas finitas que definen un conjunto infinito de posibles sentencias válidas en el lenguaje. Está formada por una 4-tupla.
+  - `N` conjunto de símbolos no terminales, que en este caso son `<numero_entero>` y `<digito>`.
+  - `T` conjunto de símbolos terminales, que son los dígitos del 0 al 9.
+  - `S` símbolo inicial, que es `<numero_entero>`.
+  - `P` conjunto de producciones, que definen cómo se generan las cadenas válidas en el lenguaje. En este caso, hay dos producciones para `<numero_entero>` y una para `<digito>`. Las producciones indican que un `<numero_entero>` puede ser generado concatenando un `<digito>` y otro `<numero_entero>`, o bien concatenando un `<numero_entero>` y un `<digito>`, o bien siendo simplemente un `<digito>`. La producción para `<digito>` indica que un `<digito>` puede ser cualquiera de los dígitos del 0 al 9.
 - `b)` Indique porqué es ambigua y corríjala
 
 La gramática es ambigua porque una misma cadena puede ser generada por más de un árbol de derivación. Por ejemplo, la cadena "123" puede ser generada de dos formas diferentes:
@@ -148,6 +205,7 @@ La gramática es ambigua porque una misma cadena puede ser generada por más de 
 Para corregir la ambigüedad, se puede modificar la gramática de varias formas posibles. Aquí se presenta una opción:
 
 ```ebnf
+G = (N, T, S, P)
 N = {<numero_entero>, <digito>, <resto_numero>}
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 S = <numero_entero>
@@ -166,7 +224,7 @@ P = {
 <digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 ```
 
-La principal diferencia es que se ha introducido un nuevo símbolo no terminal <resto_numero>, que se encargará de generar los dígitos restantes después del primer dígito. Además, se ha modificado la producción de <numero_entero> para que sea la concatenación de un \<digito> y un <resto_numero>, y se ha añadido una nueva producción para <resto_numero> que indica que puede ser la concatenación de un \<digito> y otro <resto_numero>, o bien ser la cadena vacía ε.
+La principal diferencia es que se ha introducido un nuevo símbolo no terminal \<resto_numero>, que se encargará de generar los dígitos restantes después del primer dígito. Además, se ha modificado la producción de \<numero_entero> para que sea la concatenación de un \<digito> y un \<resto_numero>, y se ha añadido una nueva producción para \<resto_numero> que indica que puede ser la concatenación de un \<digito> y otro \<resto_numero>, o bien ser la cadena vacía ε.
 
 Con esta modificación, la gramática ya no es ambigua, ya que cada cadena generada solo tiene un árbol de derivación posible.
 
@@ -177,8 +235,9 @@ Con esta modificación, la gramática ya no es ambigua, ya que cada cadena gener
 Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gramática para la definición de una palabra cualquiera.
 
 ```ebnf
+G = (N, T, S, P)
 N = {<text>, <character>, <letter>, <digit>}
-T = {0, 1, 2, 3,....,Z}
+T = {0-9,a-Z}
 S = <text>
 P = {
   <text> ::= <character> <text> | <character>
@@ -191,12 +250,13 @@ P = {
 O tambien
 
 ```ebnf
-N = {<text>, <character>, <letter>, <digit>}
-T = {0, 1, 2, 3,....,Z}
+G = (N, T, S, P)
+N = {<text>, <letra>}
+T = {a,....,Z}
 S = <text>
 P = {
-  <texto> ::= <letra> <texto> | <letra>
-  <letra> ::= [A-Z] | [a-z]
+  <text> ::= <letra> <text> | <letra>
+  <letra> ::= a | ... | Z | " "
 }
 ```
 
@@ -207,15 +267,35 @@ P = {
 Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
+<table><td>
+
 ```ebnf
-N = {<real> <nro>}
-T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+G = (N, T, S, P)
+N = {<real>, <nro>, <digito>}
+T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ., +, -}
 S = <real>
 P = {
-  <real> ::=  <nro> ("." <nro>)?
-  <nro> ::= [0-9]+
+  <real> ::= ["-"] <numero> ["." <numero>]
+  <numero> ::= {<nro>}+
+  <digito> ::= 0 | ... | 9
 }
 ```
+</td><td>
+
+```ebnf
+G = (N, T, S, P)
+N = {<real>, <integer>, <digito>}
+T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ., -}
+S = <real>
+P = {
+	<real> ::= + <integer> "." <integer> | - <integer> "." <integer>
+	<integer> ::=  <digito> | <digito><integer>
+	<digito> ::= 0 | ... | 9
+}
+```
+</td></table>
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
