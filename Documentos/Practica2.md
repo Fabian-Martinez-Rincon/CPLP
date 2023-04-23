@@ -284,12 +284,12 @@ P = {
 
 ```ebnf
 G = (N, T, S, P)
-N = {<real>, <integer>, <digito>}
+N = {<real>, <numero>, <digito>}
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ., -}
 S = <real>
 P = {
-	<real> ::= + <integer> "." <integer> | - <integer> "." <integer>
-	<integer> ::=  <digito> | <digito><integer>
+	<real> ::= <numero> "." <numero> | - <numero> "." <numero>
+	<numero> ::=  <digito> | <digito><numero>
 	<digito> ::= 0 | ... | 9
 }
 ```
@@ -417,71 +417,6 @@ En este árbol, cada nodo interno representa una regla de la gramática, y los n
 
 En este árbol, la primera parte de la regla `<real>` se satisface al tomar `[0-9]+` como la primera secuencia de dígitos (8, 5 y 4). Luego, la segunda parte de la regla se satisface al tomar el "." seguido de la secuencia de dígitos "26" como la parte decimal del número.
 
-#### `e)` Conceptos de lenguajes
-
-```
-         <texto>
-           |
-     +-----+------+
-     |            |
-  <letra>     <texto>
-     |            |
-     C       +----+-----+
-             |          |
-           <letra>    <texto>
-             |          |
-             o       +----+-----+
-                      |          |
-                    <letra>    <texto>
-                      |          |
-                      n       +----+-----+
-                               |          |
-                             <letra>    <texto>
-                               |          |
-                               c       +----+-----+
-                                        |          |
-                                      <letra>    <texto>
-                                        |          |
-                                        e       +----+-----+
-                                                 |          |
-                                               <letra>    <texto>
-                                                 |          |
-                                               p       +----+-----+
-                                                          |          |
-                                                        <letra>    <texto>
-                                                          |          |
-                                                          t       +----+-----+
-                                                                   |          |
-                                                                 <letra>   <texto>
-                                                                   |          |
-                                                                   o     +----+-----+
-                                                                             |          |
-                                                                           <letra>   <texto>
-                                                                             |          |
-                                                                             s      +----+-----+
-                                                                                      |          |
-                                                                                    <letra>    <texto>
-                                                                                      |          |
-                                                                                      d       +----+-----+
-                                                                                               |          |
-                                                                                             <letra>   <texto>
-                                                                                               |          |
-                                                                                               e     +----+-----+
-                                                                                                         |          |
-                                                                                                       <letra>    <texto>
-                                                                                                         |          |
-                                                                                                         l       +----+-----+
-                                                                                                                  |          |
-                                                                                                                <letra>    <texto>
-                                                                                                                  |          |
-                                                                                                                  e       +----+-----+
-                                                                                                                           |          |
-                                                                                                                         <letra>   <letra>
-                                                                                                                           |          |
-                                                                                                                           n          g
-```
-
-En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan las letras individuales de la frase "Conceptos de lenguajes". La frase se genera siguiendo la regla `<texto> ::= <letra>` `<texto>` | `<letra>`, lo que significa que cada letra y cada espacio se agregan a la cadena de texto a través de la regla `<letra>` `<texto>` hasta que no quedan más letras o espacios para agregar.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -489,16 +424,21 @@ En este árbol, cada nodo interno representa una regla de la gramática, y los n
 
 Defina utilizando diagramas sintácticos la gramática para la definición de un identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
 
+<table><td>
+
 ```ebnf
 G = ( N, T, S, P)
 N = {<real>, <letra> }
-T = {0, 9, A, Z, a, z}
+T = {0-9, A-Z, a-z}
 S = <real>
 P = {
-    <real> ::= <letra> ([0-9] | <letra> )*
-    <letra> ::= ([A-Z] | [a-z])
+    <identificador> ::= <letra> {<caracter>}*
+    <caracter> ::= (<letra> | <digito>)
+    <digito> ::= (a | ... | z | A | ... | Z)
+    <letra> ::= (0 | ... | 9)
 }
 ```
+</td><td>
 
 Arbol de definición
 ```
@@ -512,6 +452,10 @@ Arbol de definición
              |      |
           letra  letra/digito/_
 ```
+</td></table>
+
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
