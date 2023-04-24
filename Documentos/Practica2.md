@@ -464,40 +464,68 @@ P = {
 
 
 ```ebnf
-  G = ( N, T, S, P)
-  N = {<operacion>, <termino>, <elemento>, <numero> , <letra>}
-  T = {0, 9, +, -, *, /}
-  S = <operacion>
-  P = {
-      <operacion> ::= <termino> {(+|-)<termino>}*
-      <termino> ::= <elemento>{(*|/)<elemento>}*
-      <elemento> ::= (<identificador> | <numero>)
-      
-      <numero> ::= {<digito>}+
-      <letra> ::= [a-z][A-Z]
-  }
-  ```
+G = ( N, T, S, P)
+N = {
+  <elemento>, 
+  <identificador>, 
+  <caracter>, 
+  <numero>, 
+  <digito>, 
+  <letra>, 
+}
+T = {0-9, a-Z, +, -, *, /}
+S = <operacion>
+P = {
+  <expresion> ::= <elemento> {<termino>}+
+  <termino> ::= {(* | / | + | -)<elemento>}
+
+
+  <elemento> ::= (<identificador> | <numero>)
+  <identificador> ::= <letra>{<caracter>}*
+  <caracter> ::= <digito> | <letra>
+  <numero> ::= {<digito>}+
+  <digito> ::= 0 | ... | 9
+  <letra> ::= a | ... | z | A | ... Z
+}
+```
 </td><td>
 
 ```ebnf
-  G = ( N, T, S, P)
-  N = {<operacion>, <termino>, <elemento>, <numero> , <letra>}
-  T = {0, 9, +, -, *, /}
-  S = <operacion>
-  P = {
-      <operacion> ::= <termino> {(+|-)<termino>}*
-      <termino> ::= <elemento>{(*|/)<elemento>}*
-      <elemento> ::= (<identificador> | <numero>)
-      
-      <numero> ::= {<digito>}+
-      <letra> ::= [a-z][A-Z]
-  }
-  ```
+G = ( N, T, S, P)
+N = {
+  <expresion>,
+  <operacion>,
+  <sumaResta>,
+  <multiplicacionDivision>,
+  <elemento>,
+  <identificador>,
+  <caracter>,
+  <numero>,
+  <digito>,
+  <letra>
+}
+T = {0-9, a-Z, +, -, *, /}
+S = <operacion>
+P = {
+  <expresion> ::= <operacion> {<sumaResta>}*
+  <operacion> ::= <elemento><multiplicacionDivision> | <elemento>
+  <sumaResta> ::= {(+ | -)<operacion>}
+  <multiplicacionDivision> ::= {(* | /)<elemento>}
+
+  
+  <elemento> ::= (<identificador> | <numero>)
+  <identificador> ::= <letra>{<caracter>}*
+  <caracter> ::= <digito> | <letra>
+  <numero> ::= {<digito>}+
+  <digito> ::= 0 | ... | 9
+  <letra> ::= a | ... | z | A | ... Z
+}
+```
 </td></tr></table>
 
 
-- `c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior. <br>
-    Basicamente lo primero que hago es determinar las multiplicaciones y divisiones del programa y dejo las sumas para el final.
+`c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior. 
+Lo primero que hacemos es determinar las multiplicaciones y divisiones del programa y dejo las sumas para el final.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
