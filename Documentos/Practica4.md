@@ -334,30 +334,45 @@ La diferencia entre variables globales, variables de instancia y variables local
 ### Ejercicio 8
 Sea el siguiente ejercicio escrito en Pascal
 
-```pas
-1- Program Uno;
-2- type tpuntero= ^integer;
-3-      var mipuntero: tpuntero;
-4-      var i:integer;
-5-      var h:integer;
-6- Begin
-7-      i:=3;
-8-      mipuntero:=nil;
-9-      new(mipuntero);
-10-     mipunterno^:=i;
-11-     h:= mipuntero^+i;
-12-     dispose(mipuntero);
-13-     write(h);
-14-     i:= h- mipuntero;
-15- End.
-```
 
 - `a)` Indique el rango de instrucciones que representa el tiempo de vida de las variables i, h y mipuntero.
 - `b)` Indique el rango de instrucciones que representa el alcance de las variables i, h y mipuntero.
-- `c)` Indique si el programa anterior presenta un error al intentar escribir el valor de h. Justifique
+- `c)` Indique si el programa anterior presenta un error al intentar escribir el valor de h. Justifique. 
 - `d)` Indique si el programa anterior presenta un error al intentar asignar a i la resta de h con mipuntero. Justifique
 - `e)` Determine si existe otra entidad que necesite ligar los atributos de alcance y tiempo de vida para justificar las respuestas anteriores. En ese caso indique cuál es la entidad y especifique su tiempo de vida y alcance.
 - `f)` Especifique el tipo de variable de acuerdo a la ligadura con el l-valor de las variables que encontró en el ejercicio.
+
+<table><td>
+
+```pas
+1- Program Uno;
+2- type tpuntero= ^integer;
+3-   var mipuntero: tpuntero;
+4-   var i:integer;
+5-   var h:integer;
+6- Begin
+7-   i:=3;
+8-   mipuntero:=nil;
+9-   new(mipuntero);
+10-  mipunterno^:=i;
+11-  h:= mipuntero^+i;
+12-  dispose(mipuntero);
+13-  write(h);
+14-  i:= h- mipuntero;
+15- End.
+```
+</td><td>
+
+| Identificador | L-VALOR    | ALCANCE | T.VIDA |
+| ------------- | ---------  | ------- | ------ |
+| minipuntero   | dinamico   | 3-15    | 9-12   |
+| i             | automatico | 4-15    | 1-15   |
+| h             | automatico | 5-15    | 1-15   |
+
+
+</td></table>
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -366,6 +381,33 @@ Elija un lenguaje y escriba un ejemplo:
 - `a)` En el cual el tiempo de vida de un identificador sea mayor que su alcance
 - `b)` En el cual el tiempo de vida de un identificador sea menor que su alcance
 - `c)` En el cual el tiempo de vida de un identificador sea igual que su alcance
+
+<table><td>
+
+```c
+1. static int aux;
+2. int v2;
+3. static int fun2( )
+4. { extern int v1;
+5.    aux=aux+1;
+6. }
+7. int fun3( )
+8. { int aux;
+9.    aux=aux+1;
+10. }
+```
+</td><td>
+
+    | Identificador | Lvalor     | Rvalor | Alcance  | T. vida |
+    | ------------- | ---------- | ------ | -------- | ------- |
+    | aux           | estática   | 0-1    | 1-8 10-> | <1-10>  |
+    | v2            | automática | 0      | 2-10     | 1-10    |
+    | fun2          |            |        | 3-10     | 3-6     |
+    | v1            | automática | indef  | 4-6      | 3-6     |
+    | fun3          |            |        | 7-10     | 7-10    |
+    | aux           | automática | indef  | 8-10     | 7-10    |
+
+</td></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
