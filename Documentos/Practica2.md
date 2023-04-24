@@ -504,15 +504,15 @@ N = {
   <digito>,
   <letra>
 }
-T = {0-9, a-Z, +, -, *, /}
+T = {0-9, a-Z, "+", "-", "*", "/"}
 S = <operacion>
 P = {
   <expresion> ::= <operacion> {<sumaResta>}*
   <operacion> ::= <elemento><multiplicacionDivision> | <elemento>
-  <sumaResta> ::= {(+ | -)<operacion>}
-  <multiplicacionDivision> ::= {(* | /)<elemento>}
+  <sumaResta> ::= {("+" | "-")<operacion>}
+  <multiplicacionDivision> ::= {("*" | "/")<elemento>}
 
-  
+
   <elemento> ::= (<identificador> | <numero>)
   <identificador> ::= <letra>{<caracter>}*
   <caracter> ::= <digito> | <letra>
