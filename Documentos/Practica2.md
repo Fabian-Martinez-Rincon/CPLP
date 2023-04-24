@@ -299,79 +299,6 @@ de:
 |  |  |
 
 
-#### `c)` 
-```
-                        <real>
-                            |
-                    +------+------+
-                    |             |
-                [0-9]+       ("." [0-9]+)?
-                    |                |
-                    1              null
-                    |                 
-                +--+--+
-                |     |
-                [0-9]+  |
-                |     |
-                2    +--+--+
-                    |     |
-                    [0-9]+  |
-                    |     |
-                    5    +--+--+
-                            |     |
-                        [0-9]+  |
-                            |     |
-                            5     |
-                                |
-                                +--+--+
-                                |     |
-                            [0-9]+  |
-                                |     |
-                                8     |
-                                    |
-                                    +--+--+
-                                    |     |
-                                [0-9]+  |
-                                    |     |
-                                    6     |
-                                        |
-                                        +--+--+
-                                        |     |
-                                    [0-9]+  |
-                                        |     |
-                                        9     |
-```
-
-En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan los valores reales. Aquí, el valor real es 1255869, que se compone de seis dígitos enteros. Entonces, la regla `<real>` se satisface simplemente tomando `[0-9]+` como la primera parte de la regla, y la segunda parte opcional `(("." [0-9]+)?)` se omite por completo.
-
-#### `d)` 
-
-```
-                            <real>
-                                |
-                        +------+------+
-                        |             |
-                    [0-9]+       ("." [0-9]+)?
-                        |                |
-                        8           +--+--+
-                        |           |     |
-                    +--+--+     [0-9]+  |
-                    |     |        |     |
-                    [0-9]+  |        2     |
-                    |     |              |
-                    5    +--+--+
-                        |     |
-                        [0-9]+  |
-                        |     |
-                        4    +--+--+
-                                |     |
-                            [0-9]+  |
-                                |     |
-                                2     |
-```
-
-En este árbol, la primera parte de la regla `<real>` se satisface al tomar `[0-9]+` como la primera secuencia de dígitos (8, 5 y 4). Luego, la segunda parte de la regla se satisface al tomar el "." seguido de la secuencia de dígitos "26" como la parte decimal del número.
-
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -464,8 +391,8 @@ S = <operacion>
 P = {
   <expresion> ::= <operacion> {<sumaResta>}*
   <operacion> ::= <elemento><multiplicacionDivision> | <elemento>
-  <sumaResta> ::= {("+" | "-")<operacion>}
-  <multiplicacionDivision> ::= {("*" | "/")<elemento>}
+  <sumaResta> ::= ("+" | "-")<operacion>
+  <multiplicacionDivision> ::= ("*" | "/")<elemento>
 
 
   <elemento> ::= (<identificador> | <numero>)
