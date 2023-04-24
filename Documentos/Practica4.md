@@ -83,9 +83,6 @@ Una variable puede inicializarse vacía o con un valor acorde al tipo de la vari
 
 <table><td>
 
-En los lenguajes Java y C, se pueden inicializar variables declarando y asignando un valor en la misma línea o declarando primero la variable y luego asignando un valor. Además, en Java es posible inicializar arreglos mediante la creación de una nueva instancia y especificando su tamaño. En Python y Ruby, las variables se pueden inicializar asignándoles un valor o dejándolas en estado nulo. En general, los cuatro lenguajes permiten la inicialización de variables de manera similar, aunque con algunas diferencias sintácticas. Python y Ruby tienen una sintaxis más simple, mientras que Java y C ofrecen más opciones y control en la inicialización de arreglos.
-</td><td>
-
 | Lenguaje | Sintaxis de inicialización de variables |
 | -------- | --------------------------------------- |
 | Java     | Tipo variable = valor;                  |
@@ -100,6 +97,11 @@ En los lenguajes Java y C, se pueden inicializar variables declarando y asignand
 |          | variable = None                         |
 | Ruby     | variable = valor                        |
 |          | variable = nil                          |
+</td><td>
+
+
+
+En los lenguajes Java y C, se pueden inicializar variables declarando y asignando un valor en la misma línea o declarando primero la variable y luego asignando un valor. Además, en Java es posible inicializar arreglos mediante la creación de una nueva instancia y especificando su tamaño. En Python y Ruby, las variables se pueden inicializar asignándoles un valor o dejándolas en estado nulo. En general, los cuatro lenguajes permiten la inicialización de variables de manera similar, aunque con algunas diferencias sintácticas. Python y Ruby tienen una sintaxis más simple, mientras que Java y C ofrecen más opciones y control en la inicialización de arreglos.
 </td></table>
 
 
