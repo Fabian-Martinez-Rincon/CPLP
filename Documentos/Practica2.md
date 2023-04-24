@@ -491,17 +491,21 @@ No se puede porque tiene nros infinitos
 Sobre un lenguaje de su preferencia escriba en EBNF la gramática para la definición de funciones o métodos o procedimientos (considere los parámetros en caso de ser necesario)
 
 ```ebnf
-<div> ::= "funcion " <espacio> <identificador> <espacio> "(" <espacio> <parametros>? <espacio> ")" <espacio> 
-<espacio> ::= "\s"*
-<letras> ::= ([a-z] | [A-Z])
+G = (N, T, S, P)
+N = {<funcion>}
+T = {a-z, A-Z, 0-9}
+S = <funcion>
+P = {
+  <div> ::= "funcion " <espacio> <identificador> <espacio> "(" <espacio> <parametros>? <espacio> ")" <espacio> 
+  <espacio> ::= "\s"*
+  <letras> ::= ([a-z] | [A-Z])
 
-<tipoDato> ::= "int" | "real" | "string"
 
-<parametros> ::= <parametro> <parametros> | <parametro>
-
-<parametro> ::= <tipoDato> <espacio> <identificador> ","
-
-<identificador> ::= <letras> ( ([0-9] | <letras> )*)
+  <tipoDato> ::= "int" | "real" | "string"
+  <parametros> ::= <parametro> <parametros> | <parametro>
+  <parametro> ::= <tipoDato> <espacio> <identificador> ","
+  <identificador> ::= <letras> ( ([0-9] | <letras> )*)
+}
 ```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
