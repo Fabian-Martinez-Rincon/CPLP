@@ -130,16 +130,19 @@ Ayuda: Sintáctico 2, Semántico 3
 </td><td>
 
 Sintacticos
-- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
-- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+- **`3.`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
+- **`9.`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
 
 Semanticos
-- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
-- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
-- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+- **`7.`**, La variable `i` no esta declarada en el for
+- **`9.`**, No fue inicializada la variable `a`
+- **`9.`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
 
 </td></tr>
-<tr><td>
+
+</table>
+
+<table><td>
 
 #### b) Java:
 
@@ -156,20 +159,27 @@ Semanticos
 ```
 
 Ayuda: Sintácticos 4, Semánticos 3, Lógico 1
-
 </td><td>
 
 Sintacticos
-- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
-- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+
+- `1.` arrayList empieza con mayuscula
+- `6.` Estas asignando a un valor, otro valor, ejemplo 20=true
+- `6.` Ese Boolean esta mal escrito
 
 Semanticos
-- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
-- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
-- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+- `4.` falta declarar la variable i
+- `5.` falta declarar la variable i
+- `6.` falta declarar la variable i
+- `5.` Estas multiplicando una variable no declarada con un entero
+- `1.` El metodo espera un string y devuelve un boolean
+- `6.` La asignación es incorrecta, se tendria que usar un set
 
-</td></tr>
-<tr><td>
+Logico
+- `3.` Deberia inicializar con cadena vacia en lugar de null, ya que no se puede concatenar un string con null en java
+- `4.` Se queda en un bucle infinito, ya que nunca encuentra el tope por decrementar
+</td>
+</table>
 
 #### c) C
 
@@ -195,93 +205,57 @@ Semanticos
 ```
 
 Ayuda: Sintácticos 2, Semánticos 6
-</td><td>
 
-Sintacticos
-- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
-- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
-
-Semanticos
-- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
-- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
-- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
-
-</td></tr>
-<tr><td>
 
 #### d)Python
 
 ```py
-#!/usr/bin/python
-print "\nDEFINICION DE NUMEROS PRIMOS"
-r = 1
-while r = True:
-    N = input("\nDame el numero a analizar: ")
-    i = 3
-    fact = 0
-    if (N mod 2 == 0) and (N != 2):
-        print "\nEl numero %d NO es primo\n" % N
-    else:
-        while i <= (N^0.5):
-            if (N % i) == 0:
-                mensaje="\nEl numero ingresado NO es primo\n" % N
-                msg = mensaje[4:6]
-                print msg
-                fact = 1
-        i+=2
-        if fact == 0:
-            print "\nEl numero %d SI es primo\n" % N
-r = input("Consultar otro número? SI (1) o NO (0)--->> ")
+1.#!/usr/bin/python
+2.print "\nDEFINICION DE NUMEROS PRIMOS"
+3.r = 1
+4.while r = True:
+5.	N = input("\nDame el numero a analizar: ")
+6.	i = 3
+7.	fact = 0
+8.	if (N mod 2 == 0) and (N != 2):
+9.			print "\nEl numero %d NO es primo\n" % N
+10.	else:
+11.		while i <= (N^0.5):
+12.			if (N % i) == 0:
+13.				mensaje="\nEl numero ingresado NO es primo\n" % N
+14.				msg = mensaje[4:6]
+15.				print msg
+16.				fact = 1
+17.		i+=2
+18.		if fact == 0:
+19.			print "\nEl numero %d SI es primo\n" % N
+.r = input("Consultar otro número? SI (1) o NO (0)--->> ")
 ```
 
 Ayuda: Sintácticos 2, Semánticos 3
-</td><td>
-
-Sintacticos
-- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
-- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
-
-Semanticos
-- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
-- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
-- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
-
-</td></tr>
-<tr><td>
 
 #### e) Ruby
 ```ruby
-def ej1
-    Puts 'Hola, ¿Cuál es tu nombre?'
-    nom = gets.chomp
-    puts 'Mi nombre es ', + nom
-    puts 'Mi sobrenombre es 'Juan''
-    puts 'Tengo 10 años'
-    meses = edad*12
-    dias = 'meses' *30
-    hs= 'dias * 24'
-    puts 'Eso es: meses + ' meses o ' + dias + ' días o ' + hs + ' horas'
-    puts 'vos cuántos años tenés'
-    edad2 = gets.chomp
-    edad = edad + edad2.to_i
-    puts 'entre ambos tenemos ' + edad + ' años'
-    puts '¿Sabes que hay ' + name.length.to_s + ' caracteres en tu nombre, ' + name + '?'
-end
+1.def ej1
+2.	Puts 'Hola, ¿Cuál es tu nombre?'
+3.	nom = gets.chomp
+4.	puts 'Mi nombre es ', + nom
+5.	puts 'Mi sobrenombre es 'Juan''
+6.	puts 'Tengo 10 años'
+7.	meses = edad*12
+8.	dias = 'meses' *30
+9.	hs= 'dias * 24'
+10.	puts 'Eso es: meses + ' meses o ' + dias + ' días o ' + hs + ' horas'
+11.	puts 'vos cuántos años tenés'
+12.	edad2 = gets.chomp
+13.	edad = edad + edad2.to_i
+14.	puts 'entre ambos tenemos ' + edad + ' años'
+15.	puts '¿Sabes que hay ' + name.length.to_s + ' caracteres en tu nombre, ' + name + '?'
+16.end
 ```
 
 Ayuda: Semánticos +4
-</td><td>
 
-Sintacticos
-- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
-- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
-
-Semanticos
-- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
-- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
-- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
-
-</td></tr></table>
 
 
 
