@@ -237,19 +237,14 @@ Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gr
 ```ebnf
 G = (N, T, S, P)
 N = {
-  <palabra>, 
-  <caracter>, 
-  <letra>, 
-  <digito>
+  <palabra>,
+  <caracter>
 }
-T = {0-9,a-Z}
+T = {0-9, a-Z}
 S = <palabra>
 P = {
-  <palabra> ::= <caracter> | <caracter><palabra>
-
-  <caracter> ::= <letra> | <digito>
-  <letra> ::= a | ... | z | a | ... | Z
-  <digito> ::= 0 | ... | 9
+  <palabra> ::= <letra> | <letra><palabra>
+  <letra> ::= a | ... | z | a | ... | Z | " "
 }
 ```
 
@@ -264,12 +259,12 @@ desarrollar para BNF y explique las diferencias con la utilización de la gramá
 
 ```ebnf
 G = (N, T, S, P)
-N = {<real>, <nro>, <digito>}
+N = {<real>, <numero>, <digito>}
 T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ., +, -}
 S = <real>
 P = {
   <real> ::= ["-"] <numero> ["." <numero>]
-  <numero> ::= {<nro>}+
+  <numero> ::= {<digito>}+
   <digito> ::= 0 | ... | 9
 }
 ```
@@ -297,47 +292,14 @@ P = {
 Utilizando la gramática que desarrolló en los puntos 6 y 7, escriba el árbol sintáctico
 de:
 
-#### `a)` Conceptos
+| Conceptos | Programación |
+| --- | --- |
+| ![Conceptos](https://user-images.githubusercontent.com/55964635/233899650-b270136e-87ae-499c-9729-8ae1b38ed11e.jpg) | ![Programacion](https://user-images.githubusercontent.com/55964635/233901701-d7b44a37-fda8-4ce9-8810-bed09383c114.jpg) |
+| 1255869 | 854,26 |
+|  |  |
 
-```
-         <texto>
-           |
-     +-----+------+
-     |            |
-  <letra>     <texto>
-     |            |
-     C       +----+-----+
-             |          |
-           <letra>    <texto>
-             |          |
-             o       +----+-----+
-                      |          |
-                    <letra>    <texto>
-                      |          |
-                      n       +----+-----+
-                               |          |
-                             <letra>    <texto>
-                               |          |
-                               c       +----+-----+
-                                        |          |
-                                      <letra>    <texto>
-                                        |          |
-                                        e       +----+-----+
-                                                 |          |
-                                               <letra>    <texto>
-                                                 |          |
-                                                 p       +----+-----+
-                                                          |          |
-                                                        <letra>   <letra>
-                                                          |          |
-                                                          t          o
-```
 
-En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan las letras individuales de la palabra "Conceptos". La palabra se genera siguiendo la regla `<texto> ::= <letra> <texto> | <letra>`, lo que significa que cada letra se agrega a la cadena de texto a través de la regla `<letra> <texto>` hasta que no quedan más letras para agregar.
-
-#### `b)` Programación
-
-#### `c)` 1255869
+#### `c)` 
 ```
                         <real>
                             |
@@ -382,7 +344,7 @@ En este árbol, cada nodo interno representa una regla de la gramática, y los n
 
 En este árbol, cada nodo interno representa una regla de la gramática, y los nodos hoja representan los valores reales. Aquí, el valor real es 1255869, que se compone de seis dígitos enteros. Entonces, la regla `<real>` se satisface simplemente tomando `[0-9]+` como la primera parte de la regla, y la segunda parte opcional `(("." [0-9]+)?)` se omite por completo.
 
-#### `d)` 854,26
+#### `d)` 
 
 ```
                             <real>
