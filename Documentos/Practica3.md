@@ -157,7 +157,6 @@ Semanticos
 
 Ayuda: Sintácticos 4, Semánticos 3, Lógico 1
 
-Ayuda: Sintáctico 2, Semántico 3
 </td><td>
 
 Sintacticos
@@ -175,24 +174,24 @@ Semanticos
 #### c) C
 
 ```c
-# include <stdio.h>
-int suma; /* Esta es una variable global */
-int main()
-{  int indice;
-    encabezado;
-    for (indice = 1 ; indice <= 7 ; indice ++)
-    cuadrado (indice);
-    final(); Llama a la función final */
-    return 0;
-}
-cuadrado (numero)
-int numero;
-{   int numero_cuadrado;
-    numero_cuadrado == numero * numero;
-    suma += numero_cuadrado;
-    printf("El cuadrado de %d es %d\n",
-    numero, numero_cuadrado);
-}
+1.# include <stdio.h>
+2.int suma; /* Esta es una variable global */
+3.int main()
+4.{  int indice;
+5.    encabezado;
+6.    for (indice = 1 ; indice <= 7 ; indice ++)
+7.    cuadrado (indice);
+8.    final(); Llama a la función final */
+9.    return 0;
+10.}
+11.cuadrado (numero)
+12.int numero;
+13.{   int numero_cuadrado;
+14.    numero_cuadrado == numero * numero;
+15.    suma += numero_cuadrado;
+16.    printf("El cuadrado de %d es %d\n",
+17.    numero, numero_cuadrado);
+18.}
 ```
 
 Ayuda: Sintácticos 2, Semánticos 6
