@@ -296,7 +296,7 @@ de:
 | --- | --- |
 | ![Conceptos](https://user-images.githubusercontent.com/55964635/233899650-b270136e-87ae-499c-9729-8ae1b38ed11e.jpg) | ![Programacion](https://user-images.githubusercontent.com/55964635/233901701-d7b44a37-fda8-4ce9-8810-bed09383c114.jpg) |
 | 1255869 | 854,26 |
-|  |  |
+| ![image](https://user-images.githubusercontent.com/55964635/233906831-18fb1f5d-0dec-4e71-899b-98c5f1067728.png) | ![image](https://user-images.githubusercontent.com/55964635/233906881-9d617c98-d469-4e03-8b33-b1fdb24f0579.png) |
 
 
 
