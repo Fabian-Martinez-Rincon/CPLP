@@ -111,17 +111,17 @@ Aclaración: Los valores de la ayuda pueden ser mayores.
 #### a) Pascal
 
 ```pas
-Program P
-var 
-    5: integer;
-var 
-    a:char;
-Begin
-    for i:=5 to 10 do begin
-        write(a);
-        a=a+1;
-    end;
-End.
+1.Program P
+2.var 
+3.    5: integer;
+4.var 
+5.    a:char;
+6.Begin
+7.    for i:=5 to 10 do begin
+8.        write(a);
+9.        a=a+1;
+10.    end;
+11.End.
 ```
 
 Ayuda: Sintáctico 2, Semántico 3
