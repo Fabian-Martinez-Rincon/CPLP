@@ -121,7 +121,7 @@ El atributo l-valor se refiere a la capacidad de una variable para ser utilizada
 
 
 
-<table><tr><td>Definicion</td><td>Ejemplo</td></tr> <tr><td>
+<table><tr><td>Ejemplo</td><td>Definicion</td></tr> <tr><td>
 
 
 
@@ -410,14 +410,14 @@ Elija un lenguaje y escriba un ejemplo:
 ```
 </td><td>
 
-    | Identificador | Lvalor     | Rvalor | Alcance  | T. vida |
-    | ------------- | ---------- | ------ | -------- | ------- |
-    | aux           | estática   | 0-1    | 1-8 10-> | <1-10>  |
-    | v2            | automática | 0      | 2-10     | 1-10    |
-    | fun2          |            |        | 3-10     | 3-6     |
-    | v1            | automática | indef  | 4-6      | 3-6     |
-    | fun3          |            |        | 7-10     | 7-10    |
-    | aux           | automática | indef  | 8-10     | 7-10    |
+  | Identificador | Lvalor     | Rvalor | Alcance  | T. vida |
+  | ------------- | ---------- | ------ | -------- | ------- |
+  | aux           | estática   | 0-1    | 1-8 10-> | <1-10>  |
+  | v2            | automática | 0      | 2-10     | 1-10    |
+  | fun2          |            |        | 3-10     | 3-6     |
+  | v1            | automática | indef  | 4-6      | 3-6     |
+  | fun3          |            |        | 7-10     | 7-10    |
+  | aux           | automática | indef  | 8-10     | 7-10    |
 
 </td></table>
 
