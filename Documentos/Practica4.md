@@ -17,7 +17,7 @@
 - [Ejercicio 1 Tome una de las variables de la línea 3 del siguiente código](#ejercicio-1)
 - [Ejercicio 2 Indique cuales son las diferentes formas de inicializar una variable](#ejercicio-2)
 - [Ejercicio 3 Explique los siguientes conceptos asociados al atributo l-valor ](#ejercicio-3)
-- [Ejercicio 4](#ejercicio-4)
+- [Ejercicio 4 ¿A qué se denomina variable local y a qué se denomina variable global?](#ejercicio-4)
 - [Ejercicio 5](#ejercicio-5)
 - [Ejercicio 6](#ejercicio-6)
 - [Ejercicio 7](#ejercicio-7)
@@ -115,9 +115,19 @@ En los lenguajes Java y C, se pueden inicializar variables declarando y asignand
 
 El atributo l-valor se refiere a la capacidad de una variable para ser utilizada como una referencia a la ubicación de memoria donde se almacena su valor. Los diferentes tipos de variables pueden tener diferentes atributos l-valor según la forma en que se declaran y utilizan en el programa.
 
+
+
+
+
+<table><tr><td>Definicion</td><td>Ejemplo</td></tr> <tr><td>
+
 #### `a` Variable estática.
 
 Se declara con la palabra clave "static" y se almacena en una ubicación fija en la memoria durante toda la vida del programa. 
+
+</td><td>
+
+
 
 ```c
 void myFunction() {
@@ -126,11 +136,13 @@ void myFunction() {
   printf("Valor de x: %d\n", x);
 }
 ```
-
----
+</td></tr>
+<tr><td>
 
 #### `b` Variable automática o semiestática.
 Se declara dentro de una función o un bloque y se almacena en la pila durante la ejecución de la función o el bloque. 
+
+</td><td>
 
 ```ada
 procedure myProcedure is
@@ -139,23 +151,25 @@ begin
   null;
 end myProcedure;
 ```
-
----
+</td></tr>
+<tr><td>
 
 #### `c` Variable dinámica.
 
 Se crea y se destruye dinámicamente durante la ejecución del programa, y su ubicación en la memoria se determina en tiempo de ejecución. 
+</td><td>
 
 ```python
 my_list = [1, 2, 3] # variable dinámica
 my_list.append(4)
 print(my_list) # [1, 2, 3, 4]
 ```
-
----
+</td></tr>
+<tr><td>
 
 #### `d` Variable semidinámica.
 Se declara como una matriz en tiempo de compilación pero se inicializa y cambia de tamaño en tiempo de ejecución. 
+</td><td>
 
 ```c
 void myFunction() {
@@ -169,7 +183,7 @@ void myFunction() {
   }
 }
 ```
-
+</td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
