@@ -59,12 +59,12 @@
 ```
 </td><td>
 
-| Id    | L-VALOR       | R-VALOR   | ALCANCE | T.VIDA |
-| ---   | --- | ---     | --- | --- |
-| Practica4 | -    | -          | 1-16    |  1-16   |
-| a     | automatica    | 0         | 3-16    | 1-16   |
-| i     | automatica    | undefined | 3-16    | 1-16   |
-| p     | automatica    | ^i | 4-16 | 7-15   |
+| Identificador | L-VALOR       | R-VALOR   | ALCANCE | T.VIDA |
+| ------------- | ------------- | --------- | ------- | ------ |
+| Practica4     | -             | -         | 1-16    |  1-16  |
+| a             | automatica    | 0         | 3-16    | 1-16   |
+| i             | automatica    | undefined | 3-16    | 1-16   |
+| p             | automatica    | ^i        | 4-16    | 7-15   |
 
 </td>
 </table>
@@ -75,7 +75,9 @@
 
 ### Ejercicio 2
 
-a. Indique cuales son las diferentes formas de inicializar una variable en el momento de la declaración de la misma.
+#### `a)` Indique cuales son las diferentes formas de inicializar una variable en el momento de la declaración de la misma.
+
+Una variable puede inicializarse vacía o con un valor acorde al tipo de la variable. Internamente, si no le asigno un valor en memoria se guardará vacía hasta que la variable tome un valor
 
 b. Analice en los lenguajes: Java, C, Phyton y Ruby las diferentes formas de inicialización de variables que poseen. Realice un cuadro comparativo de esta característica.
 
