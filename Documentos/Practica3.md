@@ -361,7 +361,7 @@ let variable;
 variable = null;
 ```
 
-- Se considera que null es un valor asignado por el programador, ya que se utiliza para indicar que se ha asignado un valor ausente de forma intencional.
+Se considera que null es un valor asignado por el programador, ya que se utiliza para indicar que se ha asignado un valor ausente de forma intencional.
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -370,10 +370,52 @@ variable = null;
 
 Determine la semántica de la sentencia break en C, PHP, javascript y Ruby. Cite las características más importantes de esta sentencia para cada lenguaje
 
+#### `C`
+La sentencia break se utiliza para interrumpir la ejecución de un bucle for, while o do-while. Debe estar dentro del cuerpo del bucle, y si se utiliza dentro de un bucle anidado, solo se interrumpe el bucle más cercano. Se utiliza comúnmente con una condición if para salir del bucle cuando se cumple una cierta condición.
+
+#### `PHP`
+La sentencia break se utiliza principalmente para interrumpir la ejecución de un bucle foreach. Al igual que en C, debe estar dentro del cuerpo del bucle y se utiliza comúnmente con una condición if para salir del bucle cuando se cumple una cierta condición.
+
+#### `JavaScript`
+La sentencia break se utiliza para interrumpir la ejecución de un bucle for, while, do-while o switch. Al igual que en C y PHP, debe estar dentro del cuerpo del bucle y se utiliza comúnmente con una condición if para salir del bucle cuando se cumple una cierta condición.
+
+#### `Ruby`
+La sentencia break se utiliza para interrumpir la ejecución de un bucle for, while o until. También se puede utilizar para salir de un bloque de código. En Ruby, la sentencia break puede devolver un valor, lo que la hace más versátil que en otros lenguajes. Debe estar dentro del cuerpo del bucle y se utiliza comúnmente con una condición if para salir del bucle cuando se cumple una cierta condición.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 9
 
 Defina el concepto de ligadura y su importancia respecto de la semántica de un programa. ¿Qué diferencias hay entre ligadura estática y dinámica? Cite ejemplos (proponer casos sencillos)
+
+Existen dos tipos de ligadura: la ligadura estática y la ligadura dinámica. La ligadura estática se produce en tiempo de compilación, donde los nombres de las variables y funciones se asocian con su ubicación en memoria antes de la ejecución del programa. En cambio, la ligadura dinámica se produce en tiempo de ejecución, donde los nombres se asocian con su ubicación en memoria a medida que se van necesitando durante la ejecución del programa.
+
+Un ejemplo de ligadura estática sería en el lenguaje C, donde la declaración de una variable debe preceder a su uso en el programa. Por ejemplo:
+
+```javascript
+int main() {
+int x = 5;
+int y = x + 2;
+return 0;
+}
+```
+
+En este caso, la variable "x" se declara antes de su uso en la expresión "y = x + 2", lo que permite al compilador asignar su dirección de memoria correspondiente en tiempo de compilación.
+
+Un ejemplo de ligadura dinámica sería en el lenguaje Python, donde una función puede recibir un argumento de cualquier tipo y su tipo puede cambiar durante la ejecución del programa. Por ejemplo:
+
+```python
+def multiply(x, y):
+return x * y
+
+a = 5
+b = "hello"
+
+print(multiply(a, 2)) # output: 10
+print(multiply(b, 2)) # output: "hellohello"
+```
+
+
+En este caso, la función "multiply" puede recibir argumentos de cualquier tipo y su tipo puede cambiar durante la ejecución del programa, lo que permite una mayor flexibilidad en el código.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
