@@ -267,7 +267,7 @@ P = {
 Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
-<table><td>
+<table><tr><td>EBNF</td><td>BNF</td></tr><tr><td>
 
 ```ebnf
 G = (N, T, S, P)
@@ -293,7 +293,7 @@ P = {
 	<digito> ::= 0 | ... | 9
 }
 ```
-</td></table>
+</td></tr></table>
 
 
 
