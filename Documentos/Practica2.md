@@ -236,27 +236,20 @@ Defina en BNF (Gramática de contexto libre desarrollada por Backus- Naur) la gr
 
 ```ebnf
 G = (N, T, S, P)
-N = {<text>, <character>, <letter>, <digit>}
-T = {0-9,a-Z}
-S = <text>
-P = {
-  <text> ::= <character> <text> | <character>
-  <character> ::= <letter> | <digit>
-    <letter> ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
-    <digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+N = {
+  <palabra>, 
+  <caracter>, 
+  <letra>, 
+  <digito>
 }
-```
-
-O tambien
-
-```ebnf
-G = (N, T, S, P)
-N = {<text>, <letra>}
-T = {a,....,Z}
-S = <text>
+T = {0-9,a-Z}
+S = <palabra>
 P = {
-  <text> ::= <letra> <text> | <letra>
-  <letra> ::= a | ... | Z | " "
+  <palabra> ::= <caracter> | <caracter><palabra>
+
+  <caracter> ::= <letra> | <digito>
+  <letra> ::= a | ... | z | a | ... | Z
+  <digito> ::= 0 | ... | 9
 }
 ```
 
