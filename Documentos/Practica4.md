@@ -61,11 +61,10 @@
 
 | Id    | L-VALOR       | R-VALOR   | ALCANCE | T.VIDA |
 | ---   | --- | ---     | --- | --- |
+| Practica4 | -    | -          | 1-16    |  1-16   |
 | a     | automatica    | 0         | 3-16    | 1-16   |
-| i     | automatica    | 0         | 3-16    | 1-16   |
-| p     | automatica    | -         | 4-16    | 1-16   |
-| ^p    | automatica    | -         | 4-16    | 7-14   |
-
+| i     | automatica    | undefined | 3-16    | 1-16   |
+| p     | automatica    | ^i | 4-16 | 7-15   |
 
 </td>
 </table>
