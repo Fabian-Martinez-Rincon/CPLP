@@ -123,11 +123,7 @@ El atributo l-valor se refiere a la capacidad de una variable para ser utilizada
 
 <table><tr><td>Definicion</td><td>Ejemplo</td></tr> <tr><td>
 
-#### `a` Variable estática.
 
-Se declara con la palabra clave "static" y se almacena en una ubicación fija en la memoria durante toda la vida del programa. 
-
-</td><td>
 
 
 
@@ -138,13 +134,14 @@ void myFunction() {
   printf("Valor de x: %d\n", x);
 }
 ```
+</td><td>
+
+Variable estática.
+
+Se declara con la palabra clave "static" y se almacena en una ubicación fija en la memoria durante toda la vida del programa. 
+
 </td></tr>
 <tr><td>
-
-#### `b` Variable automática o semiestática.
-Se declara dentro de una función o un bloque y se almacena en la pila durante la ejecución de la función o el bloque. 
-
-</td><td>
 
 ```ada
 procedure myProcedure is
@@ -153,25 +150,33 @@ begin
   null;
 end myProcedure;
 ```
+
+</td><td>
+
+ Variable automática o semiestática.
+
+Se declara dentro de una función o un bloque y se almacena en la pila durante la ejecución de la función o el bloque. 
+
 </td></tr>
 <tr><td>
 
-#### `c` Variable dinámica.
 
-Se crea y se destruye dinámicamente durante la ejecución del programa, y su ubicación en la memoria se determina en tiempo de ejecución. 
-</td><td>
 
 ```python
 my_list = [1, 2, 3] # variable dinámica
 my_list.append(4)
 print(my_list) # [1, 2, 3, 4]
 ```
+
+</td><td>
+
+Variable dinámica.
+
+Se crea y se destruye dinámicamente durante la ejecución del programa, y su ubicación en la memoria se determina en tiempo de ejecución. 
 </td></tr>
 <tr><td>
 
-#### `d` Variable semidinámica.
-Se declara como una matriz en tiempo de compilación pero se inicializa y cambia de tamaño en tiempo de ejecución. 
-</td><td>
+
 
 ```c
 void myFunction() {
@@ -185,6 +190,11 @@ void myFunction() {
   }
 }
 ```
+</td><td>
+
+Variable semidinámica.
+
+Se declara como una matriz en tiempo de compilación pero se inicializa y cambia de tamaño en tiempo de ejecución. 
 </td></tr></table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
