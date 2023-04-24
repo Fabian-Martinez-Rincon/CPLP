@@ -224,6 +224,8 @@ La principal diferencia entre una variable estática y una constante es que una 
 ### Ejercicio 6
 Sea el siguiente archivo con funciones de C:
 
+Analice si llegaría a tener el mismo comportamiento en cuanto a alocación de memoria, sacar la declaración (1) y colocar dentro de func1() la declaración static int x =1;
+
 <table><td>
 
 ```ada
@@ -249,13 +251,9 @@ Archivo.c
 
 </td><td>
 
-Analice si llegaría a tener el mismo comportamiento en cuanto a alocación de memoria, sacar la declaración (1) y colocar dentro de func1() la declaración static int x =1;
+Despues lo hago
 
 </td></table>
-
-
-
-
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -271,37 +269,61 @@ Sea el siguiente segmento de código escrito en Java, indique para los identific
 
 ```java
 Clase Persona {
-public long id
-public string nombreApellido
-public Domicilio domicilio
-private string dni;
-public string fechaNac;
-public static int cantTotalPersonas;
-//Se tienen los getter y setter de cada una
-de las variables
-//Este método calcula la edad de la persona
-a partir de la fecha de nacimiento
-```
-
-</td><td>
-
-```java
-public int getEdad(){
+  public long id //Global
+  public string nombreApellido //Global
+  public Domicilio domicilio //Global
+  private string dni; //Local
+  public string fechaNac; //Global
+  public static int cantTotalPersonas; //Global
+  //Se tienen los getter y setter de cada una
+  // de las variables
+  //Este método calcula la edad de la persona
+  //a partir de la fecha de nacimiento
+  public int getEdad(){
     public int edad=0;
     public string fN = this.getFechaNac();
         ...
         ...
     return edad;
-}
+  }
 }
 Clase Domicilio {
-    public long id;
-    public static int nro
-    public string calle
-    public Localidad loc;
-    //Se tienen los getter y setter de cada una de las variables
+  public long id;
+  public static int nro
+  public string calle
+  public Localidad loc;
+  //Se tienen los getter 
+  //y setter de cada una de las variables
 }
 ```
+
+</td><td>
+
+
+
+Los identificadores se pueden clasificar de la siguiente manera:
+
+**Globales** (variables estáticas de clase, aquellos que se declaran a nivel de la clase y pueden ser accedidos sin necesidad de crear una instancia de la clase):
+
+- cantTotalPersonas (estático) en la clase Persona
+- nro (estático) en la clase Domicilio
+
+**Variables de instancia** (no estáticas, son variables de instancia que se declaran dentro de la clase y solo pueden ser accedidas a través de una instancia de la clase):
+
+- id en las clases Persona y Domicilio
+- nombreApellido en la clase Persona
+- domicilio en la clase Persona
+- dni en la clase Persona
+- fechaNac en la clase Persona
+- calle en la clase Domicilio
+- loc en la clase Domicilio
+
+**Locales** (son aquellos que se declaran dentro de un método y solo pueden ser accedidos dentro del mismo):
+
+- edad en el método getEdad() de la clase Persona
+- fN en el método getEdad() de la clase Persona
+
+La diferencia entre variables globales, variables de instancia y variables locales en Java se basa en su alcance y su duración. Las variables globales son visibles en todo el programa y tienen una duración de toda la vida del mismo, mientras que las variables de instancia son específicas de cada objeto y duran tanto como el objeto exista. Por último, las variables locales solo son visibles en el método o bloque de código en el que se declaran y tienen una duración limitada a la ejecución de ese método o bloque.
 
 </td></tr>
 
