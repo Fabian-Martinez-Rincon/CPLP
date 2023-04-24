@@ -112,7 +112,7 @@ Aclaración: Los valores de la ayuda pueden ser mayores.
 
 #### a) Pascal
 
-```pas
+```pascal
 1.Program P
 2.var 
 3.    5: integer;
@@ -141,6 +141,8 @@ Semanticos
 </td></tr>
 
 </table>
+
+---
 
 <table><td>
 
@@ -181,6 +183,10 @@ Logico
 </td>
 </table>
 
+---
+
+<table><td>
+
 #### c) C
 
 ```c
@@ -205,7 +211,23 @@ Logico
 ```
 
 Ayuda: Sintácticos 2, Semánticos 6
+</td><td>
 
+Sintacticos
+- `8.` Hay un comentario de cierre pero no de apertura
+- `5.` No esta definido el tipo de variable de `encabezado`
+
+Semanticos
+- `8.` La funcion **final** no esta definida
+- `15.` Suma no esta inicializada, ya que le estas haciendi +=
+- `13.` numero_cuadrado no esta inicializado
+- `11.` La funcion cuadrado no tiene un valor asignado
+- `11.` Faltan los dos ; de la llamada a la funcion cuadrado
+- `11.` El parametro numero no tiene tipo
+</td></table>
+
+
+---
 
 #### d)Python
 
@@ -234,6 +256,16 @@ Ayuda: Sintácticos 2, Semánticos 6
 
 Ayuda: Sintácticos 2, Semánticos 3
 
+**Errores de Sintaxis** Se detectan en compilación
+- `1.` dentro del `while` tenes un error sintáctico, ya que estas asignando un valor, no comparandolo
+- `8.` El `mod` como operación no existe en python, en su lugar se usa el %
+- `11.`, El operador de potencia es \**
+
+**Errores Semanticos**
+- `8.` estas comparando un string con un entero
+- `11 y 12` estas comparando `N` que es un string con un nro
+
+
 #### e) Ruby
 ```ruby
 1.def ej1
@@ -256,6 +288,13 @@ Ayuda: Sintácticos 2, Semánticos 3
 
 Ayuda: Semánticos +4
 
+- `1.` Puts debe ser puts (minúsculas).
+- `5.` Nadie sabe lo que es juan, si fuera variable le faltan los + y seguro no tendria la primera en mayuscula.
+- `7.` Edad no está definido antes de ser utilizado.
+- `8.` Meses es un número pero se usa como una cadena en 'meses' 30.
+- `9.` Dias es una cadena pero se usa como un número en 'dias 24'.
+- `10.` La concatenación de cadenas en la línea que comienza con 'Eso es: meses + ' es incorrecta.
+- `15.` La variable name no está definida antes de ser utilizada.
 
 
 
