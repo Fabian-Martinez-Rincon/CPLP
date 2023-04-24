@@ -144,7 +144,7 @@ Semanticos
 
 ---
 
-<table><td>
+
 
 #### b) Java:
 
@@ -161,7 +161,7 @@ Semanticos
 ```
 
 Ayuda: Sintácticos 4, Semánticos 3, Lógico 1
-</td><td>
+
 
 Sintacticos
 
@@ -180,8 +180,6 @@ Semanticos
 Logico
 - `3.` Deberia inicializar con cadena vacia en lugar de null, ya que no se puede concatenar un string con null en java
 - `4.` Se queda en un bucle infinito, ya que nunca encuentra el tope por decrementar
-</td>
-</table>
 
 ---
 
