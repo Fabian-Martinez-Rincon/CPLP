@@ -14,9 +14,9 @@
 
 **`Objetivo`**: Conocer el manejo de identificadores en memoria y como lo definen e implementan los diferentes lenguajes
 
-- [Ejercicio 1](#ejercicio-1)
-- [Ejercicio 2](#ejercicio-2)
-- [Ejercicio 3](#ejercicio-3)
+- [Ejercicio 1 Tome una de las variables de la línea 3 del siguiente código](#ejercicio-1)
+- [Ejercicio 2 Indique cuales son las diferentes formas de inicializar una variable](#ejercicio-2)
+- [Ejercicio 3 Explique los siguientes conceptos asociados al atributo l-valor ](#ejercicio-3)
 - [Ejercicio 4](#ejercicio-4)
 - [Ejercicio 5](#ejercicio-5)
 - [Ejercicio 6](#ejercicio-6)
@@ -79,20 +79,89 @@
 
 Una variable puede inicializarse vacía o con un valor acorde al tipo de la variable. Internamente, si no le asigno un valor en memoria se guardará vacía hasta que la variable tome un valor
 
-b. Analice en los lenguajes: Java, C, Phyton y Ruby las diferentes formas de inicialización de variables que poseen. Realice un cuadro comparativo de esta característica.
+#### `b)` Analice en los lenguajes: Java, C, Phyton y Ruby las diferentes formas de inicialización de variables que poseen. Realice un cuadro comparativo de esta característica.
+
+| Lenguaje | Sintaxis de inicialización de variables |
+| -------- | --------------------------------------- |
+| Java     | Tipo variable = valor;                  |
+|          | Tipo variable;                          |
+|          | variable = valor;                       |
+|          | Tipo[] variable = new Tipo[tamaño];     |
+| C        | Tipo variable = valor;                  |
+|          | Tipo variable;                          |
+|          | variable = valor;                       |
+|          | Tipo variable[tamaño];                  |
+| Python   | variable = valor                        |
+|          | variable = None                         |
+| Ruby     | variable = valor                        |
+|          | variable = nil                          |
+
+En los lenguajes Java y C, se pueden inicializar variables declarando y asignando un valor en la misma línea o declarando primero la variable y luego asignando un valor. Además, en Java es posible inicializar arreglos mediante la creación de una nueva instancia y especificando su tamaño. En Python y Ruby, las variables se pueden inicializar asignándoles un valor o dejándolas en estado nulo. En general, los cuatro lenguajes permiten la inicialización de variables de manera similar, aunque con algunas diferencias sintácticas. Python y Ruby tienen una sintaxis más simple, mientras que Java y C ofrecen más opciones y control en la inicialización de arreglos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 3
-Explique los siguientes conceptos asociados al atributo l-valor de una:
-- `a` Variable estática.
-- `b` Variable automática o semiestática.
-- `c` Variable dinámica.
-- `d` Variable semidinámica.
+- Explique los siguientes conceptos asociados al atributo l-valor de una:
+- De al menos un ejemplo de cada uno.
+- Investigue sobre que tipos de variables respecto de su l-valor hay en los lenguajes C y Ada.
 
-De al menos un ejemplo de cada uno.
+El atributo l-valor se refiere a la capacidad de una variable para ser utilizada como una referencia a la ubicación de memoria donde se almacena su valor. Los diferentes tipos de variables pueden tener diferentes atributos l-valor según la forma en que se declaran y utilizan en el programa.
 
-Investigue sobre que tipos de variables respecto de su l-valor hay en los lenguajes C y Ada.
+#### `a` Variable estática.
+
+Se declara con la palabra clave "static" y se almacena en una ubicación fija en la memoria durante toda la vida del programa. 
+
+```c
+void myFunction() {
+  static int x = 0; // variable estática
+  x++; // incrementar valor de x
+  printf("Valor de x: %d\n", x);
+}
+```
+
+---
+
+#### `b` Variable automática o semiestática.
+Se declara dentro de una función o un bloque y se almacena en la pila durante la ejecución de la función o el bloque. 
+
+```ada
+procedure myProcedure is
+  a : Integer := 10; -- variable automática
+begin
+  null;
+end myProcedure;
+```
+
+---
+
+#### `c` Variable dinámica.
+
+Se crea y se destruye dinámicamente durante la ejecución del programa, y su ubicación en la memoria se determina en tiempo de ejecución. 
+
+```python
+my_list = [1, 2, 3] # variable dinámica
+my_list.append(4)
+print(my_list) # [1, 2, 3, 4]
+```
+
+---
+
+#### `d` Variable semidinámica.
+Se declara como una matriz en tiempo de compilación pero se inicializa y cambia de tamaño en tiempo de ejecución. 
+
+```c
+void myFunction() {
+  int n;
+  printf("Ingrese tamaño de la matriz: ");
+  scanf("%d", &n);
+  int arr[n]; // variable semidinámica
+  for (int i = 0; i < n; i++) {
+    arr[i] = i;
+    printf("%d ", arr[i]);
+  }
+}
+```
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
