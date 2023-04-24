@@ -417,8 +417,16 @@ La siguiente gramática intenta describir sintácticamente la sentencia for de A
 
 ```ebnf
 N= {
-    <sentencia_for>,  <bloque>, <variable>, <letra>, <cadena>, <digito>, <otro>, <operacion>,
-    <llamada_a_funcion>, <numero>,  <sentencia> 
+    <sentencia_for>, 
+    <bloque>, <variable>, 
+    <letra>, 
+    <cadena>, 
+    <digito>, 
+    <otro>, 
+    <operacion>,
+    <llamada_a_funcion>, 
+    <numero>, 
+     <sentencia> 
 }
 
 P= { 
@@ -432,6 +440,11 @@ P= {
     <sentencia_for> |  <sentencia_while> | <sentencia_switch> 
 }
 ```
+
+- <otro> <operacion> <llamada_a_funcion><numero> <sentencia_asignacion><llamada_a_funcion> no está definido.
+- Mezcla recursión de EBNF y de BNF.
+- <sentencia_if>, <sentencia_while>, <sentencia_switch> no está declarado.
+- <bloque> es ambiguo.
 
 - Para preguntar en clase pero yo hice los siguiente y mas o menos funciona. Lo unico que no mire bien bien es la sentencia `bloque`<br><br>
   ```ebnf
