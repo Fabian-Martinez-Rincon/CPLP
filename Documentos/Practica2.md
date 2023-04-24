@@ -434,25 +434,16 @@ S = <real>
 P = {
     <identificador> ::= <letra> {<caracter>}*
     <caracter> ::= (<letra> | <digito>)
-    <digito> ::= (a | ... | z | A | ... | Z)
-    <letra> ::= (0 | ... | 9)
+    <letra> ::= (a | ... | z | A | ... | Z)
+    <digito> ::= (0 | ... | 9)
 }
 ```
 </td><td>
 
-Arbol de definición
-```
-             identificador
-                    |
-                +---+----+
-                |        |
-               letra  letra/digito/_
-                |
-             +--+---+
-             |      |
-          letra  letra/digito/_
-```
-</td></table>
+![6](https://user-images.githubusercontent.com/55964635/233878007-0360094b-d320-44d3-9d92-d43fdda52bb1.jpg)
+</td>
+</table>
+
 
 
 
