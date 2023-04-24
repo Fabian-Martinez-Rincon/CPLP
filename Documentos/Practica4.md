@@ -64,7 +64,7 @@
 | Practica4     | -             | -         | 1-16    |  1-16  |
 | a             | automatica    | 0         | 3-16    | 1-16   |
 | i             | automatica    | undefined | 3-16    | 1-16   |
-| p             | automatica    | ^i        | 4-16    | 7-15   |
+| p             | dinamica    | ^i        | 4-16    | 7-15   |
 
 </td>
 </table>
@@ -188,46 +188,75 @@ void myFunction() {
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 4
-- `a)` ¿A qué se denomina variable local y a qué se denomina variable global?
-- `b)` ¿Una variable local puede ser estática respecto de su l-valor? En caso afirmativo dé un ejemplo
-- `c)` Una variable global ¿siempre es estática? Justifique la respuesta.
-- `d)` Indique qué diferencia hay entre una variable estática respecto de su l-valor y una constante
+#### `a)` ¿A qué se denomina variable local y a qué se denomina variable global?
+
+- `local` es aquella que tiene alcance dentro del contexto donde fue declarada
+- `global` es una variable que se asigna en el programa principal y su alcance es de todo el programa.
+
+---
+
+#### `b)` ¿Una variable local puede ser estática respecto de su l-valor? En caso afirmativo dé un ejemplo
+
+- No, una variable local no puede ser estática respecto a su l-valor, ya que el término "estático" se refiere a una propiedad, no al l-valor. 
+- `static` significa que su valor se mantiene entre llamadas a una función, pero esto no afecta su l-valor.
+
+#### `c)` Una variable global ¿siempre es estática? Justifique la respuesta.
+
+No, una variable global no siempre es estática. La propiedad de ser estática o no depende de cómo se declare la variable
+
+#### `d)` Indique qué diferencia hay entre una variable estática respecto de su l-valor y una constante
+
+La principal diferencia entre una variable estática y una constante es que una variable estática se refiere a una ubicación de memoria que retiene su valor entre llamadas a una función o durante la ejecución del programa, mientras que una constante es un valor que no cambia durante la ejecución del programa. Una variable estática se inicializa solo una vez y se mantiene su valor durante toda la vida útil del programa. Su l-valor puede cambiar, pero su valor se mantiene constante. Por otro lado, una constante es una variable cuyo valor no cambia durante la ejecución del programa, y su l-valor tampoco.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 5
-- `a)` En Ada hay dos tipos de constantes, las numéricas y las comunes. Indique a que se debe dicha clasificación.
-- `b)` En base a lo respondido en el punto a), determine el momento de ligadura de las constantes del siguiente código:
-- `H` constant Float:= 3,5;
-- `I` constant:= 2;
-- `K` constant float:= H*I;
+#### `a)` En Ada hay dos tipos de constantes, las numéricas y las comunes. Indique a que se debe dicha clasificación.
+- Las constantes numéricas son aquellas que representan valores numéricos, como enteros, reales, complejos, etc. Estas constantes se definen utilizando una notación numérica estándar y la ligadura se produce durante la compilación; esto significa que los valores de las constantes numéricas se conocen antes de que el programa se ejecute y se incorporan directamente en el código objeto generado por el compilador.
+
+#### `b)` En base a lo respondido en el punto a), determine el momento de ligadura de las constantes del siguiente código:
+- `H` constant Float:= 3,5; es una constante numérica con el valor 3.5 del tipo float. La ligadura se realiza en la compilación.
+- `I` constant:= 2; es una constante numérica con el valor 2, sin tipo especificado así que se asume que es integer. La ligadura se realiza en la compilación.
+- `K` constant float:= H*I; se define como una expresión que utiliza las constantes H e I. Dado que tanto H como I son constantes numéricas, su valor se evalúa durante la compilación. Por lo tanto, la constante K también se evalúa durante la compilación, en el primer momento de ligadura.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 6
 Sea el siguiente archivo con funciones de C:
 
+<table><td>
+
 ```ada
 Archivo.c
 { 
-    int x=1; (1)
-    int func1();{
+  int x=1; (1)
+  int func1();{
     int i;
     for (i:=0; i < 4; i++) 
-        x=x+1;
-    }
-    int func2();{
+      x=x+1;
+  }
+  int func2();{
     int i, j;
     /*sentencias que contienen declaraciones y
     sentencias que no contienen declaraciones*/
     ......
     for (i:=0; i < 3; i++)
-        j=func1 + 1;
-    }
+      j=func1 + 1;
+  }
 }
 ```
 
+
+</td><td>
+
 Analice si llegaría a tener el mismo comportamiento en cuanto a alocación de memoria, sacar la declaración (1) y colocar dentro de func1() la declaración static int x =1;
+
+</td></table>
+
+
+
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
