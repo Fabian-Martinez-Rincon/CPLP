@@ -108,7 +108,7 @@ Aclaración: Los valores de la ayuda pueden ser mayores.
 
 ---
 
-<table><td>
+<table><tr><td>
 
 #### a) Pascal
 
@@ -138,30 +138,39 @@ Semanticos
 - **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
 - **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
 
-</td></table>
-
-
-
-
----
+</td></tr>
+<tr><td>
 
 #### b) Java:
 
 ```java
-public String tabla(int numero, arrayList<Boolean> listado)
-{
-    String result = null;
-    for(i = 1; i < 11; i--) {
-        result += numero + "x" + i + "=" + (i*numero) + "\n";
-        listado.get(listado.size()-1)=(BOOLEAN) numero>i;
-    }
-    return true;
-}
+1.public String tabla(int numero, arrayList<Boolean> listado)
+2.{
+3.    String result = null;
+4.    for(i = 1; i < 11; i--) {
+5.        result += numero + "x" + i + "=" + (i*numero) + "\n";
+6.        listado.get(listado.size()-1)=(BOOLEAN) numero>i;
+7.    }
+8.    return true;
+9.}
 ```
 
 Ayuda: Sintácticos 4, Semánticos 3, Lógico 1
 
----
+Ayuda: Sintáctico 2, Semántico 3
+</td><td>
+
+Sintacticos
+- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
+- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+
+Semanticos
+- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
+- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
+- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+
+</td></tr>
+<tr><td>
 
 #### c) C
 
@@ -187,8 +196,19 @@ int numero;
 ```
 
 Ayuda: Sintácticos 2, Semánticos 6
+</td><td>
 
----
+Sintacticos
+- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
+- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+
+Semanticos
+- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
+- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
+- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+
+</td></tr>
+<tr><td>
 
 #### d)Python
 
@@ -216,8 +236,19 @@ r = input("Consultar otro número? SI (1) o NO (0)--->> ")
 ```
 
 Ayuda: Sintácticos 2, Semánticos 3
+</td><td>
 
----
+Sintacticos
+- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
+- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+
+Semanticos
+- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
+- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
+- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+
+</td></tr>
+<tr><td>
 
 #### e) Ruby
 ```ruby
@@ -240,6 +271,20 @@ end
 ```
 
 Ayuda: Semánticos +4
+</td><td>
+
+Sintacticos
+- **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
+- **`En la línea 7`**, se usa el operador "=" en lugar del operador ":=" para asignar un valor a la variable.
+
+Semanticos
+- **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
+- **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
+- **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+
+</td></tr></table>
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
