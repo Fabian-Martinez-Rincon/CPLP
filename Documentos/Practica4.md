@@ -34,9 +34,12 @@
 
 ## Ejercicio 1
 
-a) Tome una de las variables de la línea 3 del siguiente código e indique y defina cuales son sus atributos:
+- `a)` Tome una de las variables de la línea 3 del siguiente código e indique y defina cuales son sus atributos:
+- `b)` Compare los atributos de la variable del punto `a)` con los atributos de la variable de la línea 4. Que dato contiene esta variable?
 
-```pas
+<table> <td>
+
+```pascal
 1.Procedure Practica4();
 2.var
 3.  a,i:integer
@@ -46,16 +49,28 @@ a) Tome una de las variables de la línea 3 del siguiente código e indique y de
 7.  new(p);
 8.  p:= ^i
 9.  for i:=1 to 9 do
-10. a:=a+i;
-11.end;
-12....
-13.p:= ^a;
-14....
-15.dispose(p);
+10.     a:=a+i;
+11. end; //Este end esta mal
+12. ... //Hagamos como que no existe
+13. p:= ^a;
+14. ...
+15. dispose(p);
 16.end;
 ```
+</td><td>
 
-b) Compare los atributos de la variable del punto a) con los atributos de la variable de la línea 4. Que dato contiene esta variable?,
+| Id    | L-VALOR       | R-VALOR   | ALCANCE | T.VIDA |
+| ---   | --- | ---     | --- | --- |
+| a     | automatica    | 0         | 3-16    | 1-16   |
+| i     | automatica    | 0         | 3-16    | 1-16   |
+| p     | automatica    | -         | 4-16    | 1-16   |
+| ^p    | automatica    | -         | 4-16    | 7-14   |
+
+
+</td>
+</table>
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
