@@ -108,6 +108,8 @@ Aclaración: Los valores de la ayuda pueden ser mayores.
 
 ---
 
+<table><td>
+
 #### a) Pascal
 
 ```pas
@@ -125,6 +127,7 @@ Aclaración: Los valores de la ayuda pueden ser mayores.
 ```
 
 Ayuda: Sintáctico 2, Semántico 3
+</td><td>
 
 Sintacticos
 - **`En la línea 3`**, se está declarando una variable con un nombre inválido (un número no puede ser un identificador válido en Pascal).
@@ -134,6 +137,11 @@ Semanticos
 - **`En la línea 4`**, hay una declaración de variable innecesaria y redundante.
 - **`En la línea 6`**, se usa una variable que no ha sido declarada previamente.
 - **`En la línea 8`**, se usa el operador "+" para concatenar caracteres en lugar del operador "succ()" para obtener el siguiente carácter en la tabla ASCII.
+
+</td></table>
+
+
+
 
 ---
 
