@@ -452,36 +452,50 @@ P = {
 
 ### **Ejercicio 10**
 
-- `a)` Defina con EBNF la gramática para una expresión numérica, dónde intervienen variables y números. Considerar los operadores +, -, * y / sin orden de prioridad. No considerar el uso de paréntesis. <br><br>
-    ```ebnf
-    G = ( N, T, S, P)
-    N = {<operacion>, <termino>, <elemento>, <numero> , <letra>}
-    T = {0, 9, +, -, *, /}
-    S = <operacion>
-    P = {
-        <operacion> ::= <termino> {(+|-)<termino>}*
-        <termino> ::= <elemento>{(*|/)<elemento>}*
-        <elemento> ::= (<identificador> | <numero>)
-        
-        <numero> ::= {<digito>}+
-        <letra> ::= [a-z][A-Z]
-    }
-    ```
-- `b)` A la gramática definida en el ejercicio anterior agregarle prioridad de operadores. <br><br>
-   ```ebnf
-    G = ( N, T, S, P)
-    N = {<operacion>, <termino>, <elemento>, <numero> , <letra>}
-    T = {0, 9, +, -, *, /}
-    S = <operacion>
-    P = {
-        <operacion> ::= <termino> {(+|-)<termino>}*
-        <termino> ::= <elemento>{(*|/)<elemento>}*
-        <elemento> ::= (<identificador> | <numero>)
-        
-        <numero> ::= {<digito>}+
-        <letra> ::= [a-z][A-Z]
-    }
-    ```
+<table><tr><td>
+
+`a)` Defina con EBNF la gramática para una expresión numérica, dónde intervienen variables y números. Considerar los operadores +, -, * y / sin orden de prioridad. No considerar el uso de paréntesis.
+</td><td>
+
+`b)` A la gramática definida en el ejercicio anterior agregarle prioridad de operadores.
+</td></tr>
+
+<tr><td>
+
+
+```ebnf
+  G = ( N, T, S, P)
+  N = {<operacion>, <termino>, <elemento>, <numero> , <letra>}
+  T = {0, 9, +, -, *, /}
+  S = <operacion>
+  P = {
+      <operacion> ::= <termino> {(+|-)<termino>}*
+      <termino> ::= <elemento>{(*|/)<elemento>}*
+      <elemento> ::= (<identificador> | <numero>)
+      
+      <numero> ::= {<digito>}+
+      <letra> ::= [a-z][A-Z]
+  }
+  ```
+</td><td>
+
+```ebnf
+  G = ( N, T, S, P)
+  N = {<operacion>, <termino>, <elemento>, <numero> , <letra>}
+  T = {0, 9, +, -, *, /}
+  S = <operacion>
+  P = {
+      <operacion> ::= <termino> {(+|-)<termino>}*
+      <termino> ::= <elemento>{(*|/)<elemento>}*
+      <elemento> ::= (<identificador> | <numero>)
+      
+      <numero> ::= {<digito>}+
+      <letra> ::= [a-z][A-Z]
+  }
+  ```
+</td></tr></table>
+
+
 - `c)` Describa con sus palabras los pasos y decisiones que tomó para agregarle prioridad de operadores al ejercicio anterior. <br>
     Basicamente lo primero que hago es determinar las multiplicaciones y divisiones del programa y dejo las sumas para el final.
 
