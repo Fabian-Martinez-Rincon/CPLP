@@ -303,25 +303,36 @@ Ayuda: Semánticos +4
 ## Ejercicio 6
 Dado el siguiente código escrito en pascal. Transcriba la misma funcionalidad de acuerdo al lenguaje que haya cursado en años anteriores. Defina brevemente la sintaxis (sin hacer la gramática) y semántica para la utilización de arreglos y estructuras de control del ejemplo.
 
-```pas
-Procedure ordenar_arreglo(var arreglo: arreglo_de_caracteres;cont:integer);
+<table><td>
+
+```pascal
+Procedure ordenar_arreglo(
+  var arreglo: arreglo_de_caracteres;
+  cont:integer
+);
 var
-    i:integer; ordenado:boolean;
-    aux:char;
+  i:integer; ordenado:boolean;
+  aux:char;
 begin
-    repeat
-        ordenado:=true;
-        for i:=1 to cont-1 do
-            if ord(arreglo[i])>ord(arreglo[i+1]) then begin
-                aux:=arreglo[i];
-                arreglo[i]:=arreglo[i+1];
-                arreglo[i+1]:=aux; ordenado:=false
-            end;
-    until ordenado;
+  repeat
+    ordenado:=true;
+    for i:=1 to cont-1 do
+      if ord(arreglo[i])>ord(arreglo[i+1]) then begin
+        aux:=arreglo[i];
+        arreglo[i]:=arreglo[i+1];
+        arreglo[i+1]:=aux; ordenado:=false
+      end;
+  until ordenado;
 end;
 ```
+</td><td>
 
-
+```python
+def ordenar_arreglo(array):
+  print (sorted(array))
+ordenar_arreglo([3,2,1])
+```
+</td></table>
 
 Observación: Aquí sólo se debe definir la instrucción y qué es lo que hace cada una; detallando alguna particularidad del lenguaje respecto de ella. Por ejemplo el for de java necesita definir una variable entera, una condición y un incremento para dicha variable.
 
@@ -331,11 +342,27 @@ Observación: Aquí sólo se debe definir la instrucción y qué es lo que hace 
 
 Explique cuál es la semántica para las variables predefinidas en lenguaje Ruby self y nil. ¿Qué valor toman; cómo son usadas por el lenguaje?
 
+- `self` Es una variable predefinida que hace referencia al objeto actual. En otras palabras, self se refiere al objeto que está siendo ejecutado en ese momento. Se usa principalmente para acceder a los métodos y propiedades de ese objeto.
+- `nil` Es un valor especial que representa la ausencia de un valor o una referencia nula. En otras palabras, nil se utiliza para indicar que una variable no tiene un valor asignado. Se puede pensar en nil como una especie de "nada" en Ruby. También se utiliza como un valor de retorno por defecto para los métodos que no devuelven nada.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ## Ejercicio 7
 
 Determine la semántica de null y undefined para valores en javascript.¿Qué diferencia hay entre ellos?
+
+En JavaScript, null y undefined son dos valores que se utilizan para representar la ausencia de un valor o un valor indefinido. A pesar de que ambos valores se usan para denotar una ausencia de valor, tienen diferencias importantes en cuanto a su semántica y uso:
+- `null` Es un valor primitivo que se utiliza para indicar la ausencia de cualquier objeto o valor. Se puede asignar a una variable como un valor explícito. 
+- `let variable = null;`
+- También se puede utilizar para inicializar una variable que se utilizará más adelante en el código: 
+
+```javascript
+let variable; 
+variable = null;
+```
+
+- Se considera que null es un valor asignado por el programador, ya que se utiliza para indicar que se ha asignado un valor ausente de forma intencional.
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
