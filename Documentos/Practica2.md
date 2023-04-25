@@ -206,23 +206,16 @@ Para corregir la ambigüedad, se puede modificar la gramática de varias formas 
 
 ```ebnf
 G = (N, T, S, P)
-N = {<numero_entero>, <digito>, <resto_numero>}
-T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+N = {<numero_entero>, <digito>}
+T = {0...9}
 S = <numero_entero>
 P = {
-    <numero_entero> ::= <digito> <resto_numero>
-    <resto_numero> ::= <digito> <resto_numero> | " "
-    <digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+    <numero_entero> ::= <digito> <numero_entero>
+    <digito> ::= 0 | ... | 9
 }
 ```
 
-[Compilado](https://bnfplayground.pauliankline.com/?bnf=%3Cnumero_entero%3E%20%3A%3A%3D%20%3Cdigito%3E%20%3Cresto_numero%3E%0A%3Cresto_numero%3E%20%3A%3A%3D%20%3Cdigito%3E%20%3Cresto_numero%3E%20%7C%20%22%20%22%0A%3Cdigito%3E%20%3A%3A%3D%20%220%22%20%7C%20%221%22%20%7C%20%222%22%20%7C%20%223%22%20%7C%20%224%22%20%7C%20%225%22%20%7C%20%226%22%20%7C%20%227%22%20%7C%20%228%22%20%7C%20%229%22&name=Resto)
 
-```ebnf
-<numero_entero> ::= <digito> <resto_numero>
-<resto_numero> ::= <digito> <resto_numero> | " "
-<digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
-```
 
 La principal diferencia es que se ha introducido un nuevo símbolo no terminal \<resto_numero>, que se encargará de generar los dígitos restantes después del primer dígito. Además, se ha modificado la producción de \<numero_entero> para que sea la concatenación de un \<digito> y un \<resto_numero>, y se ha añadido una nueva producción para \<resto_numero> que indica que puede ser la concatenación de un \<digito> y otro \<resto_numero>, o bien ser la cadena vacía ε.
 
@@ -240,7 +233,7 @@ N = {
   <palabra>,
   <caracter>
 }
-T = {0-9, a-Z}
+T = {0...9, a...z, A...Z}
 S = <palabra>
 P = {
   <palabra> ::= <letra> | <letra><palabra>
@@ -255,12 +248,12 @@ P = {
 Defina en EBNF la gramática para la definición de números reales. Inténtelo
 desarrollar para BNF y explique las diferencias con la utilización de la gramática EBNF.
 
-<table><tr><td>EBNF</td><td>BNF</td></tr><tr><td>
+<table><tr><td>EBNF 854</td><td>BNF 21.5</td></tr><tr><td>
 
 ```ebnf
 G = (N, T, S, P)
 N = {<real>, <numero>, <digito>}
-T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ., +, -}
+T = {0...9, ., +, -}
 S = <real>
 P = {
   <real> ::= ["-"] <numero> ["." <numero>]
@@ -273,14 +266,27 @@ P = {
 ```ebnf
 G = (N, T, S, P)
 N = {<real>, <numero>, <digito>}
-T = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ., -}
+T = {0...9, ., -}
 S = <real>
 P = {
-	<real> ::= <numero> "." <numero> | - <numero> "." <numero>
+	<real> ::=
+    <numero>                |
+    <numero> "." <numero>   | 
+    - <numero>              |
+    - <numero> "." <numero> 
 	<numero> ::=  <digito> | <digito><numero>
 	<digito> ::= 0 | ... | 9
 }
 ```
+</td></tr><tr>
+<td>
+
+![image](https://user-images.githubusercontent.com/55964635/234172176-1244c2b6-3fab-41a1-aee2-425285c838ea.png)
+</td>
+
+<td>
+
+![image](https://user-images.githubusercontent.com/55964635/234171988-5af1f557-927e-42fd-8f98-e99fe539d718.png)
 </td></tr></table>
 
 
@@ -295,7 +301,7 @@ de:
 | Conceptos | Programación |
 | --- | --- |
 | ![Conceptos](https://user-images.githubusercontent.com/55964635/233899650-b270136e-87ae-499c-9729-8ae1b38ed11e.jpg) | ![Programacion](https://user-images.githubusercontent.com/55964635/233901701-d7b44a37-fda8-4ce9-8810-bed09383c114.jpg) |
-| 1255869 | 854,26 |
+| 1255869 | 854,26 Esta corregido arriba (en el 7) |
 | ![image](https://user-images.githubusercontent.com/55964635/233906831-18fb1f5d-0dec-4e71-899b-98c5f1067728.png) | ![image](https://user-images.githubusercontent.com/55964635/233906881-9d617c98-d469-4e03-8b33-b1fdb24f0579.png) |
 
 
@@ -310,8 +316,8 @@ Defina utilizando diagramas sintácticos la gramática para la definición de un
 
 ```ebnf
 G = ( N, T, S, P)
-N = {<real>, <letra> }
-T = {0-9, A-Z, a-z}
+N = {<real>, <letra>}
+T = {0..9, A..Z, a..z}
 S = <real>
 P = {
     <identificador> ::= <letra> {<caracter>}*
@@ -386,7 +392,7 @@ N = {
   <digito>,
   <letra>
 }
-T = {0-9, a-Z, "+", "-", "*", "/"}
+T = {0..9, a,z, A..Z, "+", "-", "*", "/"}
 S = <operacion>
 P = {
   <expresion> ::= <operacion> {<sumaResta>}*
