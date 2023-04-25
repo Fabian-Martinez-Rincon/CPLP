@@ -62,9 +62,10 @@
 | Identificador | L-VALOR       | R-VALOR   | ALCANCE | T.VIDA |
 | ------------- | ------------- | --------- | ------- | ------ |
 | Practica4     | -             | -         | 1-16    |  1-16  |
-| a             | automatica    | 0         | 3-16    | 1-16   |
-| i             | automatica    | undefined | 3-16    | 1-16   |
-| p             | dinamica    | ^i        | 4-16    | 7-15   |
+| a             | automatica    | basura    | 4-16    | 1-16   |
+| i             | automatica    | basura    | 4-16    | 1-16   |
+| p             | automatica    | basura    | 5-16    | 1-16   |
+| p^            | dinamica      | basura    | 5-16    | 7-15   |
 
 </td>
 </table>
@@ -377,9 +378,10 @@ Sea el siguiente ejercicio escrito en Pascal
 
 | Identificador | L-VALOR    | ALCANCE | T.VIDA |
 | ------------- | ---------  | ------- | ------ |
-| minipuntero   | dinamico   | 3-15    | 9-12   |
-| i             | automatico | 4-15    | 1-15   |
-| h             | automatico | 5-15    | 1-15   |
+| minipuntero   | automatico | 4-15    | 1-15   |
+| minipuntero^  | dinamico   | 4-15    | 9-12   |
+| i             | automatico | 5-15    | 1-15   |
+| h             | automatico | 6-15    | 9-12   |
 
 
 </td></table>
@@ -412,12 +414,12 @@ Elija un lenguaje y escriba un ejemplo:
 
   | Identificador | Lvalor     | Rvalor | Alcance  | T. vida |
   | ------------- | ---------- | ------ | -------- | ------- |
-  | aux           | estática   | 0-1    | 1-8 10-> | <1-10>  |
-  | v2            | automática | 0      | 2-10     | 1-10    |
-  | fun2          |            |        | 3-10     | 3-6     |
-  | v1            | automática | indef  | 4-6      | 3-6     |
-  | fun3          |            |        | 7-10     | 7-10    |
-  | aux           | automática | indef  | 8-10     | 7-10    |
+  | aux           | estática   | 0      | 1-8      | <1-10>  |
+  | v2            | automática | 0      | 3-10     | 1-10    |
+  | fun2          |            |        | 4-10     | 3-6     |
+  | v1            | automática | basura | 5-6      | 3-6     |
+  | fun3          |            |        | 8-10     | 7-10    |
+  | aux           | automática | basura | 9-10     | 7-10    |
 
 </td></table>
 
@@ -448,4 +450,54 @@ a) Responda Verdadero o Falso para cada opción. El tipo de dato de una variable
 b) Escriba la definición correcta de tipo de dato de una variable.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+### Ejercicio 12
+
+<table><td>
+
+```ada
+01.with text_io; use text_io;
+02.
+03.procedure Main is
+04.   type vector is array (integer range <>) of integer;
+05.   a, n, p: integer;
+06.   v1: vector(1..100);
+07.   c1: constant integer := 10;
+08.
+09.   procedure Uno is
+10.      type puntero is access integer;
+11.      v2: vector(0..n);
+12.      c2: character;
+13.      p, q: puntero;
+14.   begin
+15.      n := 4;
+16.      v2(n) := v2(1) + v1(5);
+17.      p := new puntero;
+18.      q := p;
+19.      -- ...
+20.      free p;
+21.      -- ...
+22.      free q;
+23.      -- ...
+24.   end Uno;
+25.
+26.begin
+27.   n := 5;
+28.   -- ...
+29.   Uno;
+30.   a := n + 2;
+31.   -- ...
+32.end Main;
+```
+</td><td>
+
+| Identificador | Lvalor     | Rvalor | Alcance  | T. vida |
+| ------------- | ---------- | ------ | -------- | ------- |
+| a             | automatica | basura | 6-23     | 1-23    |
+| n             | automática | basura | 6-23     | 1-23    |
+| p             | automatica | basura | 6-23     | 1-23    |
+| v1            | automática | basura | 7-23     | 1-23    |
+| c1            |            |        | 8-10     | 7-10    |
+| aux           | constante  | 10     | 9-10     | 7-10    |
+</td></table>
 
