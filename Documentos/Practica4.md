@@ -493,11 +493,82 @@ b) Escriba la definición correcta de tipo de dato de una variable.
 
 | Identificador | Lvalor     | Rvalor | Alcance  | T. vida |
 | ------------- | ---------- | ------ | -------- | ------- |
-| a             | automatica | basura | 6-23     | 1-23    |
-| n             | automática | basura | 6-23     | 1-23    |
-| p             | automatica | basura | 6-23     | 1-23    |
-| v1            | automática | basura | 7-23     | 1-23    |
-| c1            |            |        | 8-10     | 7-10    |
-| aux           | constante  | 10     | 9-10     | 7-10    |
+| a             | automatica | basura | 6-32     | 3-32    |
+| n             | automática | basura | 6-32     | 3-32    |
+| p             | automatica | basura | 6-13     | 3-32    |
+| v1            | automática | basura | 7-32     | 3-32    |
+| c1            | constante  | basura | 8-10     | 7-10    |
+| v1 |  |  |  |  |
+| c2 |  |  |  |  |
+| p |  |  |  |  |
+| q |  |  |  |  |
+| p^ |  |  |  |  |
+| q^ |  |  |  |  |
+
+</td></table>
+
+### Ejercicio 14: Sean los siguientes archivos en C, los cuales se compilan juntos
+- Indicar para cada variable de que tipo es en cuanto al momento de ligadura de su l-valor.
+- Indicar para cada identificador cuál es su alcance y cual es su el tiempo de vida.
+- Indicar para cada variable su r-valor al momento de alocación en memori
+
+<table><td>
+
+```ada
+ARCHIVO1.C
+1.int v1;
+2.int *a;
+3.Int fun2 ()
+4.{ int v1, y;
+5.   for(y=0; y<8; y++)
+6.   { extern int v2;
+7....}
+8.}
+9.main()
+10.{static int var3;
+11.   extern int v2;
+12.   int v1, y;
+13.   for(y=0; y<10; y++)
+14.   { char var1='C';
+15.   a=&v1;}
+16.}
+ARCHIVO2.C
+17.static int aux;
+18.int v2;
+19.static int fun2( )
+20.{ extern int v1;
+21.   aux=aux+1;
+22....
+23.}
+24.int fun3( )
+25.{ int aux;
+26.   aux=aux+1;
+27....
+28.}
+```
+</td><td>
+
+| Identificador | Lvalor    | Rvalor | Alcance  | T. vida |
+| ------------- | --------- | ------ | -------- | ------- |
+| v1       |           |        |          |         |
+| a*             |           |        |          |         |
+| fun2            |           |        |          |         |
+| v1              |           |        |          |         |
+| y              |           |        |          |         |
+| v2              |           |        |          |         |
+| var3              |           |        |          |         |
+| v2              |           |        |          |         |
+| v1              |           |        |          |         |
+| y              |           |        |          |         |
+| var1              |           |        |          |         |
+| aux              |           |        |          |         |
+| v2              |           |        |          |         |
+| fun2              |           |        |          |         |
+| v1              |           |        |          |         |
+| fun3              |           |        |          |         |
+| aux              |           |        |          |         |
+
+
+
 </td></table>
 
