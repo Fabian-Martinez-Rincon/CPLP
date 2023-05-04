@@ -13,11 +13,29 @@
 
 **`Objetivo`** Interpretar cómo se organiza la memoria de datos durante la ejecución de un programa con llamados a subrutinas
 
+|Modelo de registro de activación |
+| ------------------------------- |
+|Head (prog principal)            |
+|Pto retorno                      |
+|EE (enlace estático)             |
+|ED (enlace dinámico)             |
+|Variables...                     |
+|...                              |
+|Parámetros ...                   |
+|....                             |
+|Procedimientos ....              |
+|....                             |
+|Funciones ...                    |
+|....                             |
+|Valor de retorno                 |
+
+
 - [Ejercicio 1](#ejercicio-1)
 - [Ejercicio 2](#ejercicio-2)
 - [Ejercicio 3](#ejercicio-3)
 - [Ejercicio 4](#ejercicio-4)
 - [Ejercicio 5](#ejercicio-5)
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
