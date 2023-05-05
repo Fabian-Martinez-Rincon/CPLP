@@ -227,6 +227,59 @@ end
 
 ### Ejercicio 8
 
+#### a) Indique las diferencias entre los pasaje de subprogramas como parámetros deep y shallow
+
+#### b) Realice la pila estática y dinámica tanto con el pasaje de parámetros deep y shallow para el siguiente código
+
+<table><td>
+
+```pascal
+Program A
+    Var x:integer;
+    Var y: char;
+
+Procedure B;
+    Var h:integer;
+Begin
+    h:=1+x;
+    Write (y);
+    C(D);
+    Write (y);
+End;
+
+Procedure C (Subrutina S);
+    Var x:integer;
+    Var y: char;
+Begin
+    x:=3;
+    y:= "b";
+    x:=S(x,y)
+    y:= "j";
+    Write (x,y);
+End
+```
+
+</td><td>
+
+```pascal
+Function D (j:integer, k:char);
+Begin
+    j:=j+x;
+    k:=y;
+    Write (k);
+    Return j;
+End;
+BEGIN
+        x:=0;
+        y:="a";
+        B();
+        Write (x,y);
+END
+```
+</td>
+
+</table>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 9

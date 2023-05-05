@@ -20,6 +20,6 @@
 - [Practica 3 Semantica Estatica/Dinamica](/Documentos/Practica3.md)
 - [Practica 4 Variables](/Documentos/Practica4.md)
 - [Practica 5 Pilas de ejecución](/Documentos/Practica5.md)
-- [Practuca 6 Parametros](/Documentos/Practica6.md)
+- [Practica 6 Parametros](/Documentos/Practica6.md)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
