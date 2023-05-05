@@ -28,9 +28,9 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 1 Explique brevemente los siguientes conceptos
-- **`Parámetro`** 
-- **`Parámetro real`** 
-- **`Parámetro formal`** 
+- **`Parámetro`** son valores que se pasan a una función cuando se invoca.
+- **`Parámetro real`** son los valores que se pasan a la función cuando se invoca
+- **`Parámetro formal`** son las variables definidas por la función que reciben valores cuando se llama a la función.
 
 #### Ligadura
 - **`Ligadura posicional`**  Se corresponden con la posición que ocupan en la lista
