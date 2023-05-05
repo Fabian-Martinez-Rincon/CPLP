@@ -178,8 +178,6 @@ Realice la pila de ejecución del siguiente programa:
 - **`a)`** siguiendo la cadena estática 
 - **`b)`** siguiendo la cadena dinámica
 
-<table><td>
-
 ```pascal
 Procedure Uno;
     y, z: integer;
@@ -217,11 +215,7 @@ begin
     for y:= 1 to 5 do write (r2(y));
 end
 ```
-</td><td>
 
-
-</td>
-</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
