@@ -276,10 +276,83 @@ END
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 9
+### Ejercicio 9 Sea el siguiente código escrito en Pascal like
+
+<table><td>
+
+```pascal
+Procedure main
+    a: array(1..5) of integer;
+    x: integer;
+    i;integer;
+Procedure Uno (tipo_pasaje m:integer)
+Begin
+    x:=0;
+    x:=x+1;
+    m:=m+x + a(3);
+    x:=x*2;
+    a(3):=a(3) - 1;
+    m:=m+1;
+End
+```
+
+</td><td>
+
+```pascal
+Begin
+    For i:=1 to 5 a(i):=1;
+    x:=3;
+    Uno(a(x));
+    For i:=1 to 5 write (a(i));
+End
+```
+</td>
+
+</table>
+
+
+#### a- Plantee diferencias, relacionada con la forma de implementación de cada uno y los resultados sobre este ejemplo considerando los siguientes tipos de pasajes parámetros nombre, referencia y valor resultado.
+
+---
+
+#### b- ¿Qué sucede si en Uno se agrega la siguiente declaración: x: integer? Indique el resultado para cada uno de los tipos de pasajes de parámetros (nombre, referencia y valor resultado
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 10
+### Ejercicio 10 Sea el siguiente un programa escrito en Pascal
+
+<table><td>
+
+```pascal
+Program Uno;
+    var x:integer;
+Function Dos:integer;
+begin
+    x:= x + 1;
+    return (x);
+end;
+```
+</td><td>
+
+```pascal
+Procedure Tres (pasaje x:integer);
+begin
+    x:= x + 5;
+    x:= Dos + 10;
+end;
+begin
+    x:= 8; Tres(x);
+    write (x);
+end.
+```
+
+</td></table>
+
+
+#### **`a)`** Explique cómo simularía en Pascal el pasaje por valor-resultado y hágalo sobre este ejemplo.
+
+Nota: No se pueden agregar más variables, ni cambiar el nombre de las que están.
+#### **`b`** Transcriba este ejemplo en Ada de manera tal que el resultado de la ejecución sea diferente si el pasaje de parámetros es por referencia y luego por valor – resultado
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
