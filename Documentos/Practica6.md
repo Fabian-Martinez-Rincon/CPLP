@@ -27,10 +27,71 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 1
-### Ejercicio 2
+### Ejercicio 1 Explique brevemente los siguientes conceptos
+- **`Parámetro`** 
+- **`Parámetro real`** 
+- **`Parámetro formal`** 
+
+#### Ligadura
+- **`Ligadura posicional`**  Se corresponden con la posición que ocupan en la lista
+- **`Ligadura por palabra clave o nombre`** Se corresponden con el nombre por lo tanto pueden estar colocados indistintamente en la list
+- En `Ada` pueden mezclarse ambos métodos. 
+- En `C++` y en `Ada` los parámetros formales pueden tener valores por defecto, con lo cual a veces no es necesario listarlos todos en la 
+invocación
+
+### Ejercicio 2  Unir los siguientes puntos según corresponda y de una definición y un ejemplo de cada par.
+
 ### Ejercicio 3
-### Ejercicio 4
+
+### `a)` Complete el siguiente cuadro según lo correspondiente a cada lenguaje
+
+| Tipo de pasaje de parámetros | Lenguaje |
+| ---------------------------- | -------- |
+| | ADA |
+| | C |
+| | Rubi |
+| | JAVA |
+| | Python |
+
+### `b)` Ada es más seguro que Pascal, respecto al pasaje de parámetros en las funciones. Explique por qué.
+### `c)` Explique cómo maneja Ada los tipos de parámetros in-out de acuerdo al tipo de dato
+
+### Ejercicio 4 Sea el siguiente programa escrito en Pascal-like
+
+<table><td>
+
+```pas
+Procedure Main;
+    var j, m, i: integer;
+Procedure Recibe (x:integer; y:integer);
+begin
+    m:= m + 1 + y;
+    x:=i + x + j;
+    y:=m - 1;
+    write (x, y, i, j, m);
+end;
+```
+
+</td><td>
+
+```pas
+Procedure Dos;
+    var m:integer;
+begin
+    m:= 5;
+    Recibe(i, j);
+    write (i, j, m);
+    end;
+    begin
+    m:= 2;
+    i:=1; j:=3;
+    Dos;
+    write (i, j, m);
+end.
+```
+</td>
+</table>
+
 ### Ejercicio 5
 ### Ejercicio 6
 ### Ejercicio 7
