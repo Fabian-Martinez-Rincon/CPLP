@@ -223,6 +223,8 @@ end
 
 #### a) Indique las diferencias entre los pasaje de subprogramas como parámetros deep y shallow
 
+---
+
 #### b) Realice la pila estática y dinámica tanto con el pasaje de parámetros deep y shallow para el siguiente código
 
 <table><td>
@@ -353,6 +355,9 @@ end.
 #### **`a)`** Explique cómo simularía en Pascal el pasaje por valor-resultado y hágalo sobre este ejemplo.
 
 Nota: No se pueden agregar más variables, ni cambiar el nombre de las que están.
+
+---
+
 #### **`b`** Transcriba este ejemplo en Ada de manera tal que el resultado de la ejecución sea diferente si el pasaje de parámetros es por referencia y luego por valor – resultado
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
