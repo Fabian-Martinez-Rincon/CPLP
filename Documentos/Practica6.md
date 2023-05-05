@@ -71,7 +71,7 @@ invocación
 
 <table><td>
 
-```pas
+```pascal
 Procedure Main;
     var j, m, i: integer;
 Procedure Recibe (x:integer; y:integer);
@@ -85,7 +85,7 @@ end;
 
 </td><td>
 
-```pas
+```pascal
 Procedure Dos;
     var m:integer;
 begin
@@ -142,7 +142,7 @@ Suponiendo que se está ejecutando un programa con el siguiente registro de acti
 | Rutina() |
 | VR |
 
-```pas
+```pascal
 ......
 procedura rutina(tipoParam iteracion,tipoParam vector,tipoParam vit):
     while iteracion begin
@@ -155,15 +155,73 @@ procedura rutina(tipoParam iteracion,tipoParam vector,tipoParam vit):
     print vit
 print a
 .....
+
+rutina(iter,vec,a)
 ```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 6
+### Ejercicio 6 
+Indique con un ejemplo el comportamiento del parámetro por nombre (en el parámetro formal) para los siguientes casos de parámetros reales:
+- Un valor entero.
+- Una constante.
+- Un elemento de un arreglo.
+- una expresión.
+
+Que sucede en cada caso?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 7
+
+Realice la pila de ejecución del siguiente programa: 
+- **`a)`** siguiendo la cadena estática 
+- **`b)`** siguiendo la cadena dinámica
+
+<table><td>
+
+```pascal
+Procedure Uno;
+    y, z: integer;
+    r1:array[1..6] of integer;
+    r2:array[1..5] of integer;
+Procedure Dos( nombre x, t:integer; var io:integer; valor-resultado y:integer);
+    Procedure Dos( nombre t1:integer);
+        Procedure Tres;
+        begin
+            y:= y + 1;
+            z:= z + 1;
+        end;
+    begin
+        t1:= t1 + 1;
+        t:= t + 1;
+        Tres;
+        t1:= t1 + 2;
+        t:= t + 2;
+    end
+begin
+    x:= x + 1;
+    t:= t + 1;
+    io:= io + 1;
+    x:= x + 2;
+    if z =2 then Dos ( t );
+end
+
+begin
+    for y:= 1 to 6 do r1(y):= 2;
+    for y:= 1 to 5 do r2(y):= 1;
+    z:= 2;
+    y:= 1;
+    Dos( r1( y + r2( y )), r2( z ), y, z);
+    for y:= 1 to 6 do write (r1(y));
+    for y:= 1 to 5 do write (r2(y));
+end
+```
+</td><td>
+
+
+</td>
+</table>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
