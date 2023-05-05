@@ -30,7 +30,11 @@
 ### Ejercicio 1 Explique brevemente los siguientes conceptos
 - **`Parámetro`** son valores que se pasan a una función cuando se invoca.
 - **`Parámetro real`** son los valores que se pasan a la función cuando se invoca
-- **`Parámetro formal`** son las variables definidas por la función que reciben valores cuando se llama a la función.
+- **`Parámetro formal`** son las variables definidas por la función que reciben valores cuando se llama a la función. Desde el punto de vista semántico Pueden ser 
+    - **`Modo IN`** El parámetro formal recibe  el dato desde el  parámetro real
+    - **`Modo out`** El parámetro formal envía el dato al parámetro real
+    - **`Modo IN/OUT`** El parámetro formal recibe el dato del parámetro real y 
+    el parámetro formal le envía el dato al parámetro real
 
 #### Ligadura
 - **`Ligadura posicional`**  Se corresponden con la posición que ocupan en la lista
@@ -43,6 +47,17 @@ invocación
 
 ### Ejercicio 2  Unir los siguientes puntos según corresponda y de una definición y un ejemplo de cada par.
 
+- **Modo IN**
+    - Valor
+    - Valor Constante
+- **Modo OUT** 
+    - Por resultado
+    - Por resultado de funciones
+- **Modo In-Out**
+    - Valor – resultado
+    - Referencia
+    - Nombre
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 3
@@ -51,15 +66,17 @@ invocación
 
 | Tipo de pasaje de parámetros | Lenguaje |
 | ---------------------------- | -------- |
-| | ADA |
-| | C |
-| | Rubi |
-| | JAVA |
-| | Python |
+| Paso por valor               | ADA      |
+| Paso por valor y referencia  | C        |
+| Paso por valor y referencia  | Ruby     |
+| Paso por valor y referencia  | JAVA     |
+| Paso por valor y referencia  | Python   |
 
 ---
 
 #### `b)` Ada es más seguro que Pascal, respecto al pasaje de parámetros en las funciones. Explique por qué.
+
+Ada tiene una verificación más estricta de tipos de datos en tiempo de compilación, lo que ayuda a prevenir errores de tiempo de ejecución debido a problemas de tipo, lo que hace que sea más seguro que Pascal en términos de pasaje de parámetros en las funciones.
 
 ---
 
