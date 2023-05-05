@@ -47,7 +47,7 @@ invocación
 
 ### Ejercicio 3
 
-### `a)` Complete el siguiente cuadro según lo correspondiente a cada lenguaje
+#### `a)` Complete el siguiente cuadro según lo correspondiente a cada lenguaje
 
 | Tipo de pasaje de parámetros | Lenguaje |
 | ---------------------------- | -------- |
@@ -59,11 +59,11 @@ invocación
 
 ---
 
-### `b)` Ada es más seguro que Pascal, respecto al pasaje de parámetros en las funciones. Explique por qué.
+#### `b)` Ada es más seguro que Pascal, respecto al pasaje de parámetros en las funciones. Explique por qué.
 
 ---
 
-### `c)` Explique cómo maneja Ada los tipos de parámetros in-out de acuerdo al tipo de dato
+#### `c)` Explique cómo maneja Ada los tipos de parámetros in-out de acuerdo al tipo de dato
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -103,11 +103,11 @@ end.
 </td>
 </table>
 
-### a- Arme el árbol de anidamiento sintáctico y el registro de activación de cada una de las unidades.
+#### a- Arme el árbol de anidamiento sintáctico y el registro de activación de cada una de las unidades.
 
 ---
 
-### b- Decir qué imprime el programa suponiendo que para todas las variables que se pasan el pasaje de parámetros es por: (Deberá hacer la pila estática y dinámica para cada caso)
+#### b- Decir qué imprime el programa suponiendo que para todas las variables que se pasan el pasaje de parámetros es por: (Deberá hacer la pila estática y dinámica para cada caso)
 - **`i)`** Referencia. 
 - **`ii)`** Valor 
 - **`iii)`**Valor Resultado 
@@ -116,15 +116,46 @@ end.
 
 ---
 
-### c- ¿Existió algún caso que no pudo realizarlo porque saltó algún tipo de error? Diga cuál y por qué.
+#### c- ¿Existió algún caso que no pudo realizarlo porque saltó algún tipo de error? Diga cuál y por qué.
 
 ---
 
-### d- ¿Dará el mismo resultado si se trata de un lenguaje que sigue la cadena dinámica? Justifique la respuesta realizando las pilas de activación
+#### d- ¿Dará el mismo resultado si se trata de un lenguaje que sigue la cadena dinámica? Justifique la respuesta realizando las pilas de activación
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 5
+
+Suponiendo que se está ejecutando un programa con el siguiente registro de activación en memoria y se llama al procedimiento rutina(iter,vec,a). Determine el tipo de parámetro que se deben utilizar en el llamado para que los resultados sean los siguientes:
+
+- **`a)`** (4,6,7),(4,6,7), 2, 2
+- **`b)`** (3,5,6),(4,6,7), 2, 2
+- **`c)`** (3,5,6),(5,5,6), 0, -1
+
+| PR |
+| -- |
+| LD |
+| LE |
+| Iter: true |
+| Vec:[3,5,6] |
+| a: -1 |
+| Rutina() |
+| VR |
+
+```pas
+......
+procedura rutina(tipoParam iteracion,tipoParam vector,tipoParam vit):
+    while iteracion begin
+        vit = a+1
+        vector[vit] = vector[vit]+1
+        iteracion = (vector[vit] mod 2)==0
+    end
+    print vec
+    print vector
+    print vit
+print a
+.....
+```
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
