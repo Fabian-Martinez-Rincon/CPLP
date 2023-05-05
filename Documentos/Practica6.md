@@ -110,9 +110,9 @@ end.
 #### b- Decir qué imprime el programa suponiendo que para todas las variables que se pasan el pasaje de parámetros es por: (Deberá hacer la pila estática y dinámica para cada caso)
 - **`i)`** Referencia. 
 - **`ii)`** Valor 
-- **`iii)`**Valor Resultado 
+- **`iii)`** Valor Resultado 
 - **`iv)`** Nombre 
-- **`v)`**Resultado.
+- **`v)`** Resultado.
 
 ---
 
