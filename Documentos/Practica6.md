@@ -92,7 +92,8 @@ El manejo de los tipos de parámetros **`in-out`** en Ada depende del tipo de da
 
 ```pascal
 Procedure Main;
-    var j, m, i: integer;
+var 
+    j, m, i: integer;
 Procedure Recibe (x:integer; y:integer);
 begin
     m:= m + 1 + y;
@@ -106,13 +107,15 @@ end;
 
 ```pascal
 Procedure Dos;
-    var m:integer;
+var 
+    m:integer;
 begin
     m:= 5;
     Recibe(i, j);
     write (i, j, m);
-    end;
-    begin
+end;
+
+begin
     m:= 2;
     i:=1; j:=3;
     Dos;
@@ -130,6 +133,34 @@ Programa
   |_Procedimiento Recibe
   |_Procedimiento Dos
 ```
+
+- Current: Main
+  - Free
+  - PR *1
+  - LE
+  - LD
+    - j:
+    - m:
+    - i:
+  - VR
+- Current: Recibe
+  - Free
+  - PR *2
+  - LE *1
+  - LD
+    - m:
+  - VR
+- Current: Dos
+  - Free
+  - PR *3
+  - LE *1
+  - LD
+    - m: 
+  - VR
+
+
+
+
 
 ---
 
