@@ -124,7 +124,12 @@ end.
 
 #### **`a)`** Arme el árbol de anidamiento sintáctico y el registro de activación de cada una de las unidades.
 
-
+```
+Programa
+|_Procedimiento Main
+  |_Procedimiento Recibe
+  |_Procedimiento Dos
+```
 
 ---
 
