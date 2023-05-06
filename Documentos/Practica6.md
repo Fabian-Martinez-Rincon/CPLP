@@ -82,6 +82,8 @@ Ada tiene una verificación más estricta de tipos de datos en tiempo de compila
 
 #### `c)` Explique cómo maneja Ada los tipos de parámetros in-out de acuerdo al tipo de dato
 
+El manejo de los tipos de parámetros **`in-out`** en Ada depende del tipo de dato utilizado para el parámetro. Los tipos de datos básicos se pasan por valor, mientras que los tipos de datos compuestos se pasan por referencia.
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 4 Sea el siguiente programa escrito en Pascal-like
@@ -120,11 +122,13 @@ end.
 </td>
 </table>
 
-#### a- Arme el árbol de anidamiento sintáctico y el registro de activación de cada una de las unidades.
+#### **`a)`** Arme el árbol de anidamiento sintáctico y el registro de activación de cada una de las unidades.
+
+
 
 ---
 
-#### b- Decir qué imprime el programa suponiendo que para todas las variables que se pasan el pasaje de parámetros es por: (Deberá hacer la pila estática y dinámica para cada caso)
+#### **`b)`** Decir qué imprime el programa suponiendo que para todas las variables que se pasan el pasaje de parámetros es por: (Deberá hacer la pila estática y dinámica para cada caso)
 - **`i)`** Referencia. 
 - **`ii)`** Valor 
 - **`iii)`** Valor Resultado 
