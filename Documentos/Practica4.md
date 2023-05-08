@@ -26,9 +26,7 @@
 - [Ejercicio 10 Si tengo la siguiente declaración al comienzo de un procedimiento](#ejercicio-10)
 - [Ejercicio 11 Responda Verdadero o Falso para cada opción](#ejercicio-11)
 - [Ejercicio 12](#ejercicio-12)
-- [Ejercicio 13](#ejercicio-13)
 - [Ejercicio 14](#ejercicio-14)
-- [Ejercicio 15](#ejercicio-15)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -510,7 +508,9 @@ b) Escriba la definición correcta de tipo de dato de una variable.
 
 ![](/Practica/Practica4/13.jpg)
 
-### Ejercicio 14: Sean los siguientes archivos en C, los cuales se compilan juntos
+### Ejercicio 14
+
+Sean los siguientes archivos en C, los cuales se compilan juntos
 - Indicar para cada variable de que tipo es en cuanto al momento de ligadura de su l-valor.
 - Indicar para cada identificador cuál es su alcance y cual es su el tiempo de vida.
 - Indicar para cada variable su r-valor al momento de alocación en memori
