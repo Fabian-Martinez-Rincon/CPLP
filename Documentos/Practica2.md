@@ -241,6 +241,8 @@ P = {
 }
 ```
 
+![](2023-05-07-23-27-08.png)
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### **Ejercicio 7**
@@ -286,10 +288,13 @@ P = {
 
 <td>
 
+
+
 ![image](https://user-images.githubusercontent.com/55964635/234171988-5af1f557-927e-42fd-8f98-e99fe539d718.png)
 </td></tr></table>
 
 
+![](2023-05-07-23-28-01.png)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -304,7 +309,8 @@ de:
 | 1255869 | 854,26 Esta corregido arriba (en el 7) |
 | ![image](https://user-images.githubusercontent.com/55964635/233906831-18fb1f5d-0dec-4e71-899b-98c5f1067728.png) | ![image](https://user-images.githubusercontent.com/55964635/233906881-9d617c98-d469-4e03-8b33-b1fdb24f0579.png) |
 
-
+![](/Practica/Practica2/8.jpg)
+![](/Practica/Practica2/82.jpg)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
@@ -313,6 +319,8 @@ de:
 Defina utilizando diagramas sintácticos la gramática para la definición de un identificador de un lenguaje de programación. Tenga presente como regla que un identificador no puede comenzar con números.
 
 <table><td>
+
+
 
 ```ebnf
 G = ( N, T, S, P)
@@ -327,6 +335,8 @@ P = {
 }
 ```
 </td><td>
+
+Cambia los cuadrados de los terminales por circulos
 
 ![6](https://user-images.githubusercontent.com/55964635/233878007-0360094b-d320-44d3-9d92-d43fdda52bb1.jpg)
 </td>
