@@ -357,7 +357,7 @@ Sea el siguiente ejercicio escrito en Pascal
 
 <table><td>
 
-```pas
+```pascal
 1- Program Uno;
 2- type tpuntero= ^integer;
 3-   var mipuntero: tpuntero;
@@ -507,6 +507,9 @@ b) Escriba la definición correcta de tipo de dato de una variable.
 
 </td></table>
 
+
+![](/Practica/Practica4/13.jpg)
+
 ### Ejercicio 14: Sean los siguientes archivos en C, los cuales se compilan juntos
 - Indicar para cada variable de que tipo es en cuanto al momento de ligadura de su l-valor.
 - Indicar para cada identificador cuál es su alcance y cual es su el tiempo de vida.
@@ -572,3 +575,5 @@ ARCHIVO2.C
 
 </td></table>
 
+
+![](/Practica/Practica4/14.jpg)

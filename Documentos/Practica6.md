@@ -134,42 +134,237 @@ Programa
   |_Procedimiento Dos
 ```
 
-- Current: Main
-  - Free
-  - PR *1
-  - LE
-  - LD
-    - j:
-    - m:
-    - i:
-  - VR
-- Current: Recibe
-  - Free
-  - PR *2
-  - LE *1
-  - LD
-    - m:
-  - VR
-- Current: Dos
-  - Free
-  - PR *3
-  - LE *1
-  - LD
-    - m: 
-  - VR
+---
 
-
-
-
+#### PR *1 Main
+- Free
+- PR *1
+- LE
+- LD
+  - j:
+  - m:
+  - i:
+- VR
+#### PR *2 Recibe
+- PR *2
+- LE *1
+- LD
+  - m:
+- VR
+#### PR *3 Dos
+- Free
+- PR *3
+- LE *1
+- LD
+  - m: 
+- VR
 
 ---
 
 #### **`b)`** Decir qué imprime el programa suponiendo que para todas las variables que se pasan el pasaje de parámetros es por: (Deberá hacer la pila estática y dinámica para cada caso)
-- **`i)`** Referencia. 
-- **`ii)`** Valor 
-- **`iii)`** Valor Resultado 
-- **`iv)`** Nombre 
-- **`v)`** Resultado.
+
+---
+#### **`i)`** Referencia. 
+
+<table><td>
+
+```pascal
+Procedure Main;
+var 
+    j, m, i: integer;
+Procedure Recibe (var x:integer; var y:integer);
+begin
+    m:= m + 1 + y;
+    x:=i + x + j;
+    y:=m - 1;
+    write (x, y, i, j, m);
+end;
+```
+
+</td><td>
+
+```pascal
+Procedure Dos;
+var 
+    m:integer;
+begin
+    m:= 5;
+    Recibe(i, j);
+    write (i, j, m);
+end;
+
+begin
+    m:= 2;
+    i:=1; j:=3;
+    Dos;
+    write (i, j, m);
+end.
+```
+</td>
+</table>
+
+---
+#### **`ii)`** Valor 
+
+<table><td>
+
+```pascal
+Procedure Main;
+var 
+    j, m, i: integer;
+Procedure Recibe (x:integer; y:integer);
+begin
+    m:= m + 1 + y;
+    x:=i + x + j;
+    y:=m - 1;
+    write (x, y, i, j, m);
+end;
+```
+
+</td><td>
+
+```pascal
+Procedure Dos;
+var 
+    m:integer;
+begin
+    m:= 5;
+    Recibe(i, j);
+    write (i, j, m);
+end;
+
+begin
+    m:= 2;
+    i:=1; j:=3;
+    Dos;
+    write (i, j, m);
+end.
+```
+</td>
+</table>
+
+
+---
+#### **`iii)`** Valor Resultado 
+
+<table><td>
+
+```pascal
+Procedure Main;
+var 
+    j, m, i: integer;
+Procedure Recibe (res x:integer; res y:integer);
+begin
+    m:= m + 1 + y;
+    x:=i + x + j;
+    y:=m - 1;
+    write (x, y, i, j, m);
+end;
+```
+
+</td><td>
+
+```pascal
+Procedure Dos;
+var 
+    m:integer;
+begin
+    m:= 5;
+    Recibe(i, j);
+    write (i, j, m);
+end;
+
+begin
+    m:= 2;
+    i:=1; j:=3;
+    Dos;
+    write (i, j, m);
+end.
+```
+</td>
+</table>
+
+
+---
+#### **`iv)`** Nombre 
+
+<table><td>
+
+```pascal
+Procedure Main;
+var 
+    j, m, i: integer;
+Procedure Recibe (x:integer; y:integer);
+begin
+    m:= m + 1 + y;
+    x:=i + x + j;
+    y:=m - 1;
+    write (x, y, i, j, m);
+end;
+```
+
+</td><td>
+
+```pascal
+Procedure Dos;
+var 
+    m:integer;
+begin
+    m:= 5;
+    Recibe(i, j);
+    write (i, j, m);
+end;
+
+begin
+    m:= 2;
+    i:=1; j:=3;
+    Dos;
+    write (i, j, m);
+end.
+```
+</td>
+</table>
+
+
+---
+#### **`v)`** Resultado.
+
+<table><td>
+
+```pascal
+Procedure Main;
+var 
+    j, m, i: integer;
+Procedure Recibe (x:integer; y:integer);
+begin
+    m:= m + 1 + y;
+    x:=i + x + j;
+    y:=m - 1;
+    write (x, y, i, j, m);
+end;
+```
+
+</td><td>
+
+```pascal
+Procedure Dos;
+var 
+    m:integer;
+begin
+    m:= 5;
+    Recibe(i, j);
+    write (i, j, m);
+end;
+
+begin
+    m:= 2;
+    i:=1; j:=3;
+    Dos;
+    write (i, j, m);
+end.
+```
+</td>
+</table>
 
 ---
 
