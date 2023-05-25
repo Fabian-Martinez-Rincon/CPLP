@@ -46,7 +46,8 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 4: 
+### Ejercicio 4
+
 Cuando se termina de manejar la excepción, la acción que se toma luego es importante. Indique
 
 01. ¿Qué modelos diferentes existen en este aspecto?
@@ -196,25 +197,25 @@ c) como modificaría el método “acceso_por_indice” para que maneje él mism
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 9:
+### Ejercicio 9
 
 Indique diferencias y similitudes entre Phyton y Java con respecto al manejo de excepciones.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 10:
+### Ejercicio 10
 
 ¿Qué modelo de excepciones implementa Ruby?. ¿Qué instrucciones específicas provee el lenguaje para manejo de excepciones y cómo se comportan cada una de ellas?
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 11:
+### Ejercicio 11
 
 Indique el mecanismo de excepciones de javascript.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-### Ejercicio 12:
+### Ejercicio 12
 
 Sea el siguiente programa escrito en PYTHON::Indique el camino de ejecución
 
@@ -251,7 +252,182 @@ Sea el siguiente código escrito en JAVA
 
 ```java
 public class ExcepcionUno extends Exception {
+
   public ExcepcionUno(){
     super(); // constructor por defecto de Exception
   }
+
+  public ExcepcionUno( String cadena ){
+    super( cadena ); // constructor param. de Exception
+  }
+}
+
+public class ExcepcionDos extends Exception {
+  public ExcepcionDos(){
+    super(); // constructor por defecto de Exception
+  }
+  public ExcepcionDos( String cadena ){
+    super( cadena ); // constructor param. de Exception
+  }
+}
+
+public class ExcepcionTres extends Exception {
+  public ExcepcionTres(){
+    super(); // constructor por defecto de Exception
+  }
+  public ExcepcionTres( String cadena ){
+    super( cadena ); // constructor param. de Exception
+  }
+}
+
+public class Lanzadora {
+  public void lanzaSiNegativo(int param) throws ExcepcionUno {
+    if (param < 0)
+      throw new ExcepcionUno("Numero negativo");
+  }
+  public void lanzaSimayor100(int param) throws ExcepcionDos {
+    if (param >100 and param<125)
+      throw new ExcepcionDos("Numero mayor100");
+  }
+  public void lanzaSimayor125(int param) throws ExcepcionTres {
+    if (param >= 125)
+      throw new ExcepcionTres("Numero mayor125");
+  }
+}
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Excepciones {
+  public static void main(String[] args) {
+    // Para leer un fichero
+    Lanzadora lanza = new Lanzadora();
+    FileInputStream entrada = null;
+    int leo;
+    try {
+      entrada = new FileInputStream("fich.txt");
+      while ((leo = entrada.read()) != -1){
+        if (leo < 0)
+          lanza.lanzaSiNegativo(leo);
+        else if (leo > 100)
+          lanza.lanzaSimayor100(leo);
+      }
+      entrada.close();
+      System.out.println("Todo fue bien");
+    }
+    catch (ExcepcionUno e) { // Personalizada
+      System.out.println("Excepcion: " + e.getMessage());
+    }
+    catch (ExcepcionDos e) { // Personalizada
+      System.out.println("Excepcion: " + e.getMessage());
+    }
+    catch (IOException e) { // Estándar
+      System.out.println("Excepcion: " + e.getMessage());
+    }
+    finally {
+      if (entrada != null)
+        try {
+          entrada.close(); // Siempre queda cerrado
+        }
+        catch (Exception e) {
+          System.out.println("Excepcion: " + e.getMessage());
+        }
+      System.out.println("Fichero cerrado.");
+    }
+  }
+}
+```
+
+a) Indique cómo se ejecuta el código. Debe quedar en claro los caminos posibles de ejecución, cuales son los manejadores que se ejecutan y cómo se buscan los mismos y si en algún caso se produce algún error
+
+### Ejercicio 14
+
+Dado el siguiente código en Java. Indique todos los posibles caminos de resolución, de acuerdo a los números que vaya leyendo del archivo.
+
+```java
+class ExcepcionE1 extends Exception {
+
+  publicExcepcionE1(){
+    super(); // constructor por defecto de Exception
+  }
+
+  publicExcepcionE1( String cadena ){
+    super( cadena ); // constructor param. de Exception
+  }
+}
+
+class ExcepcionE2 extends Exception {
+
+  PublicExcepcionE2(){
+    super(); // constructor por defecto de Exception
+  }
+
+  PublicExcepcionE2( String cadena ){
+    super( cadena ); // constructor param. de Exception
+  }
+}
+
+// Esta clase lanzará la excepción
+public class Evaluacion {
+  void Evalua( int edad ) throws ExcepcionE1, ExcepcionE2 {
+    if ( edad < 18 )
+      throw new ExcepcionE1( "Es una persona menor de edad" );
+    else if ( edad> 70 )
+      throw new ExcepcionE2( "Es persona mayor de edad" );
+  }
+
+  void Segmenta( int edad ) throws ExcepcionE1, ExcepcionE2 {
+    if ( edad < 35 )
+      throw new ExcepcionE1( "Es una persona joven" );
+  }
+}
+
+class AnalisisEdadPoblacion{
+  public static void main( String[] args ){
+  // Para leer un fichero
+  Evaluacion Invoca = new Evaluacion();
+  FileInputSt ream entrada = null;
+  int leo;
+  try{
+    entrada = new FileInputStream( "fich.txt" );
+    while ( ( leo = entrada.read() ) != -1 ) {
+      try {
+        if (leo<0) {
+          throw new ExcepcionE1( "Edad inválida" );
+        }
+        else{
+          if (leo>120){
+            throw new ExcepcionE1( "Edad inválida" );
+          }
+        }
+        invoca.evalua (leo);
+        invoca.segmenta( leo );
+        System.out.println( " ( Es persona adulta, Todo fue bien" );
+      }
+      catch ( ExcepcionE2 e ){
+        System.out.println( "Excepcion: " + e.getMessage() );
+      }
+      catch ( ExcepcionE1 e ){
+        System.out.println( "Excepcion: " + e.getMessage() );
+      }
+    } 
+  }
+  catch (FileNotFoundException e1) {
+    System.out.println("No se encontró el archivo");
+  } 
+  catch (IOException e) {
+    System.out.println("Problema para leer los datos");
+  }
+  finally {
+    if (entrada != null)
+      try {
+        entrada.close();
+      } catch (Exception e) {
+        System.out.println("Excepcion: " + e.getMessage());
+      }
+    System.out.println("Fichero cerrado.");
+    }
+  }
+}
+
 ```
