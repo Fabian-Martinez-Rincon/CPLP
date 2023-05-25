@@ -7,7 +7,7 @@
 
 <h1 align="center"> 🧠 CPLP</h1>
 <div align="center">
-<img src="https://media.giphy.com/media/gFPxNhzEWdFCCRAqf0/giphy.gif"/>
+<img src="https://media.giphy.com/media/3oz8xNkfjM07d7dK0w/giphy.gif"/>
 </div>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
@@ -21,5 +21,8 @@
 - [Practica 4 Variables](/Documentos/Practica4.md)
 - [Practica 5 Pilas de ejecución](/Documentos/Practica5.md)
 - [Practica 6 Parametros](/Documentos/Practica6.md)
+- [Practica 7 Sistemas y tipos de Datos](/Documentos/Practica7.md)
+- [Practica 8 Excepciones](/Documentos/Practica8.md)
+- [Practica 9 Estructuras de control y sentencias](/Documentos/Practica9.md)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">

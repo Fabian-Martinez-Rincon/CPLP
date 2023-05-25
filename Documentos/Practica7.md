@@ -1,4 +1,4 @@
-<h1 align="center"> 📝 Practica7</h1>
+<h1 align="center"> 📝 Practica 7 Sistemas y tipos de Datos</h1>
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
