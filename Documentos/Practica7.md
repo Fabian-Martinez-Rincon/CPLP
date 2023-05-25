@@ -58,7 +58,83 @@
 
 <table>
 <tr><td>Java</td><td>C</td> <td>C</td></tr>
-<tr><td>Ruby</td><td>PHP</td> <td>Python</td></tr>
-<tr><td>Hashell</td><td>Hashell</td> <td></td></tr>
+<tr><td>
 
+```java
+class Persona {
+  String nombre;
+  String apellido;
+  int edad;
+}
+```
+</td><td>
+
+```C
+typedef struct _nodoLista {
+  void *dato;
+  struct _nodoLista *siguiente
+} nodoLista;
+typedef struct _lista {
+  int cantidad;
+  nodoLista *primero
+} Lista;
+```
+</td> <td>
+
+```C
+union codigo {
+  int numero;
+  char id;
+};
+```
+</td></tr>
+<tr><td>Ruby</td><td>PHP</td> <td>Python</td></tr>
+<tr><td>
+
+```Ruby
+hash = {
+  uno: 1,
+  dos: 2,
+  tres: 3,
+  cuatro: 4
+}
+```
+</td><td>
+
+```php
+function doble($x) {
+  return 2 * $x;
+}
+```
+</td> <td>
+
+```python
+tuple = (
+  'physics',
+  'chemistry', 
+  1997, 2000
+  )
+```
+</td></tr>
+<tr><td>Hashell</td><td>Hashell</td> <td></td></tr>
+<tr><td>
+
+```Haskell
+data ArbolBinarioInt =
+Nil |
+Nodo int
+(ArbolBinarioInt dato)
+(ArbolBinarioInt dato)
+```
+
+Ayuda para interpretar:
+‘ArbolBinarioInt’ es un
+tipo de dato que puede ser
+Nil (“vacío”) o un Nodo con
+un dato número entero (int)
+junto a un árbol como hijo
+izquierdo y otro árbol como
+hijo derech
+
+</td><td>Hashell</td> <td></td></tr>
 </table>
