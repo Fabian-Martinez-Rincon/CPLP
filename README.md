@@ -19,7 +19,7 @@
 - [Practica 2 BNF/EBNF](/Documentos/Practica2.md)
 - [Practica 3 Semantica Estatica/Dinamica](/Documentos/Practica3.md)
 - [Practica 4 Variables](/Documentos/Practica4.md)
-- [Practica 5 Pilas de ejecución](/Documentos/Practica5.md)
+- [Practica 5 Pilas de ejecución (Esta la hice full en papel)](/Documentos/Practica5.md)
 - [Practica 6 Parametros](/Documentos/Practica6.md)
 - [Practica 7 Sistemas y tipos de Datos](/Documentos/Practica7.md)
 - [Practica 8 Excepciones](/Documentos/Practica8.md)
