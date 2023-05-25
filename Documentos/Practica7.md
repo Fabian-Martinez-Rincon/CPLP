@@ -24,37 +24,40 @@
 
 ### Ejercicio 1 Sistemas de tipos
 
-#### ¿Qué es un sistema de tipos y cuál es su principal función?
+##### ¿Qué es un sistema de tipos y cuál es su principal función?
 
 ---
 
-#### b) Definir y contrastar las definiciones de un sistema de tipos fuerte y débil (probablemente en la bibliografía se encuentren dos definiciones posibles. Volcar ambas en l respuesta). Ejemplificar con al menos 2 lenguajes para cada uno de ellos y justificar.
+##### b) Definir y contrastar las definiciones de un sistema de tipos fuerte y débil (probablemente en la bibliografía se encuentren dos definiciones posibles. Volcar ambas en l respuesta). Ejemplificar con al menos 2 lenguajes para cada uno de ellos y justificar.
 
 ---
 
-#### a) Además de la clasificación anterior, también es posible caracterizar el tipado como estático o dinámico. ¿Qué significa esto? Ejemplificar con al menos 2 lenguajes para cada uno de ellos y justificar.
+##### a) Además de la clasificación anterior, también es posible caracterizar el tipado como estático o dinámico. ¿Qué significa esto? Ejemplificar con al menos 2 lenguajes para cada uno de ellos y justificar.
 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 2: Tipos de datos
 
-#### a) Dar una definición de tipo de dato.
+##### a) Dar una definición de tipo de dato.
 
 ---
 
-#### b) ¿Qué es un tipo predefinido elemental? Dar ejemplos.
+##### b) ¿Qué es un tipo predefinido elemental? Dar ejemplos.
 
 ---
 
-#### c) ¿Qué es un tipo definido por el usuario? Dar ejemplos.
+##### c) ¿Qué es un tipo definido por el usuario? Dar ejemplos.
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-#### 1. Dar una breve definición de: producto cartesiano (en la bibliografía puede aparecer también como product type), correspondencia finita, uniones (en la bibliografía puede aparecer también como sum type) y tipos recursivos.
+### Ejercicio 3: Tipos compuestos
 
+##### 1. Dar una breve definición de: producto cartesiano (en la bibliografía puede aparecer también como product type), correspondencia finita, uniones (en la bibliografía puede aparecer también como sum type) y tipos recursivos.
 
-#### 2. Identificar a qué clase de tipo de datos pertenecen los siguientes extractos de código. En algunos casos puede corresponder más de una
+---
+
+##### 2. Identificar a qué clase de tipo de datos pertenecen los siguientes extractos de código. En algunos casos puede corresponder más de una
 
 <table>
 <tr><td>Java</td><td>C</td> <td>C</td></tr>
@@ -126,15 +129,52 @@ Nodo int
 (ArbolBinarioInt dato)
 (ArbolBinarioInt dato)
 ```
+</td><td>
 
-Ayuda para interpretar:
-‘ArbolBinarioInt’ es un
-tipo de dato que puede ser
-Nil (“vacío”) o un Nodo con
-un dato número entero (int)
-junto a un árbol como hijo
-izquierdo y otro árbol como
-hijo derech
-
-</td><td>Hashell</td> <td></td></tr>
+```Haskell
+data Color =
+  Rojo |
+  Verde |
+  Azul
+```
+</td> <td></td></tr>
 </table>
+
+#### Ayuda para interpretar
+- `ArbolBinarioInt` es un tipo de dato que puede ser Nil (“vacío”) o un Nodo con un dato número entero (int) junto a un árbol como hijo izquierdo y otro árbol como hijo derech
+- `Color` es un tipo de dato que
+puede ser Rojo, Verde o Azul
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+### Ejercicio 4: Mutabilidad/Inmutabilidad:
+
+#### `1)` Definir mutabilidad e inmutabilidad respecto a un dato. Dar ejemplos en al menos 2 lenguajes. TIP: indagar sobre los tipos de datos que ofrece Python y sobre la operación
+
+freeze en los objetos de Ruby.
+
+---
+
+#### `2)` Dado el siguiente código:
+
+```Ruby
+a = Dato.new(1)
+a = Dato.new(2)
+```
+
+¿Se puede afirmar entonces que el objeto “Dato.new(1)” es mutable? Justificar la respuesta sea por afirmativa o por la negativa.
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+### Ejercicio 5: Manejo de punteros:
+##### `a)` ¿Permite C tomar el l-valor de las variables? Ejemplificar.
+##### `b)` ¿Qué problemas existen en el manejo de punteros? Ejemplificar.
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+### Ejercicio 6: TAD 
+##### `a)` ¿Qué características debe cumplir una unidad para que sea un TAD?
+##### `b)` Dar algunos ejemplos de TAD en lenguajes tales como ADA, Java, Python, entre otros.
+
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
