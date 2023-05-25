@@ -13,12 +13,12 @@
 
 **`Objetivo`** Comprender las nociones fundamentales sobre las diversas propiedades de los sistemas de tipos y los tipos de datos
 
-- [Ejercicio 1 Sistemas de tipos](#ejercicio-1)
-- [Ejercicio 2 Tipos de datos](#ejercicio-2)
-- [Ejercicio 3 Tipos compuestos](#ejercicio-3)
-- [Ejercicio 4 Mutabilidad/Inmutabilidad](#ejercicio-4)
-- [Ejercicio 5 Manejo de punteros](#ejercicio-5)
-- [Ejercicio 6 TAD](#ejercicio-6)
+- [Ejercicio 1 Sistemas de tipos](#ejercicio-1-sistemas-de-tipos)
+- [Ejercicio 2 Tipos de datos](#ejercicio-2-tipos-de-datos)
+- [Ejercicio 3 Tipos compuestos](#ejercicio-3-tipos-compuestos)
+- [Ejercicio 4 Mutabilidad/Inmutabilidad](#ejercicio-4-mutabilidadinmutabilidad)
+- [Ejercicio 5 Manejo de punteros](#ejercicio-5-manejo-de-punteros)
+- [Ejercicio 6 TAD](#ejercicio-6-tad)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
