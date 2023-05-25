@@ -4,8 +4,8 @@
 
 <div align="center">
 
-[Siguiente](/Documentos/Practica6.md)<br>
-[Anterior](/Documentos/Practica8.md)
+[Siguiente](/Documentos/Practica7.md)<br>
+[Anterior](/Documentos/Practica9.md)
 
 </div>
 
@@ -27,6 +27,8 @@
 - [Ejercicio 12](#ejercicio-12)
 - [Ejercicio 13](#ejercicio-13)
 - [Ejercicio 14](#ejercicio-14)
+
+---
 
 ### Ejercicio 1
 
