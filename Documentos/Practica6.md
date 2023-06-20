@@ -28,10 +28,12 @@
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 ### Ejercicio 1 Explique brevemente los siguientes conceptos
+
+#### Parametros
 - **`Parámetro`** son valores que se pasan a una función cuando se invoca.
 - **`Parámetro real`** son los valores que se pasan a la función cuando se invoca
 - **`Parámetro formal`** son las variables definidas por la función que reciben valores cuando se llama a la función. Desde el punto de vista semántico Pueden ser 
-    - **`Modo IN`** El parámetro formal recibe  el dato desde el  parámetro real
+    - **`Modo IN`** El parámetro formal recibe el dato desde el parámetro real
     - **`Modo out`** El parámetro formal envía el dato al parámetro real
     - **`Modo IN/OUT`** El parámetro formal recibe el dato del parámetro real y 
     el parámetro formal le envía el dato al parámetro real
