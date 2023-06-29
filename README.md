@@ -33,17 +33,46 @@
 
 Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a agregar parametros, que son los siguientes:
 
-| Parametro | Simbolo | Descripcion | Ejemplo | 
-| :---: | :---: | :---: | :---: |
-| Valor | `Nada` | Se pasa el valor de la variable | `V` = 5 |
-| Referencia | `io` | Se pasa la direccion de memoria de la variable | `R` = 0x0001 |
-| Nombre | `nombre` | Se pasa el nombre de la variable | `N` = `x` |
-| Valor Resultado | `valor-resultado` | Se pasa la expresion de la variable | `E` = `x + 1` |
 
-# 📁 Resumen Practica 7
+<table>
+<tr><td>Parametro</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Valor</td><td>Parametro</td><td>Trabajamos con una copia del valor recibido</td><td>
 
-# 📁 Resumen Practica 8
+```ada
+procedura rutina(x:integer);
+begin
+  x = 5
+end;
 
-# 📁 Resumen Practica 9
+rutina(a)
+```
 
-# 📁 Resumen Practica 10
+</td></tr>
+<tr><td>Referencia</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Nombre</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Valor-Resultado</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
+</table>
+
+### Datos a tener en cuenta
+
+- El arbol de anidamiento simplemente para saber que función esta contenida en otra, no es necesario para la practica.
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+
+# 👾 Resumen Practica 7 Tipos de Datos
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+
+# 🤖 Resumen Practica 8 Excepciones
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+
+# ♟️ Resumen Practica 9 Estructuras de Control
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+
+# 🎲 Resumen Practica 10 Paradigmas
