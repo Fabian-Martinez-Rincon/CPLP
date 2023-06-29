@@ -270,6 +270,81 @@ Nodo int
 
 # 🤖 Resumen Practica 8 Excepciones
 
+En pascal y en PL1 no tenemos un manejo de excepciones muy complejo. En cuanto a la estuctura, es parecido a pascal.
+
+#### Diferencias entre un lenguaje y otro
+
+| Pascal | PL/1 |
+| ------ | ---- |
+| var x:int | DCL x Integer; |
+| procedure | Proc |
+| procedure Manejador1 begin x:=x + 1; end; | ON CONDITION Manejador1 BEGIN x = x + 1; END; |
+
+
+<details> <summary> <b> Ejemplo Completo </b> </summary> 
+
+<table><tr><td>Pascal</td><td>PL/1</td></tr>
+<tr><td>
+
+```pascal
+Program Principal;
+var x:int; b1,b2:boolean;
+
+Procedure P (b1:boolean);
+  var x:int;
+  Procedure Manejador1
+  begin
+    x:=x + 1;
+  end;
+begin
+  x:=1;
+  if b1=true then Manejador1;
+  x:=x+4;
+end;
+
+Procedure Manejador2;
+begin
+  x:=x * 100;
+end;
+
+Begin
+  x:=4;
+  b2:=true;
+  b1:=false;
+  if b1=false then Manejador2;
+  P(b);
+  write (x);
+End
+```
+</td><td>
+
+```PL/1
+Prog Principal;
+  DCL x Integer;
+  DCL b1,b2 Boolean;
+PROC P (b1 Boolean);
+  DCL x Integer;
+BEGIN
+  ON CONDITION Manejador1 BEGIN x = x + 1; END;
+  X = 1;
+  IF b1=true THEN SIGNAL CONDITION Manejador1
+  x = x + 4;
+END;
+BEGIN
+  ON CONDITION Manejador2 BEGIN x = x * 100; END;
+  X = 4;
+  b2 = true;
+  b1 = false;
+  IF b1=false THEN SIGNAL CONDITION Manejador2
+  P(b1);
+  WRITE (x);
+END.
+```
+
+</td></tr></table>
+
+</details>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 
