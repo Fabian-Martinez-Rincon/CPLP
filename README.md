@@ -29,8 +29,6 @@
 
 # 💻 Resumen Practica 6 Párametros
 
-## 📌 Párametros
-
 Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a agregar parametros, que son los siguientes:
 
 
@@ -39,15 +37,18 @@ Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a a
 <tr><td>Valor</td><td>
 
 Trabajamos con una copia del valor recibido 
-- x = 5
+- x = 4
+- a = 3
 
 </td><td>
 
 ```ada
 procedura rutina(x:integer);
 begin
-  x = 5
+  x = x + 1
 end;
+
+a = 3;
 rutina(a);
 ```
 
@@ -56,14 +57,18 @@ rutina(a);
 
 Trabajamos siempre modificando el valor original
 - a <--- x
+- x = 4
+- a = 4
 
 </td><td>
 
 ```ada
 procedura rutina(io x:integer);
 begin
-  x = 5
+  x = x + 1
 end;
+
+a = 3;
 rutina(a);
 ```
 
@@ -83,7 +88,7 @@ r2:array[1..5] of integer;
 
 procedura rutina(nombre x:integer);
 begin
-  x = 5
+  x = x + 1
 end;
 
 rutina(r1[ y + r2 [y]]);
@@ -92,15 +97,19 @@ rutina(r1[ y + r2 [y]]);
 </td></tr>
 <tr><td>Valor-Resultado</td><td>
 
-Es igual al pasaje por valor solo que este trabaja con la copia y al final del proceso, retorna el valor modificado a la variable original. (El valor esta en el )
+Es igual al pasaje por valor solo que este trabaja con la copia y al final del proceso, retorna el valor modificado a la variable original. (El valor esta en el)
+- x = 4
+- a = 4
+
 </td><td>
 
 ```ada
 procedura rutina(valor-resultado x:integer);
 begin
-  x = 5
+  x = x + 1
 end;
-rutina(a); //VR = 5
+a = 3;
+rutina(a); //VR = 4
 ```
 
 </td></tr>
