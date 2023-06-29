@@ -120,6 +120,135 @@ rutina(a); //VR = 4
 
 # 👾 Resumen Practica 7 Tipos de Datos
 
+### Tipos de datos compuestos
+
+<details > <summary> <b> Producto cartesiano </b> </summary> 
+
+Es un **conjunto cuyos elementos están ordenados n-tupla**, es decir, es una construcción en teoría de conjuntos y programación que combina dos conjuntos o tipos de datos para formar un nuevo conjunto o tipo cuyos elementos contienen una combinación de elementos de ambos conjuntos. En programación, esto puede representarse mediante una estructura de datos que contiene múltiples campos o propiedades**.** Por ejemplo, los registros. Es una relación 1 a muchos
+
+#### Producto Cartesiano
+
+<table> <td>
+
+```python
+tuple = (
+  'physics',
+  'chemistry', 
+  1997, 2000
+  )
+```
+</td><td></td>
+
+
+
+```java
+class Persona {
+  String nombre;
+  String apellido;
+  int edad;
+}
+```
+</table>
+
+
+
+#### Producta Cartesiano y Recursión
+
+```C
+typedef struct _nodoLista {
+  void *dato;
+  struct _nodoLista *siguiente
+} nodoLista;
+typedef struct _lista {
+  int cantidad;
+  nodoLista *primero
+} Lista;
+```
+
+```Haskell
+data ArbolBinarioInt =
+Nil |
+Nodo int
+(ArbolBinarioInt dato)
+(ArbolBinarioInt dato)
+```
+
+
+</details>
+<details> <summary> <b> Correspondencia Finita </b> </summary>
+
+La correspondencia finita se refiere a una relación uno a uno entre los elementos de dos conjuntos finitos. Para cada elemento en el primer conjunto, hay exactamente un elemento correspondiente en el segundo conjunto, y viceversa. Esta correspondencia puede ser representada mediante una función que asigna cada elemento del primer conjunto a un único elemento del segundo conjunto. El tipo de dato serían los arreglos.
+
+#### Ejemplo
+
+```Ruby
+hash = {
+  uno: 1,
+  dos: 2,
+  tres: 3,
+  cuatro: 4
+}
+```
+
+#### Ejemplo 2
+
+```php
+function doble($x) {
+  return 2 * $x;
+}
+```
+
+</details>
+<details> <summary> <b> Uniones </b> </summary>
+
+Las uniones, también conocidas como sum type o tipo suma, son una construcción en programación que permite combinar varios tipos de datos en uno solo. En una unión, un valor puede pertenecer a uno de los tipos dentro de la unión. Esto se puede utilizar para representar alternativas o opciones donde un valor puede ser de diferentes tipos.
+
+#### Ejemplos
+
+
+```C
+union codigo {
+  int numero;
+  char id;
+};
+```
+
+```Haskell
+data Color =
+  Rojo |
+  Verde |
+  Azul
+```
+
+</details>
+<details> <summary> <b> Tipos Recursivos </b> </summary> 
+
+Los tipos recursivos son aquellos que se definen en términos de sí mismos. Esto significa que un tipo puede contener instancias de sí mismo como parte de su estructura. Los tipos recursivos son útiles para modelar estructuras de datos que contienen referencias a sí mismas, como árboles o listas enlazadas. Esta recursividad permite
+la construcción de estructuras de datos complejas y anidadas.
+
+#### Producto Cartesiano y Recursión
+
+```C
+typedef struct _nodoLista {
+  void *dato;
+  struct _nodoLista *siguiente
+} nodoLista;
+typedef struct _lista {
+  int cantidad;
+  nodoLista *primero
+} Lista;
+```
+
+```Haskell
+data ArbolBinarioInt =
+Nil |
+Nodo int
+(ArbolBinarioInt dato)
+(ArbolBinarioInt dato)
+```
+
+</details>
+
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
 
