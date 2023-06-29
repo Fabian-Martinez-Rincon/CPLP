@@ -26,3 +26,24 @@
 - [Practica 9 Estructuras de control y sentencias](/Documentos/Practica9.md)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
+# 💻 Resumen Practica 6 Párametros
+
+## 📌 Párametros
+
+Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a agregar parametros, que son los siguientes:
+
+| Parametro | Simbolo | Descripcion | Ejemplo | 
+| :---: | :---: | :---: | :---: |
+| Valor | `Nada` | Se pasa el valor de la variable | `V` = 5 |
+| Referencia | `io` | Se pasa la direccion de memoria de la variable | `R` = 0x0001 |
+| Nombre | `nombre` | Se pasa el nombre de la variable | `N` = `x` |
+| Valor Resultado | `valor-resultado` | Se pasa la expresion de la variable | `E` = `x + 1` |
+
+# 📁 Resumen Practica 7
+
+# 📁 Resumen Practica 8
+
+# 📁 Resumen Practica 9
+
+# 📁 Resumen Practica 10
