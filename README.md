@@ -137,9 +137,7 @@ tuple = (
   1997, 2000
   )
 ```
-</td><td></td>
-
-
+</td><td>
 
 ```java
 class Persona {
@@ -148,11 +146,14 @@ class Persona {
   int edad;
 }
 ```
-</table>
+</td></table>
 
 
 
 #### Producta Cartesiano y Recursión
+
+
+<table> <td>
 
 ```C
 typedef struct _nodoLista {
@@ -164,6 +165,7 @@ typedef struct _lista {
   nodoLista *primero
 } Lista;
 ```
+</td><td>
 
 ```Haskell
 data ArbolBinarioInt =
@@ -172,14 +174,14 @@ Nodo int
 (ArbolBinarioInt dato)
 (ArbolBinarioInt dato)
 ```
-
+</td></table>
 
 </details>
 <details> <summary> <b> Correspondencia Finita </b> </summary>
 
 La correspondencia finita se refiere a una relación uno a uno entre los elementos de dos conjuntos finitos. Para cada elemento en el primer conjunto, hay exactamente un elemento correspondiente en el segundo conjunto, y viceversa. Esta correspondencia puede ser representada mediante una función que asigna cada elemento del primer conjunto a un único elemento del segundo conjunto. El tipo de dato serían los arreglos.
 
-#### Ejemplo
+<table> <td>
 
 ```Ruby
 hash = {
@@ -189,22 +191,24 @@ hash = {
   cuatro: 4
 }
 ```
-
-#### Ejemplo 2
+</td><td>
 
 ```php
 function doble($x) {
   return 2 * $x;
 }
 ```
+</td></table>
+
 
 </details>
 <details> <summary> <b> Uniones </b> </summary>
 
 Las uniones, también conocidas como sum type o tipo suma, son una construcción en programación que permite combinar varios tipos de datos en uno solo. En una unión, un valor puede pertenecer a uno de los tipos dentro de la unión. Esto se puede utilizar para representar alternativas o opciones donde un valor puede ser de diferentes tipos.
 
-#### Ejemplos
 
+
+<table> <td>
 
 ```C
 union codigo {
@@ -212,6 +216,7 @@ union codigo {
   char id;
 };
 ```
+</td><td>
 
 ```Haskell
 data Color =
@@ -220,6 +225,12 @@ data Color =
   Azul
 ```
 
+</td></table>
+
+
+
+
+
 </details>
 <details> <summary> <b> Tipos Recursivos </b> </summary> 
 
@@ -227,6 +238,8 @@ Los tipos recursivos son aquellos que se definen en términos de sí mismos. Est
 la construcción de estructuras de datos complejas y anidadas.
 
 #### Producto Cartesiano y Recursión
+
+<table> <td>
 
 ```C
 typedef struct _nodoLista {
@@ -238,6 +251,7 @@ typedef struct _lista {
   nodoLista *primero
 } Lista;
 ```
+</td><td>
 
 ```Haskell
 data ArbolBinarioInt =
@@ -246,6 +260,8 @@ Nodo int
 (ArbolBinarioInt dato)
 (ArbolBinarioInt dato)
 ```
+
+</td></table>
 
 </details>
 
