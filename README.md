@@ -48,7 +48,7 @@ procedura rutina(x:integer);
 begin
   x = 5
 end;
-rutina(a)
+rutina(a);
 ```
 
 </td></tr>
@@ -64,23 +64,46 @@ procedura rutina(io x:integer);
 begin
   x = 5
 end;
-rutina(a)
+rutina(a);
 ```
 
 </td></tr>
 <tr><td>Nombre</td><td>
-Tomamos el contexto completo, y trabajamos con las variables originales al contexto (Hay te estar atentos si las variables se modifican por referencia o si son globales)</td><td>
+Tomamos el contexto completo, y trabajamos con las variables originales al contexto (Hay te estar atentos si las variables se modifican por referencia o si son globales)
+
+- x ↑ r1 [ y + r2 [y] ]
+
+</td><td>
 
 ```ada
-procedura rutina(io x:integer);
+Procedure main;
+y: integer;
+r1:array[1..6] of integer;
+r2:array[1..5] of integer;
+
+procedura rutina(nombre x:integer);
 begin
   x = 5
 end;
-rutina(a)
+
+rutina(r1[ y + r2 [y]]);
 ```
 
 </td></tr>
-<tr><td>Valor-Resultado</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Valor-Resultado</td><td>
+
+Es igual al pasaje por valor solo que este trabaja con la copia y al final del proceso, retorna el valor modificado a la variable original. (El valor esta en el )
+</td><td>
+
+```ada
+procedura rutina(valor-resultado x:integer);
+begin
+  x = 5
+end;
+rutina(a); //VR = 5
+```
+
+</td></tr>
 </table>
 
 ### Datos a tener en cuenta
