@@ -350,9 +350,25 @@ END.
 ![2](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/fbd524bf-d6b7-41c5-9d78-31534791b5aa)
 ![3](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/acea487b-d0a4-41fb-8637-674a62d07055)
 
-### Rta
+### Ejercicio 3a)
 
-En el main se entra a la primera iteración del for dentro del try siendo **i=1**, entra al if, imprime **`1`** y llama al metodo 
+En el main se entra a la primera iteración del for dentro del try siendo **i=1**, entra al if, imprime **`1`** y llama al metodo **`rethrow`**. El método evalua en el try y entra al primer if, ya que se envio con el parametro **`primer`** y Lanza la excepción **`firstException`**. Termina el try y la excepción es manejada por el cath del primer try dele método y tira una excepción **`ThirdException`** y se imprime "tercerException" y termina el programa.
+
+Por lo que la opción válida es la 
+
+>1) Imprime "1", luego "Tercer Exception" y termina el programa.
+
+### Ejercicio 3b)
+
+Si se pusiera todo en el bloque try/cath dentro del for, los resultados serian diferentes, ya que el for podria continuar ejecutandose haya sido manejada una excepción o no dentro de su bloque. El resultado final de la impresion seria
+
+> "1", "Tercera Excepción", "2", "Tercer Excepción", "3", "Tercer Excepción"
+
+- Salta la excepción **first Exceptión** y se maneja dentro del **rethrow** en el segundo **cath** y en el **cath** del for donde imprime.
+- Salta la excepción **second Exception** y se maneja dentro del **rethrow** en el primer **cath** y en el **cath** del for donde imprime.
+- Salta la excepción **third Exception** y como no se puede manejar en **rethrow** es directamente manejada en el main, en el for.
+
+
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
