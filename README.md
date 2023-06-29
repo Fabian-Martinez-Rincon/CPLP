@@ -37,8 +37,7 @@ Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a a
 <tr><td>Valor</td><td>
 
 Trabajamos con una copia del valor recibido 
-- x = 4
-- a = 3
+- x = 3
 
 </td><td>
 
@@ -57,8 +56,6 @@ rutina(a);
 
 Trabajamos siempre modificando el valor original
 - a <--- x
-- x = 4
-- a = 4
 
 </td><td>
 
@@ -98,8 +95,7 @@ rutina(r1[ y + r2 [y]]);
 <tr><td>Valor-Resultado</td><td>
 
 Es igual al pasaje por valor solo que este trabaja con la copia y al final del proceso, retorna el valor modificado a la variable original. (El valor esta en el)
-- x = 4
-- a = 4
+- x(a) = 3 
 
 </td><td>
 
