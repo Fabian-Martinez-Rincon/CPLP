@@ -35,8 +35,14 @@ Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a a
 
 
 <table>
-<tr><td>Parametro</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
-<tr><td>Valor</td><td>Parametro</td><td>Trabajamos con una copia del valor recibido</td><td>
+<tr><td>Parametro</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Valor</td><td>
+
+Trabajamos con una copia del valor recibido 
+
+- x = 5
+
+</td><td>
 
 ```ada
 procedura rutina(x:integer);
@@ -48,9 +54,9 @@ rutina(a)
 ```
 
 </td></tr>
-<tr><td>Referencia</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
-<tr><td>Nombre</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
-<tr><td>Valor-Resultado</td><td>En Pila</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Referencia</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Nombre</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Valor-Resultado</td><td>Descripción</td><td>Ejemplo</td></tr>
 </table>
 
 ### Datos a tener en cuenta
