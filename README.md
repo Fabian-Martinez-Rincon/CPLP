@@ -40,6 +40,8 @@ Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a a
 
 Trabajamos con una copia del valor recibido 
 
+En pila
+
 - x = 5
 
 </td><td>
@@ -49,12 +51,27 @@ procedura rutina(x:integer);
 begin
   x = 5
 end;
-
 rutina(a)
 ```
 
 </td></tr>
-<tr><td>Referencia</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Referencia</td><td>Trabajamos siempre modificando el valor original
+
+En pila
+
+- a <--- x
+
+</td><td>
+
+```ada
+procedura rutina(io x:integer);
+begin
+  x = 5
+end;
+rutina(a)
+```
+
+</td></tr>
 <tr><td>Nombre</td><td>Descripción</td><td>Ejemplo</td></tr>
 <tr><td>Valor-Resultado</td><td>Descripción</td><td>Ejemplo</td></tr>
 </table>
