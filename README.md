@@ -350,6 +350,9 @@ END.
 ![2](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/fbd524bf-d6b7-41c5-9d78-31534791b5aa)
 ![3](https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/acea487b-d0a4-41fb-8637-674a62d07055)
 
+### Rta
+
+En el main se entra a la primera iteración del for dentro del try siendo **i=1**, entra al if, imprime **`1`** y llama al metodo 
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
