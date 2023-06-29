@@ -68,7 +68,18 @@ rutina(a)
 ```
 
 </td></tr>
-<tr><td>Nombre</td><td>Descripción</td><td>Ejemplo</td></tr>
+<tr><td>Nombre</td><td>
+Tomamos el contexto completo, y trabajamos con las variables originales al contexto (Hay te estar atentos si las variables se modifican por referencia o si son globales)</td><td>
+
+```ada
+procedura rutina(io x:integer);
+begin
+  x = 5
+end;
+rutina(a)
+```
+
+</td></tr>
 <tr><td>Valor-Resultado</td><td>Descripción</td><td>Ejemplo</td></tr>
 </table>
 
