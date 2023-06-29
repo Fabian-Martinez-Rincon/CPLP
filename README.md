@@ -39,9 +39,6 @@ Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a a
 <tr><td>Valor</td><td>
 
 Trabajamos con una copia del valor recibido 
-
-En pila
-
 - x = 5
 
 </td><td>
@@ -55,10 +52,9 @@ rutina(a)
 ```
 
 </td></tr>
-<tr><td>Referencia</td><td>Trabajamos siempre modificando el valor original
+<tr><td>Referencia</td><td>
 
-En pila
-
+Trabajamos siempre modificando el valor original
 - a <--- x
 
 </td><td>
