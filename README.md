@@ -27,6 +27,10 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+# Resumen Parcial de Promo
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 # 💻 Resumen Practica 6 Párametros
 
 Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a agregar parametros, que son los siguientes:
@@ -370,12 +374,4 @@ Si se pusiera todo en el bloque try/cath dentro del for, los resultados serian d
 
 
 
-<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
-
-# ♟️ Resumen Practica 9 Estructuras de Control
-
-<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
-
-
-# 🎲 Resumen Practica 10 Paradigmas
