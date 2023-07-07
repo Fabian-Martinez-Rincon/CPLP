@@ -27,6 +27,33 @@
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
+# Parcial de Promoción Resumen
+
+---
+
+## Teoria 1 Introducción y Evaluación de Lenguajes
+
+- Simplicidad y Legibilidad
+- Claridad en los bindings
+- Confiabilidad
+- Soporte
+- Abstración
+- Ortogonalidad
+- Eficiencia
+- Sintaxis
+  - **Abstracta** Se refiere a la estructura
+  - **Concreta** Se refiere a la parte léxica
+  - **Pragmática** Se refiere al uso práctico
+  - BNF, EBNF Y CONWAY
+- Semántica
+
+---
+
+## Teoria 2
+
+
+<img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
+
 # 💻 Resumen Practica 6 Párametros
 
 Ateriormente hicimos la practica de pila estatica y dinamica, ahora le vamos a agregar parametros, que son los siguientes:
