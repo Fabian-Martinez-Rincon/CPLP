@@ -213,3 +213,51 @@ Marque con una cruz (X) las respuestas verdadera
 - [ ] En C, si asignamos a una variable puntero, la dirección de otra variable, estamos seguros que la variable puntero nunca contendrá referencias sueltas
 - [ ] Un paradigma de programación representa un modelo para resolver problemas computacionales
 - [ ] La forma de detener una excepción es una de las preguntas que debemos respondernos cuando evaluemos este concepto(Excepciones) en un lenguaje de programación.
+
+
+<table><td>
+
+<img src="https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/f08a2980-2315-4e27-a1d8-a18d3a37887d " width="2000" />
+
+
+</td><td>
+
+Para este programa en ADA indique de qué forma simularía el metodo por reasunción utilizando los constructores del lenguaje cuando se levanta una excepción en la linea 7. Justifique indicando qué instrucciones utilizaría y en qué lugar del codigo ubicaría (Numeros de Linea). Puede incluir pseudocódigo.
+</td></table>
+
+#### Pregunta
+
+Indique cual de los dos código pertenece a un lenguaje lógico y que componentes (clausulas) encuentra en él describiendolos claramente.
+
+<table><td>
+
+```
+rel(a,b).
+rel(b,c).
+rel(a,c):rel(a,b), rel(b,c).
+```
+</td><td>
+
+```
+var a,b,c:integer;
+rel(a,b); //relaciona a la variable a con la variable b y retorna true
+rel(b,c); //relaciona a la variable a con la variable c y retorna true
+if (rel(a,b) and rel(b,c)) rel(a,c);
+```
+
+</td></table>
+
+
+#### Pregunta
+
+<table><td>
+
+<img src="https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/ac59c9a7-6e0f-44c6-b6a4-280c9da30ddf " width="2500" />
+
+</td><td>
+
+Sea el siguiente fragmento de código en C y determine qué situaciones pueden presentarse en el uso de la sentencia de selección. Indique qué particularidades presenta esta sentencia en este caso particular.
+
+</td></table>
+
+
