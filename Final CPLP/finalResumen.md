@@ -134,3 +134,72 @@ Sea el siguiente código, analice y justifique con qué tipos (tipo) de parámet
 
 </td>
 </table>
+
+#### Pregunta
+
+<table><td>
+
+```pascal
+program ideaone;
+type 
+  empleado = record
+    edad:integer;
+    sueldo:real;
+  end;
+type t: array[1..10] of integer;
+type p:^char;
+var a:t;
+var e:empleado;	
+var pun:p;
+begin
+  a[2]:=3.4;
+  e.edad:=4,5;
+  new(pun);
+  pun^:='a';
+  e.sueldo:=pun^;
+  ...
+end.
+```
+</td><td>
+Lea el siguiente fragmento de código y determine si existen errores de tipo. Enuncie los constructores utilizados definiendo las características mas importantes de cada uno. Justifique completamente su respuesta.
+
+</td>
+</table>
+
+#### Pregunta
+
+<table><td>
+
+```pascal
+Program Alcance;
+var 
+  a:integer;
+  z,b:real;
+procedure uno();
+  var 
+    b:integer;
+  procedure dos();
+    begin
+      z:=a+1+b;
+    end;
+  begin
+    b:=20;
+    dos();
+  end;
+procedure tres();
+  var 
+    a:real;
+  begin
+    a:=20;
+    uno();
+  end;
+begin
+  a:=4;
+  b:=2;
+  z:=10;
+  tres();
+end.
+```
+</td><td>
+Determine los elementos del registro de activación indispensables para que el codigo ejecutado de como resultado z=41. Justifique la respuesta dando la definición de cada uno de los elementos citados.
+</td></table>
