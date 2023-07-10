@@ -203,3 +203,13 @@ end.
 </td><td>
 Determine los elementos del registro de activación indispensables para que el codigo ejecutado de como resultado z=41. Justifique la respuesta dando la definición de cada uno de los elementos citados.
 </td></table>
+
+## MT3 Resumen
+
+#### Verdadero o Falso
+
+Marque con una cruz (X) las respuestas verdadera
+
+- [ ] En C, si asignamos a una variable puntero, la dirección de otra variable, estamos seguros que la variable puntero nunca contendrá referencias sueltas
+- [ ] Un paradigma de programación representa un modelo para resolver problemas computacionales
+- [ ] La forma de detener una excepción es una de las preguntas que debemos respondernos cuando evaluemos este concepto(Excepciones) en un lenguaje de programación.
