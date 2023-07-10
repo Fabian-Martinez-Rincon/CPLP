@@ -24,6 +24,7 @@
 - [Practica 7 Sistemas y tipos de Datos](/Documentos/Practica7.md)
 - [Practica 8 Excepciones](/Documentos/Practica8.md)
 - [Practica 9 Estructuras de control y sentencias](/Documentos/Practica9.md)
+- [Resumen Final](/Final%20CPLP/finalResumen.md)
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
