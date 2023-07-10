@@ -217,7 +217,7 @@ Marque con una cruz (X) las respuestas verdadera
 
 <table><td>
 
-<img src="https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/f08a2980-2315-4e27-a1d8-a18d3a37887d " width="2000" />
+<img src="https://github.com/Fabian-Martinez-Rincon/Fabian-Martinez-Rincon/assets/55964635/f08a2980-2315-4e27-a1d8-a18d3a37887d " width="1500" />
 
 
 </td><td>
