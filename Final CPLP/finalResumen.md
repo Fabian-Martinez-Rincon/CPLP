@@ -3,8 +3,8 @@
 #### Verdadero o Falso
 
 Marque con una cruz las respuestas Faltas
-- [x] El R-Valor de un puntero es el L-Valor del objeto que quiere representar
-- [x] Un error de Tipo Sintáctico siempre provoca un error de tipo semántico
+- [ ] El R-Valor de un puntero es el L-Valor del objeto que quiere representar
+- [ ] Un error de Tipo Sintáctico siempre provoca un error de tipo semántico
 - [ ] Los errores de semántica estática se detectan cuando el programa pasa a ejecución
 
 #### Pregunta
