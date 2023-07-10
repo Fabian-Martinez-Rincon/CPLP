@@ -64,7 +64,7 @@
   - Compilación
   - Interpretación y Compilación
 
---
+---
 
 ## Teoria 3 Semantica Operacional
 
