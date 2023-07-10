@@ -84,17 +84,53 @@ while a<n do
 Las diferencias entre los dos ejemplos en cuanto a la sintaxis concreta y pragmática son las siguientes:
 
 1. Delimitadores de bloque:
-   - En Pascal, se utilizan las palabras clave `begin` y `end` para delimitar un bloque de código dentro de un bucle o una estructura condicional. Es obligatorio usarlos y el código dentro del bloque debe estar indentado.
-   - En Python, se utiliza la indentación para delimitar un bloque de código. No se utilizan palabras clave como `begin` y `end`. La indentación debe ser consistente en todo el código y generalmente se utiliza una tabulación o un número específico de espacios.
+   - En Pascal, se utilizan las palabras clave **begin** y **end** para delimitar un bloque de código dentro de un bucle o una estructura condicional. Es obligatorio usarlos y el código dentro del bloque debe estar indentado.
+   - En Python, se utiliza la indentación para delimitar un bloque de código. No se utilizan palabras clave como **begin** y **end**. La indentación debe ser consistente en todo el código y generalmente se utiliza una tabulación o un número específico de espacios.
 
 2. Asignaciones:
-   - En Pascal, se utiliza el operador `:=` para realizar una asignación. Por ejemplo, `a := b-1` asigna el valor de `b-1` a la variable `a`.
-   - En Python, se utiliza el operador `=` para realizar una asignación. Por ejemplo, `a = b-1` asigna el valor de `b-1` a la variable `a`.
+   - En Pascal, se utiliza el operador **:=** para realizar una asignación. Por ejemplo, **a := b-1** asigna el valor de **b-1** a la variable **a**.
+   - En Python, se utiliza el operador **=** para realizar una asignación. Por ejemplo, **a = b-1** asigna el valor de **b-1** a la variable **a**.
 
-En cuanto a la sintaxis abstracta, ambos ejemplos son coincidentes. Ambos utilizan la estructura de control de bucle `while` para repetir un bloque de código mientras se cumpla una condición específica. La condición `a < n` se evalúa en ambos casos para determinar si el bucle debe continuar ejecutándose. Dentro del bucle, se realizan asignaciones a las variables `a` y `b` utilizando operadores aritméticos.
+En cuanto a la sintaxis abstracta, ambos ejemplos son coincidentes. Ambos utilizan la estructura de control de bucle **while** para repetir un bloque de código mientras se cumpla una condición específica. La condición **a < n** se evalúa en ambos casos para determinar si el bucle debe continuar ejecutándose. Dentro del bucle, se realizan asignaciones a las variables **a** y **b** utilizando operadores aritméticos.
 
 Aunque hay diferencias en la sintaxis concreta y pragmática, la sintaxis abstracta, que se refiere a la estructura y el propósito general del código, es la misma en ambos casos.
 
 > La sintaxis concreta se refiere a las reglas gramaticales y estructurales específicas del lenguaje, mientras que la sintaxis pragmática abarca consideraciones prácticas y convenciones de estilo en la escritura del código. 
 
 ## MT2 Resumen
+
+#### Verdadero o Falso
+
+Marque con una cruz (X) la respuesta verdadera
+
+- [ ] El tipo de dato de una variable es un atributo que indica solamente el conjunto de valores y operaciones posibles que la misma puede tener
+- [ ] Una variable es semiestática en cuanto a su L-Valor si se aloca en memoria en el mismo momento que la unidad que la contiene y se desaloca cuando la unidad termina su ejecución
+- [ ] El punto de retorno de una unidad de programa dentro del registro de activación de un lenguaje basado en pila define cual es la unidad de programa que la invocó
+
+#### Pregunta
+
+<table><td>
+
+```pascal
+program ideaone;
+var a,b:integer;
+procedure x((tipo), y);
+begin
+  write(a);
+  y:=y-5;
+  write(y);
+  write(a);
+end;
+begin
+  a:=3;
+  x(a);
+  writeln(a);
+end.
+```
+</td><td>
+
+Sea el siguiente código, analice y justifique con qué tipos (tipo) de parámetro el resultado de la impresión en pantalla será idéntico accediento al entorno de la unidad llamante durante la ejecución de la unidad. Indique y justifique si existen casos en que pueden representarse errores con los tipos que ha contestado. Escriba los resultados de la ejecución en cada caso (Ej Imprime 1,2,3,4) Respuesta.
+
+
+</td>
+</table>
