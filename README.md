@@ -49,8 +49,28 @@
 
 ---
 
-## Teoria 2
+## Teoria 2 Semántica
 
+- Semantica Estatica - Gramatica de Atributos
+- Semantica Dinamica
+  - Formales y Complejas
+    - Semantica Axiomatica
+    - Semantica denotacional
+  - No Formal
+    - Semantica Operacional
+- Procesamiento de un Programa (Programas Traductores)
+  - Interpretación
+  - Compilación
+  - Interpretación y Compilación
+
+--
+
+## Teoria 3 Semantica Operacional
+
+- Ligadura Estatica
+- Ligadura Dinamica
+- Variable (Nombre, Alcance, Tipo, L-Valor, R-Valor)
+- Sobrecarga
 
 <img src= 'https://i.gifer.com/origin/8c/8cd3f1898255c045143e1da97fbabf10_w200.gif' height="20" width="100%">
 
