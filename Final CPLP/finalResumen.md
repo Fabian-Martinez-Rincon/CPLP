@@ -2,10 +2,11 @@
 
 #### Verdadero o Falso
 
-Marque con una cruz las respuestas Faltas
+Marque con una cruz las respuestas Falsas
 - [ ] El R-Valor de un puntero es el L-Valor del objeto que quiere representar
-- [ ] Un error de Tipo Sintáctico siempre provoca un error de tipo semántico
-- [ ] Los errores de semántica estática se detectan cuando el programa pasa a ejecución
+- [X] Un error de Tipo Sintáctico siempre provoca un error de tipo semántico
+- [X] Los errores de semántica estática se detectan cuando el programa pasa a ejecución
+
 
 #### Pregunta
 
@@ -20,11 +21,21 @@ while True:
     print("Oops!  That was no valid number.  Try again...")
 ```
 
+- Simplicidad y Legibilidad
+- Confiabilidad
+- Ortogonalidad ORTOGONALIDAD Sinifica que un conjunto pequeño de constructores primitivos, puede ser combinado en número relativamente pequeño a la hora de construir estructuras de control y datos. Cada combinación es legal y con sentido.
+-  El usuario comprende mejor si tiene un
+pequeño número de primitivas y un conjunto
+consistente de reglas de combinación. 
+
+
 La sentencia **try** funciona de la siguiente manera.
 - Primero, se ejecuta la cláusula **try** (el código entre las palabras reservadas **try** y **except**).
 - Si no ocurre ninguna excepción, el bloque **except** se salta el resto de la cláusula. Luego termina la ejecución de la sentencia **try**.
 - Si ocurre una excepción durante la ejecución de la clausula **try**, el resto de la cláusula se salta. Luego, si su tipo coincide con la excepción nombrada luego de la palabra reservada **except**, se ejecuta la cláusula **except**, y la ejecución continúa luego de la sentencia **try**.
 - Si ocurre una excepción que no coincide con la excepción nombrada en la cláusula **except**, esta se pasa a la sentencia **try** más afuera; si no se encuentra nada que la maneje, es una excepción no manejada, y la ejecución se frena con un mensaje como los mostrados arriba.
+
+
 
 #### Pregunta
 
@@ -103,8 +114,8 @@ Aunque hay diferencias en la sintaxis concreta y pragmática, la sintaxis abstra
 
 Marque con una cruz (X) la respuesta verdadera
 
-- [ ] El tipo de dato de una variable es un atributo que indica solamente el conjunto de valores y operaciones posibles que la misma puede tener
-- [ ] Una variable es semiestática en cuanto a su L-Valor si se aloca en memoria en el mismo momento que la unidad que la contiene y se desaloca cuando la unidad termina su ejecución
+- [X] El tipo de dato de una variable es un atributo que indica solamente el conjunto de valores y operaciones posibles que la misma puede tener
+- [X] Una variable es semiestática en cuanto a su L-Valor si se aloca en memoria en el mismo momento que la unidad que la contiene y se desaloca cuando la unidad termina su ejecución
 - [ ] El punto de retorno de una unidad de programa dentro del registro de activación de un lenguaje basado en pila define cual es la unidad de programa que la invocó
 
 #### Pregunta
@@ -114,7 +125,8 @@ Marque con una cruz (X) la respuesta verdadera
 ```pascal
 program ideaone;
 var a,b:integer;
-procedure x((tipo), y);
+procedure x((tipo) y);
+//Entrada, salida, entrada-salida
 begin
   write(a);
   y:=y-5;
@@ -152,10 +164,13 @@ var a:t;
 var e:empleado;	
 var pun:p;
 begin
+  //Asignas un real a un entero
   a[2]:=3.4;
+  //Asignas un real a un entero
   e.edad:=4,5;
   new(pun);
   pun^:='a';
+  //Asignas un string a un real
   e.sueldo:=pun^;
   ...
 end.
@@ -202,6 +217,11 @@ end.
 ```
 </td><td>
 Determine los elementos del registro de activación indispensables para que el codigo ejecutado de como resultado z=41. Justifique la respuesta dando la definición de cada uno de los elementos citados.
+
+- LE
+- LD
+- 
+
 </td></table>
 
 ## MT3 Resumen
